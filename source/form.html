@@ -18,11 +18,39 @@
     </header>
 
     <main class="main">
+      <form class="form" action="https://echo.htmlacademy.ru">
+        <h1 class="form__heading">Подбор программы</h1>
+        <h3 class="form__sub-heading">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
+        <span class="form__span">Имя:*</span><input class="form__input-text" type="text" name="name" value="БАРСИК" required>
+        <span class="form__span">Вес (кг):*</span><input class="form__input-text" type="text" name="weight" value="7" required>
+        <span class="form__span">Возраст (лет):</span><input class="form__input-text" type="text" name="age" value="7">
+        <hr>
+        <input type="radio" name="loose" checked><span class="form__span">Похудение</span>
+        <input type="radio" name="gain"><span class="form__span">Набор массы</span>
+        <input type="radio" name="advise"><span class="form__span">Не знаю (Нужен ваш совет)</span>
+        <hr>
+        <h2 class="heading">Контактные данные (владельца кота)</h2>
+        <span class="form__span">Email:*</span><input class="form__input-text" type="email" name="email" value="kuklachev@gmail.com" required>
+        <span class="form__span">Телефон:*</span><input class="form__input-text" type="phone" name="phone" value="8 (960) 900-60-90" required>
+        <h2 class="heading">Комментарий</h2>
+        <input class="form__input-text form__input-text--big" type="text" name="comment" value="Расскажите обо всех повадках кота">
+        <h2 class="heading">Дополнительно</h2>
+        <input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" checked><span class="form__span">сахарозаменитель</span>
+        <input type="checkbox" class="form__checkbox" name="water"><span class="form__span">питьевая вода</span>
+        <input type="checkbox" class="form__checkbox" name="milk"><span class="form__span">молоко</span>
+        <input type="checkbox" class="form__checkbox" name="vitamins"><span class="form__span">витамины</span>
+        <button type="submit" class="button" name="submit">Отправить заявку</button>
+        <p class="form_req-fields">* — Обязательные поля</p>
+      </form>
+
+
       <section class="welcome">
         <h2 class="welcome__heading">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <img class="welcome_map" src="https://via.placeholder.com/300x300" alt="Map"></img>
       </section>
+
+
     </main>
 
 
