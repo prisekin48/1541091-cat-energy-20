@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.header__menu-button {
+  background-repeat: no-repeat;
+  align-self: center;
+  width: 18px;
+  height: 18px;
+
+}
+
+.header__menu-button--open-menu {
+  background-image: url("/img/icon-close.svg");
+
+}

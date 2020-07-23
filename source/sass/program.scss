@@ -1,0 +1,30 @@
+.program {
+  background-color: #D9D9D9;
+}
+
+.program__title {
+
+}
+.program__title:before {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: $base-color;
+}
+
+.program__title--lose:before {
+  display: block;
+  content: url(/img/icon-cat-slim.svg);
+  height: 50px;
+  width: 36px;
+
+}
+
+.program__title--gain:before {
+  display: block;
+  content: url(/img/icon-cat-pro.svg);
+  height: 50px;
+  width: 67px;
+}

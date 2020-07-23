@@ -1,0 +1,10 @@
+.first-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  height: 480px;
+  background-image:  url("/img/index-can-mobile@1x.png"), url("/img/index-background-mobile@1x.jpg");
+  background-position: top left, top left;
+  background-repeat: no-repeat;
+}

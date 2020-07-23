@@ -1,5 +1,11 @@
-@import "variables.scss";
 
 .button {
-  color: $base-color;
+  width: 280px;
+  height: 40px;
+  background-color: $base-color;
+  color: white;
+}
+
+.button--secondary {
+  background-color: #F2F2F2;
 }
