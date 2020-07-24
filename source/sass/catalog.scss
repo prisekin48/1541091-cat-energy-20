@@ -22,7 +22,7 @@
 }
 
 .catalog__more-button {
-  background-image: url(/img/icon-plus-mobile.svg); //как сделать цвет #D3D3D3
+  background-image: url("/img/icon-plus-mobile.svg"); //как сделать цвет #D3D3D3
   width: 30px;
   height: 30px;
   margin-top: 37px;
@@ -36,7 +36,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  margin-top: 0px;
+  margin-top: 1px;
   margin-bottom: 10px;
 }
 
@@ -47,6 +47,6 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }

@@ -1,7 +1,8 @@
 .how-it-works {
-display: flex;
-flex-direction: column;
-@include base-padding();
+  display: flex;
+  flex-direction: column;
+
+  @include base-padding();
 }
 
 .how-it-works__item {
@@ -13,29 +14,14 @@ flex-direction: column;
   display: flex;
 }
 
-.how-it-works__item:before {
-
+.how-it-works__item::before {
   display: list-item;
   content: "";
   width: 50px;
   height: 50px;
-
-
   background-color: $base-color;
 }
-  .how-it-works__item--leaf {
+
+.how-it-works__item--leaf {
   background-image: url(/img/advantage-leaf@1x.png);
-}
-
-
-.how-it-works__item--boil {
-
-}
-
-.how-it-works__item--forks {
-
-}
-
-.how-it-works__item--clock {
-
 }

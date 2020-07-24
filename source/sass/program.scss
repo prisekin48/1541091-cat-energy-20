@@ -1,5 +1,5 @@
 .program {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -8,32 +8,29 @@
 .program__title {
   width: 250px;
   font-weight: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
 }
-.program__title:before {
 
+.program__title::before {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
   background-color: $base-color;
 }
 
-.program__title--lose:before {
+.program__title--lose::before {
   display: block;
-  content: url(/img/icon-cat-slim.svg);
+  content: url("/img/icon-cat-slim.svg");
   height: 50px;
   width: 36px;
-
 }
 
-.program__title--gain:before {
+.program__title--gain::before {
   display: block;
-  content: url(/img/icon-cat-pro.svg);
+  content: url("/img/icon-cat-pro.svg");
   height: 50px;
   width: 67px;
 }

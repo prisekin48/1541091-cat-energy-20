@@ -1,7 +1,13 @@
-@mixin oswald() {font-family: 'Oswald', sans-serif;}
-@mixin arial() {font-family: 'Arial', sans-serif;}
-@mixin base-padding() {padding: 0 20px;}
+@mixin oswald() {
+  font-family: "Oswald", sans-serif;
+}
 
+@mixin arial() {
+  font-family: "Arial", sans-serif;
+}
 
+@mixin base-padding() {
+  padding: 0 20px;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
