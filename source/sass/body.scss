@@ -1,4 +1,8 @@
 .body {
+  @include oswald();
   background-color: white;
   width: 320px;
+  padding-top: 12px;
+  margin: 0 auto;
+  outline: green solid 1px;
 }

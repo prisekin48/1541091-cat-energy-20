@@ -1,11 +1,16 @@
 .how-it-works {
 display: flex;
 flex-direction: column;
+@include base-padding();
 }
 
 .how-it-works__item {
+  @include arial();
   list-style: none;
-
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
 }
 
 .how-it-works__item:before {
