@@ -1,5 +1,4 @@
 .header {
-  @include base-padding;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -11,7 +10,8 @@
   width: 20px;
   height: 20px;
   align-self: center;
-  margin-bottom: 30px;
+  // margin-bottom: 15px;
+  margin-right: 20px;
 }
 
 .header__menu-button--open-menu {
