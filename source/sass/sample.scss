@@ -6,8 +6,8 @@
 }
 
 .sample__description {
-  width: 279px;
   @include arial();
+  width: 279px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
