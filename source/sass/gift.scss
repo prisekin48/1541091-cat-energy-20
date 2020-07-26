@@ -1,0 +1,25 @@
+.gift {
+  @include arial();
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 289px;
+  background: url("/img/gift-photo-mobile@1x.jpg");
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.gift::before {
+  content: url("/img/icon-gift.svg");
+  width: 58px;
+  align-self: center;
+  margin-top: 64px;
+  margin-bottom: 58px;
+}

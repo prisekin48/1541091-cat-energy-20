@@ -2,18 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="body">
 
 
     <header class="header">
-      <a class="image-logo" href="index.html"><img src="https://via.placeholder.com/50x50" alt="Image logo"></a>
-      <a class="text-logo" href="index.html"><img src="https://via.placeholder.com/50x50" alt="Text logo"></a>
-      <button class="header__menu-button header__menu-button--open-menu"></button>
+      <a href="index.html"><img class="image-logo" src="img/logo-mobile.svg"></a>
+      <a class="header__menu-button header__menu-button--open-menu" title="Меню"></a>
       <nav class="nav visually-hidden">
         <a class="nav__link" href="index.html">Главная</a>
-        <a class="nav__link nav__link--inactive" href="catalog.html">Каталог продукции</a>
+        <a class="nav__link nav__link--active" href="catalog.html">Каталог продукции</a>
         <a class="nav__link" href="form.html">Подбор программы</a>
       </nav>
     </header>
@@ -24,7 +24,7 @@
       <section class="first-screen">
         <h1 class="heading heading--first-screen">Функциональное питание для котов</h1>
         <p class="sub-heading">Занялся собой? Займись котом!</p>
-        <a class="button" href="form.html">Подобрать программу</a>
+        <a class="button button__first-screen" href="form.html">Подобрать программу</a>
       </section>
 
 
@@ -56,16 +56,16 @@
       <section class="sample">
         <h2 class="heading">Живой пример</h2>
         <p class="sample__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="sample__bullet">
-          <p class="sample__bullet-text">5 кг</p>
-          <p class="sample__bullet-sub-text">снижение веса</p>
-        </div>
-        <div class="sample__bullet">
-          <p class="sample__bullet-text">60 дней</p>
-          <p class="sample__bullet-sub-text">затрачено времени</p>
-        </div>
+        <dl class="sample__bullet">
+          <dt class="sample__bullet-text">5 кг</dt>
+          <dd class="sample__bullet-sub-text">снижение<br>веса</dd>
+        </dl>
+        <dl class="sample__bullet">
+          <dt class="sample__bullet-text">60 дней</dt>
+          <dd class="sample__bullet-sub-text">затрачено<br>времени</dd>
+        </dl>
         <h4 class="sample__sub-heading">Затраты на питание: 15 000 РУБ.</h4>
-        <img class="sample__image sample__image--before" src="https://via.placeholder.com/300x300">
+        <img class="sample__image sample__image--before">
         <img class="sample__image sample__image--after visually-hidden" src="https://via.placeholder.com/300x300">
         <p class="sample__state-text">Было</p>
         <button class="sample__button sample__button--before"></button>
@@ -75,21 +75,21 @@
       <section class="welcome">
         <h2 class="welcome__heading">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003142!2d30.32085871615621!3d59.93871916905411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1595339286075!5m2!1sen!2sru" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="welcome__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003142!2d30.32085871615621!3d59.93871916905411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1595339286075!5m2!1sen!2sru" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
 
 
     <footer class="footer">
-      <a class="text-logo text-logo--footer" href="index.html"><img src="https://via.placeholder.com/50x50" alt="Text logo"></a>
+      <a class="text-logo text-logo--footer" href="index.html"></a>
       <div class="social">
-        <a href="https://vk.com" class="social__link social__link--vk">вк</a>
-        <a href="https://instagram.com" class="social__link social__link--inst">инст</a>
-        <a href="https://facebook.com" class="social__link social__link--fb">фб</a>
+        <a href="https://vk.com" class="social__link social__link--vk"></a>
+        <a href="https://instagram.com" class="social__link social__link--inst"></a>
+        <a href="https://facebook.com" class="social__link social__link--fb"></a>
       </div>
       <div class="academy">
         <a href="https://htmlacademy.ru" class="academy__link">HTML Academy</a>
-        <a href="https://htmlacademy.ru" class="academy__link academy__link--logo"><img src="https://via.placeholder.com/25x25" alt="Academy logo"></img></a>
+        <a href="https://htmlacademy.ru" class="academy__link academy__link--logo"></a>
       </div>
     </footer>
 

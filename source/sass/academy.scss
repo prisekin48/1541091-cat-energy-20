@@ -1,0 +1,23 @@
+.academy {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.academy__link {
+  @include arial();
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.academy__link--logo {
+  width: 27px;
+  height: 34px;
+  background-image: url("/img/htmlacademy.svg");
+  background-repeat: no-repeat;
+}

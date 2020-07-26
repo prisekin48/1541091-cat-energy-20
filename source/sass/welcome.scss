@@ -1,0 +1,32 @@
+.welcome {
+  padding-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+}
+
+.welcome__heading {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  width: 140px;
+  margin-left: 20px;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+}
+
+.welcome__address {
+  @include arial();
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  width: 140px;
+  margin-right: 20px;
+  margin-bottom: 1px;
+}
+
+.welcome__map {
+  width: 320px;
+  height: 362px;
+  margin-top: 22px;
+}

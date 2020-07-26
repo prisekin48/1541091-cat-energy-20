@@ -1,0 +1,28 @@
+.social {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 21px;
+}
+
+.social__link--vk {
+  width: 23px;
+  height: 16px;
+  background-image: url("/img/icon-vk.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--inst {
+  width: 16px;
+  height: 16px;
+  background-image: url("/img/icon-insta.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--fb {
+  width: 22px;
+  height: 22px;
+  background-image: url("/img/icon-fb.svg");
+  background-repeat: no-repeat;
+}

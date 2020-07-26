@@ -1,0 +1,57 @@
+.sample {
+  @include base-padding();
+  display: flex;
+  flex-wrap: wrap;
+  background: #eaeaea;
+}
+
+.sample__description {
+  @include arial();
+  width: 279px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sample__bullet {
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.sample__bullet-text {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sample__bullet-sub-text {
+  @include arial();
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin: 0 auto;
+  width: 90px;
+  background: #eaeaea;
+}
+
+.sample__sub-heading {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+.sample__image--before {
+  content: url("/img/before-mobile@1x.png");
+}
+
+.sample__image--after {
+  content: url("/img/after-mobile@1x.png");
+}
