@@ -6,6 +6,7 @@
 }
 
 .program__title {
+  font-family: $oswald;
   width: 250px;
   font-weight: normal;
   font-size: 24px;
@@ -36,7 +37,6 @@
 }
 
 .program__description {
-  @include arial();
   width: 227px;
   font-weight: normal;
   font-size: 14px;
@@ -47,6 +47,7 @@
 }
 
 .program__link {
+  font-family: $oswald;
   color: black;
   text-decoration: none;
   font-weight: normal;

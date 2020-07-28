@@ -1,5 +1,5 @@
 .button {
-  @include oswald();
+  font-family: $oswald;
   background-color: $base-color;
   width: 280px;
   height: 40px;
