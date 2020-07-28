@@ -3,7 +3,7 @@
   margin-left: 20px;
   margin-right: 20px;
   height: 289px;
-  background: url("/img/gift-photo-mobile@1x.jpg");
+  background: url("../img/gift-photo-mobile@1x.jpg");
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
@@ -17,7 +17,7 @@
 }
 
 .gift::before {
-  content: url("/img/icon-gift.svg");
+  content: url("../img/icon-gift.svg");
   width: 58px;
   align-self: center;
   margin-top: 64px;

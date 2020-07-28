@@ -23,14 +23,14 @@
 
 .program__title--lose::before {
   display: block;
-  content: url("/img/icon-cat-slim.svg");
+  content: url("../img/icon-cat-slim.svg");
   height: 50px;
   width: 36px;
 }
 
 .program__title--gain::before {
   display: block;
-  content: url("/img/icon-cat-pro.svg");
+  content: url("../img/icon-cat-pro.svg");
   height: 50px;
   width: 67px;
 }
@@ -54,7 +54,7 @@
   line-height: 16px;
   width: 134px;
   height: 24px;
-  background: url("/img/icon-right-arrow-long.svg") no-repeat;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
   background-position: right;
   margin-top: 18px;
   margin-left: 20px;
