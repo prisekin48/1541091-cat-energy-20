@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   background: #eaeaea;
+  justify-content: space-between;
 }
 
 .sample__description {
@@ -14,10 +15,10 @@
 
 .sample__bullet {
   width: 124px;
-  // height: 56px;
+  height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  margin-right: 10px;
+
 }
 
 .sample__bullet-text {
@@ -25,7 +26,6 @@
   text-transform: uppercase;
   font-weight: normal;
   font-size: 24px;
-  // line-height: 50px;
   text-align: center;
 }
 
@@ -34,8 +34,6 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin: 0 auto;
-  width: 90px;
   background: #eaeaea;
 }
 
@@ -45,6 +43,8 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
