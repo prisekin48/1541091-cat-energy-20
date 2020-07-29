@@ -1,4 +1,28 @@
-@import "variables.scss", "mixins.scss", "academy.scss", "body.scss", "button.scss", "catalog.scss", "first-screen.scss", "footer.scss", "form.scss", "gift.scss", "header.scss", "heading.scss", "how-it-works.scss", "image-logo.scss", "main.scss", "nav.scss", "program.scss", "programs.scss", "sample.scss", "social.scss", "sub-heading.scss", "table.scss", "text-logo.scss", "visually-hidden.scss", "welcome.scss";
+@import "variables"
+@import "mixins"
+@import "academy"
+@import "body"
+@import "button"
+@import "catalog"
+@import "first-screen"
+@import "footer"
+@import "form"
+@import "gift"
+@import "header"
+@import "heading"
+@import "how-it-works"
+@import "image-logo"
+@import "main"
+@import "nav"
+@import "program"
+@import "programs"
+@import "sample"
+@import "social"
+@import "sub-heading"
+@import "table"
+@import "text-logo"
+@import "visually-hidden"
+@import "welcome"
 
 @font-face {
   font-family: "Oswald";
@@ -8,7 +32,3 @@
   font-style: normal;
   font-display: swap;
 }
-
-// * {
-//   outline: 1px solid red;
-// }
