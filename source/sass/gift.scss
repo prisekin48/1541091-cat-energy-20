@@ -1,24 +1,26 @@
 .gift {
-  margin-left: 20px;
-  margin-right: 20px;
+  // margin-left: 20px;
+  // margin-right: 20px;
   // height: 289px;
-  background: url("../img/gift-photo-mobile@1x.jpg");
-  display: flex;
-  flex-direction: column;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  // display: flex;
+  // flex-direction: column;
   // justify-content: space-between;
-  text-align: center;
+  // text-align: center;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: white;
-  padding-left: 48px;
-  padding-right: 48px;
+  // padding-left: 48px;
+  // padding-right: 48px;
 }
 
 .gift::before {
-  content: url("../img/icon-gift.svg");
+  display: block;
+  content: "";
+  background-image: url("../img/icon-gift.svg");
   width: 58px;
-  align-self: center;
+  // align-self: center;
   margin-top: 64px;
   margin-bottom: 58px;
 }

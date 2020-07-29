@@ -1,9 +1,9 @@
 .sample {
   @include base-padding();
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   background: #eaeaea;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .sample__description {
