@@ -18,22 +18,23 @@
 .program__title::before {
   width: 50px;
   height: 50px;
+  display: inline-block;
   border-radius: 50%;
-  background: $base-color;
+  background-color: $base-color;
 }
 
 .program__title--lose::before {
-  display: block;
-  content: url("../img/icon-cat-slim.svg");
-  height: 50px;
-  width: 36px;
+  content: "";
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat:  no-repeat;
+  background-position: 50%;
 }
 
 .program__title--gain::before {
-  display: block;
-  content: url("../img/icon-cat-pro.svg");
-  height: 50px;
-  width: 67px;
+  content: "";
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat:  no-repeat;
+  background-position: 50%;
 }
 
 .program__description {
