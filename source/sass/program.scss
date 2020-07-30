@@ -1,7 +1,5 @@
 .program {
   background-color: #f2f2f2;
-  // display: flex;
-  // flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -13,25 +11,25 @@
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
-}
 
-.program__title::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: $base-color;
-  background-repeat:  no-repeat;
-  background-position: 50%;
-}
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $base-color;
+    background-repeat:  no-repeat;
+    background-position: 50%;
+  }
 
-.program__title--lose::before {
-  background-image: url("../img/icon-cat-slim.svg");
-}
+  &--lose::before {
+    background-image: url("../img/icon-cat-slim.svg");
+  }
 
-.program__title--gain::before {
-  background-image: url("../img/icon-cat-pro.svg");
+  &--gain::before {
+    background-image: url("../img/icon-cat-pro.svg");
+  }
 }
 
 .program__description {

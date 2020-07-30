@@ -1,8 +1,5 @@
 .nav {
   margin: 0 auto;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 
 .nav__link {
@@ -16,12 +13,9 @@
   border-top: 1px solid #e6e6e6;
   width: 320px;
   text-align: center;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
-.nav__link:first-child {
-  border-top: 1px solid #e6e6e6;
-}
-
-.header__menu-button--nojs {
-  display: none;
-}

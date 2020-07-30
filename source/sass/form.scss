@@ -1,7 +1,6 @@
 .form {
   @include base-padding();
   font-family: $oswald;
-  // display: flex;
   flex-direction: column;
 }
 
@@ -52,14 +51,8 @@
   background: url("../img/icon-mail.svg") no-repeat right;
 }
 
-
 .form__checkbox {
   margin-top: 10px;
-}
-
-.button--form {
-  margin-top: 20px;
-  line-height: 10px;
 }
 
 .form__req-fields {

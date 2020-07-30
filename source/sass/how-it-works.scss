@@ -1,7 +1,4 @@
 .how-it-works {
-  // display: flex;
-  // flex-wrap: wrap;
-
   @include base-padding();
 
   & ul {
@@ -16,37 +13,36 @@
   line-height: 18px;
   display: flex;
   margin-bottom: 10px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 160px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: $base-color;
+    margin-right: 20px;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--boil::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--forks::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
-.how-it-works__item::before {
-  display: block;
-  content: "";
-  width: 160px;
-  height: 60px;
-  background-color: $base-color;
-  margin-right: 20px;
-}
 
-.how-it-works__item--leaf:before {
-  background-image: url("../img/advantage-leaf@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
 
-.how-it-works__item--boil:before {
-  background-image: url("../img/advantage-powder@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
 
-.how-it-works__item--forks:before {
-  background-image: url("../img/advantage-dining@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
 
-.how-it-works__item--clock:before {
-  background-image: url("../img/advantage-clock@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}

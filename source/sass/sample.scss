@@ -1,16 +1,12 @@
 .sample {
   @include base-padding();
-  // display: flex;
-  // flex-wrap: wrap;
   background: #eaeaea;
-  // justify-content: space-between;
 }
 
 .sample__description {
   width: 279px;
   font-weight: normal;
   font-size: 14px;
-  // line-height: 18px;
 }
 
 .sample__bullet {
@@ -18,7 +14,6 @@
   height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-
 }
 
 .sample__bullet-text {
@@ -46,7 +41,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .sample__image--before {
   content: url("../img/before-mobile@1x.png");

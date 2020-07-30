@@ -6,12 +6,12 @@ nav.classList.add('visually-hidden');
 
 menuButton.addEventListener('click', function() {
   if (menuButton.classList.contains('header__menu-button--nav-closed')) {
-    menuButton.classList.remove('header__menu-button--nav-closed')
+    menuButton.classList.remove('header__menu-button--nav-closed');
     menuButton.classList.add('header__menu-button--nav-opened');
-    nav.classList.remove('visually-hidden')
+    nav.classList.remove('visually-hidden');
   } else {
     menuButton.classList.add('header__menu-button--nav-closed');
     menuButton.classList.remove('header__menu-button--nav-opened');
-    nav.classList.add('visually-hidden')
+    nav.classList.add('visually-hidden');
   }
 });

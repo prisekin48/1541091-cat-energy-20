@@ -1,10 +1,7 @@
 .first-screen {
   @include base-padding();
   font-family: $oswald;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
   height: 480px;
-  background: url("../img/index-can-mobile@1x.png") center 160px no-repeat, url("../img/index-background-mobile@1x.jpg") no-repeat top center;
-
+  background: url("../img/index-can-mobile@1x.png") center 160px no-repeat,
+              url("../img/index-background-mobile@1x.jpg") no-repeat top center;
 }
