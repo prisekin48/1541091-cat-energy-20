@@ -22,19 +22,19 @@
       <form class="form" action="https://echo.htmlacademy.ru">
         <h1 class="heading">Подбор программы</h1>
         <h3 class="form__sub-heading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h3>
-        <label class="form__label" for="name">Имя:* </label><input id="name" class="form__input-text" type="text" name="name" value="БАРСИК" required>
-        <label class="form__label" for="weight">Вес (кг):* </label><input id="weight" class="form__input-text" type="text" name="weight" value="7" required>
-        <label class="form__label" for="age">Возраст (лет): </label><input id="age" class="form__input-text" type="text" name="age" value="7">
+        <label class="form__label" for="name">Имя:* </label><input id="name" class="form__input-text" type="text" name="name" placeholder="БАРСИК" required>
+        <label class="form__label" for="weight">Вес (кг):* </label><input id="weight" class="form__input-text" type="text" name="weight" placeholder="7" required>
+        <label class="form__label" for="age">Возраст (лет): </label><input id="age" class="form__input-text" type="text" name="age" placeholder="7">
         <hr>
         <label class="form__label"><input class="form__input-radio" type="radio" name="choice" value="lose" checked>Похудение</label>
         <label class="form__label"><input class="form__input-radio" type="radio" name="choice" value="gain">Набор массы</label>
         <label class="form__label"><input class="form__input-radio" type="radio" name="choice" value="advise">Не знаю (Нужен ваш совет)</label>
         <hr>
         <h2 class="heading">Контактные данные (владельца кота)</h2>
-        <label class="form__label">Email:*<input class="form__input-text form__input-text--email" type="email" name="email" value="kuklachev@gmail.com" required></label>
-        <label class="form__label">Телефон:*<input class="form__input-text form__input-text--phone" type="phone" name="phone" value="8 (960) 900-60-90" required></label>
+        <label class="form__label">Email:*<input class="form__input-text form__input-text--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
+        <label class="form__label">Телефон:*<input class="form__input-text form__input-text--phone" type="phone" name="phone" placeholder="8 (960) 900-60-90" required></label>
         <h2 class="heading">Комментарий</h2>
-        <textarea class="form__input-text form__input-text--comment" name="comment">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__input-text form__input-text--comment" name="comment" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         <h2 class="heading">Дополнительно</h2>
         <label class="form__label"><input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" checked>сахарозаменитель</label>
         <label class="form__label"><input type="checkbox" class="form__checkbox" name="water">питьевая вода</label>
