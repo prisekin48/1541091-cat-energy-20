@@ -4,18 +4,19 @@
 }
 
 .welcome__heading {
+  @include base-padding();
   font-family: $oswald;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   width: 140px;
-  margin-left: 20px;
   margin-bottom: 1px;
   text-transform: uppercase;
   color: #111111;
 }
 
 .welcome__address {
+  @include base-padding();
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
@@ -25,6 +26,7 @@
 }
 
 .welcome__map {
-  width: 320px;
-  margin-top: 22px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: url("../img/map-pin.png") no-repeat, url("../img/map-mobile.svg") no-repeat;
 }
