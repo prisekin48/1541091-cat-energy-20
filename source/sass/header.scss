@@ -1,18 +1,26 @@
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  font-family: $oswald;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 }
 
 .header__menu-button {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  align-self: center;
-  // margin-bottom: 15px;
+  // align-self: center;
   margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.header__menu-button--open-menu {
-  background-image: url("/img/icon-close.svg");
+.header__menu-button--nav-opened {
+    background-image: url("../img/icon-close.svg");
+
+}
+
+.header__menu-button--nav-closed {
+    background-image: url("../img/icon-mobile-menu.svg");
 }

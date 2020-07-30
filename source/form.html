@@ -8,14 +8,15 @@
   <body class="body">
 
     <header class="header">
-      <a href="index.html"><img class="image-logo" src="img/logo-mobile.svg"></a>
-      <a class="header__menu-button header__menu-button--open-menu" title="Меню"></a>
-      <nav class="nav visually-hidden">
+      <a class="image-logo" href="index.html">Логотип</a>
+      <button class="header__menu-button header__menu-button--nav-closed header__menu-button--nojs" type="button" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="nav">
         <a class="nav__link" href="index.html">Главная</a>
         <a class="nav__link nav__link--active" href="catalog.html">Каталог продукции</a>
         <a class="nav__link" href="form.html">Подбор программы</a>
       </nav>
     </header>
+
 
     <main class="main">
       <form class="form" action="https://echo.htmlacademy.ru">
@@ -33,7 +34,7 @@
         <label class="form__label">Email:*<input class="form__input-text form__input-text--email" type="email" name="email" value="kuklachev@gmail.com" required></label>
         <label class="form__label">Телефон:*<input class="form__input-text form__input-text--phone" type="phone" name="phone" value="8 (960) 900-60-90" required></label>
         <h2 class="heading">Комментарий</h2>
-        <textarea class="form__input-text form__input-text--comment" name="comment" rows="20">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__input-text form__input-text--comment" name="comment">Расскажите обо всех повадках кота</textarea>
         <h2 class="heading">Дополнительно</h2>
         <label class="form__label"><input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" checked>сахарозаменитель</label>
         <label class="form__label"><input type="checkbox" class="form__checkbox" name="water">питьевая вода</label>
@@ -56,17 +57,17 @@
 
 
     <footer class="footer">
-      <a class="text-logo text-logo--footer" href="index.html"></a>
+      <a class="text-logo text-logo--footer" href="index.html">Логотип</a>
       <div class="social">
-        <a href="https://vk.com" class="social__link social__link--vk"></a>
-        <a href="https://instagram.com" class="social__link social__link--inst"></a>
-        <a href="https://facebook.com" class="social__link social__link--fb"></a>
+        <a href="https://vk.com" class="social__link social__link--vk">Vkontakte</a>
+        <a href="https://instagram.com" class="social__link social__link--inst">Instagram</a>
+        <a href="https://facebook.com" class="social__link social__link--fb">Facebook</a>
       </div>
       <div class="academy">
         <a href="https://htmlacademy.ru" class="academy__link">HTML Academy</a>
         <a href="https://htmlacademy.ru" class="academy__link academy__link--logo"></a>
       </div>
     </footer>
-
+    <script src="js/app.js"></script>
   </body>
 </html>

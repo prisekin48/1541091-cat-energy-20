@@ -1,6 +1,7 @@
 .form {
-  @include base-padding(); //Чтобы пройти проверку Тревиса
-  display: flex;
+  @include base-padding();
+  font-family: $oswald;
+  // display: flex;
   flex-direction: column;
 }
 
@@ -22,7 +23,6 @@
 }
 
 .form__input-text {
-  @include oswald;
   font-weight: normal;
   color: #444444;
   font-size: 16px;
@@ -40,16 +40,16 @@
 }
 
 .form__input-text--comment {
-  height: 150px;
+  rows: "10";
   text-transform: uppercase;
 }
 
 .form__input-text--email {
-  background: url("/img/icon-phone.svg") no-repeat right;
+  background: url("../img/icon-phone.svg") no-repeat right;
 }
 
 .form__input-text--phone {
-  background: url("/img/icon-mail.svg") no-repeat right;
+  background: url("../img/icon-mail.svg") no-repeat right;
 }
 
 
@@ -63,7 +63,6 @@
 }
 
 .form__req-fields {
-  @include arial();
   text-align: center;
   font-weight: normal;
   font-size: 14px;
