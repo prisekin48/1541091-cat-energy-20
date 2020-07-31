@@ -1,16 +1,20 @@
 .header {
+  @include base-padding();
   font-family: $oswald;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media only screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+  }
 }
 
 .header__menu-button {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  margin-right: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -28,10 +32,8 @@
     display: none;
   }
 
-  // @media only screen (max-width: $tablet) {
-
-  // }
+  @media only screen and (min-width: $tablet) {
+    display: none;
+  }
 }
-
-
 
