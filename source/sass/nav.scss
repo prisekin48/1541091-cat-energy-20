@@ -29,6 +29,8 @@
 
 
   @media only screen and (min-width: $tablet) {
+    border-top: none;
+
     &:first-child {
       order: 1;
     }
