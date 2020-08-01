@@ -1,6 +1,18 @@
 .table {
   width: 40%;
+
+  @media only screen and (min-width: $tablet) {
+    width: 60%;
+    margin-bottom: 40px;
+  }
 }
+
+.table tr {
+    @media only screen and (min-width: $tablet) {
+      border-bottom: 1px solid #cdcdcd;
+  }
+}
+
 
 .table th {
   text-align: left;
