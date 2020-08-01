@@ -4,4 +4,16 @@
   height: 480px;
   background: url("../img/index-can-mobile@1x.png") center 160px no-repeat,
               url("../img/index-background-mobile@1x.jpg") no-repeat top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    background: url("../img/index-can-tablet@1x.jpg") center bottom no-repeat;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-bottom: 400px;
+    padding-left: 120px;
+  }
 }
