@@ -5,10 +5,13 @@
   align-items: center;
 
   @media only screen and (min-width: $tablet) {
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 75%;
   text-align-last: end;
+  }
 
+  @media only screen and (min-width: $desktop) {
+    width: 50%;
   }
 }
 
@@ -24,8 +27,15 @@
   width: 320px;
   text-align: center;
 
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
+
+  @media only screen and (min-width: $tablet) {
+    &:first-child {
+      order: 1;
+    }
+
+    &:last-child {
+      order: -1;
+    }
   }
 }
 
