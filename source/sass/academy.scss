@@ -2,6 +2,9 @@
   width: 280px;
   margin-top: 22px;
   margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .academy__link {
