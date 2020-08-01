@@ -5,6 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    justify-content: flex-end;
+    width: auto;
+  }
 }
 
 .academy__link {
@@ -14,12 +19,18 @@
   color: #444444;
   text-decoration: none;
 
+
   &--logo {
     display: block;
     width: 27px;
     height: 34px;
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
+
+
+    @media only screen and (min-width: $tablet) {
+      margin-left: 50px;
+    }
   }
 }
 
