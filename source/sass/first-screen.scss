@@ -16,4 +16,10 @@
     padding-bottom: 400px;
     padding-left: 120px;
   }
+
+  @media only screen and (min-width: $desktop) {
+    background: url("../img/index-can-desktop@1x.png") 60% center no-repeat,
+            url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    margin-top: -150px;
+  }
 }

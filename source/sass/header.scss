@@ -9,6 +9,10 @@
   @media only screen and (min-width: $tablet) {
     flex-wrap: nowrap;
   }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 100px;
+  }
 }
 
 .header__menu-button {
