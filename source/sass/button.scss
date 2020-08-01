@@ -8,6 +8,13 @@
   text-align: center;
   text-transform: uppercase;
 
+  &--catalog {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+
   &--secondary {
     background-color: #f2f2f2;
     color: #444444;
