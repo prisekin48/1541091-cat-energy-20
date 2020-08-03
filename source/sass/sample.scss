@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
 
+  @media only screen and (min-width: $tablet) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .sample__wrapper {
@@ -12,12 +16,24 @@
   width: 320px;
   justify-content: space-around;
   align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    width: 750px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .sample__description {
   width: 279px;
   font-weight: normal;
   font-size: 14px;
+
+  @media only screen and (min-width: $tablet) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .sample__bullet {
@@ -28,6 +44,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    margin-right: 40px;
+    width: 162px;
+    height: 77px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .sample__bullet-text {
@@ -37,6 +61,12 @@
   font-size: 24px;
   text-align: center;
   padding-top: 10px;
+
+  @media only screen and (min-width: $tablet) {
+    padding-top: 20px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .sample__bullet-sub-text {
@@ -50,6 +80,17 @@
   margin-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
+
+  @media only screen and (min-width: $tablet) {
+    margin-top: 15px;
+    }
+
+  & br {
+    @media only screen and (min-width: $tablet) {
+      display: none;
+      margin-top: 10px;
+    }
+  }
 }
 
 .sample__sub-heading {
@@ -60,13 +101,27 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+
+  @media only screen and (min-width: $tablet) {
+    margin-right: 0px;
+    width: 180px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .sample__image {
   content: url("../img/before-mobile@1x.png");
 
+  @media only screen and (min-width: $tablet) {
+    content: url("../img/before-tablet@1x.png");
+    padding-left: 5%;
+  }
+
+
   &--after {
-    content: url("../img/after-mobile@1x.png");
+    content: url("../img/after-tablet@1x.png");
   }
 }
 
