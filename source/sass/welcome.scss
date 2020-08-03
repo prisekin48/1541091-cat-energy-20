@@ -1,32 +1,34 @@
 .welcome {
   padding-top: 10px;
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .welcome__heading {
-  @include base-padding();
+
   font-family: $oswald;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   width: 140px;
-  margin-bottom: 1px;
   text-transform: uppercase;
   color: #111111;
 }
 
 .welcome__address {
-  @include base-padding();
+
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   width: 140px;
-  margin-right: 20px;
-  margin-bottom: 1px;
 }
 
 .welcome__map {
-  padding-top: 200px;
+  padding-top: 160px;
   padding-bottom: 200px;
-  background: url("../img/map-pin.png") no-repeat, url("../img/map-mobile.svg") no-repeat;
+  background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%;
+  width: 100%;
 }
