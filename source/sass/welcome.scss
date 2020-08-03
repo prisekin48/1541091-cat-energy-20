@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+
+  @media only screen and (min-width: $tablet) {
+  justify-content: space-around;
+  }
 }
 
 .welcome__heading {
@@ -31,4 +35,9 @@
   padding-bottom: 200px;
   background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%;
   width: 100%;
+
+  @media only screen and (min-width: $tablet) {
+    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%;
+    width: 100%;
+  }
 }
