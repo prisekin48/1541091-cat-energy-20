@@ -1,6 +1,17 @@
 .sample {
   @include base-padding();
   background: #eaeaea;
+  display: flex;
+  justify-content: center;
+
+}
+
+.sample__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .sample__description {
@@ -14,6 +25,9 @@
   height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sample__bullet-text {
@@ -22,6 +36,7 @@
   font-weight: normal;
   font-size: 24px;
   text-align: center;
+  padding-top: 10px;
 }
 
 .sample__bullet-sub-text {
@@ -30,6 +45,11 @@
   line-height: 12px;
   text-align: center;
   background: #eaeaea;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .sample__sub-heading {
@@ -42,10 +62,27 @@
   margin-right: auto;
 }
 
-.sample__image--before {
+.sample__image {
   content: url("../img/before-mobile@1x.png");
 }
 
 .sample__image--after {
   content: url("../img/after-mobile@1x.png");
+}
+
+.sample__state-text {
+  font-family: $oswald;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sample__button {
+  width: 100px;
+  height: 20px;
+  background-image: url("../img/slider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
 }
