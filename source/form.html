@@ -8,8 +8,8 @@
   <body class="body">
 
     <header class="header">
-      <a class="image-logo" href="index.html">Логотип</a>
-      <button class="header__menu-button header__menu-button--nav-closed header__menu-button--nojs" type="button" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
+      <a class="image-logo" href="index.html"><span class="visually-hidden">Cat Energy</span></a>
+      <button class="header__menu-button header__menu-button--nav-closed header__menu-button--nojs" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="nav">
         <a class="nav__link" href="index.html">Главная</a>
         <a class="nav__link nav__link--active" href="catalog.html">Каталог продукции</a>
@@ -22,19 +22,19 @@
       <form class="form" action="https://echo.htmlacademy.ru">
         <h1 class="heading">Подбор программы</h1>
         <h3 class="form__sub-heading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h3>
-        <label class="form__label" for="name">Имя:* </label><input id="name" class="form__input-text" type="text" name="name" value="БАРСИК" required>
-        <label class="form__label" for="weight">Вес (кг):* </label><input id="weight" class="form__input-text" type="text" name="weight" value="7" required>
-        <label class="form__label" for="age">Возраст (лет): </label><input id="age" class="form__input-text" type="text" name="age" value="7">
+        <label class="form__label" for="name">Имя:* </label><input class="form__input-text" id="name" type="text" name="name" placeholder="БАРСИК" required>
+        <label class="form__label" for="weight">Вес (кг):* </label><input class="form__input-text" id="weight" type="text" name="weight" placeholder="7" required>
+        <label class="form__label" for="age">Возраст (лет): </label><input class="form__input-text" id="age" type="text" name="age" placeholder="7">
         <hr>
         <label class="form__label"><input class="form__input-radio" type="radio" name="choice" value="lose" checked>Похудение</label>
         <label class="form__label"><input class="form__input-radio" type="radio" name="choice" value="gain">Набор массы</label>
         <label class="form__label"><input class="form__input-radio" type="radio" name="choice" value="advise">Не знаю (Нужен ваш совет)</label>
         <hr>
         <h2 class="heading">Контактные данные (владельца кота)</h2>
-        <label class="form__label">Email:*<input class="form__input-text form__input-text--email" type="email" name="email" value="kuklachev@gmail.com" required></label>
-        <label class="form__label">Телефон:*<input class="form__input-text form__input-text--phone" type="phone" name="phone" value="8 (960) 900-60-90" required></label>
+        <label class="form__label">Email:*<input class="form__input-text form__input-text--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
+        <label class="form__label">Телефон:*<input class="form__input-text form__input-text--phone" type="phone" name="phone" placeholder="8 (960) 900-60-90" required></label>
         <h2 class="heading">Комментарий</h2>
-        <textarea class="form__input-text form__input-text--comment" name="comment">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__input-text form__input-text--comment" name="comment" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         <h2 class="heading">Дополнительно</h2>
         <label class="form__label"><input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" checked>сахарозаменитель</label>
         <label class="form__label"><input type="checkbox" class="form__checkbox" name="water">питьевая вода</label>
@@ -48,7 +48,7 @@
       <section class="welcome">
         <h2 class="welcome__heading">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <iframe class="welcome__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003142!2d30.32085871615621!3d59.93871916905411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1595339286075!5m2!1sen!2sru" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="welcome__map"></div>
       </section>
     </main>
 
@@ -57,15 +57,15 @@
 
 
     <footer class="footer">
-      <a class="text-logo text-logo--footer" href="index.html">Логотип</a>
+      <a class="text-logo text-logo--footer" href="index.html"><span class="visually-hidden">Логотип</span></a>
       <div class="social">
-        <a href="https://vk.com" class="social__link social__link--vk">Vkontakte</a>
-        <a href="https://instagram.com" class="social__link social__link--inst">Instagram</a>
-        <a href="https://facebook.com" class="social__link social__link--fb">Facebook</a>
+        <a class="social__link social__link--vk" href="https://vk.com"><span class="visually-hidden">Vkontakte</span></a>
+        <a class="social__link social__link--inst" href="https://instagram.com"><span class="visually-hidden">Instagram</span></a>
+        <a class="social__link social__link--fb" href="https://facebook.com"><span class="visually-hidden">Facebook</span></a>
       </div>
       <div class="academy">
-        <a href="https://htmlacademy.ru" class="academy__link">HTML Academy</a>
-        <a href="https://htmlacademy.ru" class="academy__link academy__link--logo"></a>
+        <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="academy__link academy__link--logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип Академии</span></a>
       </div>
     </footer>
     <script src="js/app.js"></script>

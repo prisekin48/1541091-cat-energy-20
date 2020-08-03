@@ -1,37 +1,77 @@
 .program {
   background-color: #f2f2f2;
-  // display: flex;
-  // flex-wrap: wrap;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    background-color: unset;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    max-width: 570px;
+  }
+}
+
+.program__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 320px;
+
+  @media only screen and (min-width: $tablet) {
+    min-width: 708px;
+    flex-direction: column;
+    max-width: none;
+    background-color: #f2f2f2;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 570px;
+    min-width: auto;
+    max-width: 570px;
+  }
 }
 
 .program__title {
+  text-align: left;
+  margin-left: 20px;
   font-family: $oswald;
-  width: 250px;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  text-align: center;
-}
 
-.program__title::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: $base-color;
-  background-repeat:  no-repeat;
-  background-position: 50%;
-}
+  @media only screen and (min-width: $tablet) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
 
-.program__title--lose::before {
-  background-image: url("../img/icon-cat-slim.svg");
-}
+  }
 
-.program__title--gain::before {
-  background-image: url("../img/icon-cat-pro.svg");
+  @media only screen and (min-width: $desktop) {
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $base-color;
+    background-repeat:  no-repeat;
+    background-position: 50%;
+  }
+
+  &--lose::before {
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--gain::before {
+    background-image: url("../img/icon-cat-pro.svg");
+  }
 }
 
 .program__description {
@@ -42,6 +82,19 @@
   margin-left: 20px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media only screen and (min-width: $tablet) {
+    border: none;
+    width: 377px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: auto;
+    padding-right: 60px;
+  }
 }
 
 .program__link {
@@ -52,10 +105,14 @@
   font-size: 16px;
   line-height: 16px;
   background: url("../img/icon-right-arrow-long.svg") no-repeat;
-  background-position: right;
+  background-position: 100px;
   background-size: 25px;
   padding-right: 40px;
   margin-left: 20px;
   margin-bottom: 18px;
   text-transform: uppercase;
+
+  @media only screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }

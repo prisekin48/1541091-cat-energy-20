@@ -1,11 +1,18 @@
 .how-it-works {
-  // display: flex;
-  // flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  @include base-padding();
+.how-it-works__wrapper {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 280px;
+  margin: auto;
 
-  & ul {
-    padding-left: 0px;
+  @media only screen and (min-width: $tablet) {
+    max-width: none;
+    justify-content: space-between;
   }
 }
 
@@ -15,38 +22,60 @@
   font-size: 14px;
   line-height: 18px;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: $tablet) {
+    width: 35%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 55px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 20%;
+    margin-right: 0;
+  }
+
+
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: $base-color;
+    padding-right: 40px;
+    margin-right: 20px;
+
+    @media only screen and (min-width: $tablet) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--boil::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--forks::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
-.how-it-works__item::before {
-  display: block;
-  content: "";
-  width: 160px;
-  height: 60px;
-  background-color: $base-color;
-  margin-right: 20px;
-}
 
-.how-it-works__item--leaf:before {
-  background-image: url("../img/advantage-leaf@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
 
-.how-it-works__item--boil:before {
-  background-image: url("../img/advantage-powder@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
 
-.how-it-works__item--forks:before {
-  background-image: url("../img/advantage-dining@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
 
-.how-it-works__item--clock:before {
-  background-image: url("../img/advantage-clock@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-}

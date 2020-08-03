@@ -1,7 +1,6 @@
 .form {
   @include base-padding();
   font-family: $oswald;
-  // display: flex;
   flex-direction: column;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .form__input-text {
-  font-weight: normal;
+  font-family: inherit;
   color: #444444;
   font-size: 16px;
   line-height: 18px;
@@ -40,7 +39,6 @@
 }
 
 .form__input-text--comment {
-  rows: "10";
   text-transform: uppercase;
 }
 
@@ -52,14 +50,8 @@
   background: url("../img/icon-mail.svg") no-repeat right;
 }
 
-
 .form__checkbox {
   margin-top: 10px;
-}
-
-.button--form {
-  margin-top: 20px;
-  line-height: 10px;
 }
 
 .form__req-fields {

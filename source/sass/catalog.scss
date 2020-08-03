@@ -1,11 +1,43 @@
 .catalog {
   @include base-padding;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.catalog__item { //как выстроить такое расположение элементов
+.catalog__item {
+  border-top: 1px solid #ebebeb;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 45px;
+
+  @media only screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    background-color: #f2f2f2;
+    margin-bottom: 60px;
+    border-top: none;
+  }
+}
+
+.catalog__image {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .catalog__title {
@@ -14,10 +46,18 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    width: 150px;
+    text-align: center;
+  }
 }
 
 .catalog__more-button {
-  background-image: url("../img/icon-plus-mobile.svg"); //как сделать цвет #D3D3D3
+  background-image: url("../img/icon-plus-mobile.svg");
   width: 30px;
   height: 30px;
   margin-top: 37px;

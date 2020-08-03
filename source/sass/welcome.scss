@@ -1,33 +1,43 @@
 .welcome {
   padding-top: 10px;
-  // display: flex;
-  // flex-wrap: wrap;
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+  @media only screen and (min-width: $tablet) {
+  justify-content: space-around;
+  }
 }
 
 .welcome__heading {
+
   font-family: $oswald;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   width: 140px;
-  margin-left: 20px;
-  margin-bottom: 1px;
   text-transform: uppercase;
   color: #111111;
 }
 
 .welcome__address {
+
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   width: 140px;
-  margin-right: 20px;
-  margin-bottom: 1px;
 }
 
 .welcome__map {
-  width: 320px;
-  // height: 362px;
-  margin-top: 22px;
+  padding-top: 160px;
+  padding-bottom: 200px;
+  background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%;
+  width: 100%;
+
+  @media only screen and (min-width: $tablet) {
+    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%;
+    width: 100%;
+  }
 }

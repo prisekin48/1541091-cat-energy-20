@@ -2,3 +2,8 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@mixin hide-link-text() {
+  text-indent: -100%;
+  overflow: hidden;
+}

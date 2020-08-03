@@ -1,26 +1,43 @@
 .header {
+  @include base-padding();
   font-family: $oswald;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    padding-top: 40px;
+  }
 }
 
 .header__menu-button {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  // align-self: center;
-  margin-right: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &--nav-opened {
+      background-image: url("../img/icon-close.svg");
+
+  }
+
+  &--nav-closed {
+      background-image: url("../img/icon-mobile-menu.svg");
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
-.header__menu-button--nav-opened {
-    background-image: url("../img/icon-close.svg");
-
-}
-
-.header__menu-button--nav-closed {
-    background-image: url("../img/icon-mobile-menu.svg");
-}
