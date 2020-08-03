@@ -123,7 +123,11 @@
 
 
   &--after {
+    content: url("../img/after-mobile@1x.png");
+
+  @media only screen and (min-width: $tablet) {
     content: url("../img/after-tablet@1x.png");
+  }
   }
 }
 
