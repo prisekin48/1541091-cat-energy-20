@@ -64,10 +64,10 @@
 
 .sample__image {
   content: url("../img/before-mobile@1x.png");
-}
 
-.sample__image--after {
-  content: url("../img/after-mobile@1x.png");
+  &--after {
+    content: url("../img/after-mobile@1x.png");
+  }
 }
 
 .sample__state-text {
@@ -85,4 +85,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
+
+  &--after {
+    transform: rotate(180deg);
+  }
 }

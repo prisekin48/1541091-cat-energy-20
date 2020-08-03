@@ -15,3 +15,13 @@ menuButton.addEventListener('click', function() {
     nav.classList.add('visually-hidden');
   }
 });
+
+
+var sampleButton = document.querySelector('.sample__button');
+var sampleImage = document.querySelector('.sample__image');
+
+sampleButton.addEventListener('click', function() {
+  sampleButton.classList.toggle('sample__button--after');
+  sampleImage.classList.toggle('sample__image--after');
+
+});
