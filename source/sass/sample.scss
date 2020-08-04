@@ -1,5 +1,6 @@
 .sample {
-  @include base-padding();
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
   background: #eaeaea;
   display: flex;
   flex-direction: column;

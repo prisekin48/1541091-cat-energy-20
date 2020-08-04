@@ -1,5 +1,6 @@
 .header {
-  @include base-padding();
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
   font-family: $oswald;
   display: flex;
   justify-content: space-between;

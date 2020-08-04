@@ -1,5 +1,6 @@
 .footer {
-  @include base-padding();
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
