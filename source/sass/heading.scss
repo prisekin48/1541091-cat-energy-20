@@ -44,6 +44,10 @@
     }
   }
 
+  &--catalog {
+    margin-left: $base-padding-mobile;
+  }
+
   @media only screen and (min-width: $desktop) {
     font-size: 60px;
     line-height: 60px;
