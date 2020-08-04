@@ -7,6 +7,8 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   &--catalog {
     grid-column-start: 1;
@@ -25,8 +27,6 @@
     background-color: #f2f2f2;
     color: #444444;
     margin-top: 21px;
-    padding-top: 14px;
-    padding-bottom: 14px;
     width: 100%;
   }
 
@@ -39,9 +39,7 @@
 
 .button__first-screen {
   font-size: 14px;
-  padding-top: 10px;
   display: block;
-  min-height: 30px;
   min-width: 300px;
   }
 

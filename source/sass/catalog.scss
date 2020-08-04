@@ -31,6 +31,12 @@
     margin-right: unset;
   }
 
+  &--extra {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   @media only screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
@@ -55,6 +61,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-bottom: 13px;
 
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
