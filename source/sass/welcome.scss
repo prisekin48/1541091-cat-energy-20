@@ -1,13 +1,23 @@
 .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
   padding-top: 10px;
   background-color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
   @media only screen and (min-width: $tablet) {
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 628px;
+  padding: 60px 70px;
   }
 }
 
@@ -20,14 +30,26 @@
   width: 140px;
   text-transform: uppercase;
   color: #111111;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 175px;
+  }
 }
 
 .welcome__address {
-
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   width: 140px;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
 }
 
 .welcome__map {
