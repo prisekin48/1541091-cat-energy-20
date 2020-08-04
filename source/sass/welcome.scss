@@ -19,6 +19,14 @@
   width: 628px;
   padding: 60px 70px;
   }
+
+  @media only screen and (min-width: $desktop) {
+    padding: 30px;
+    width: 570px;
+    position: relative;
+    top: 95px;
+    left: -20%;
+  }
 }
 
 .welcome__heading {
@@ -61,5 +69,9 @@
   @media only screen and (min-width: $tablet) {
     background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%;
     width: 100%;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: -155px;
   }
 }
