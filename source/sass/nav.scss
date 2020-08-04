@@ -8,10 +8,12 @@
   flex-direction: row-reverse;
   width: 75%;
   text-align-last: end;
+  padding-top: 20px;
   }
 
   @media only screen and (min-width: $desktop) {
     width: 50%;
+    padding-top: 0;
   }
 }
 

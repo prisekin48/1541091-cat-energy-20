@@ -1,5 +1,6 @@
 .catalog {
-  @include base-padding;
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
