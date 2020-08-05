@@ -78,6 +78,8 @@
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-between;
+      padding-left: 38px;
+      padding-right: 38px;
     }
   }
 }
@@ -104,6 +106,10 @@
     margin-bottom: 20px;
     width: 150px;
     text-align: center;
+  }
+
+  &--extra {
+    width: unset;
   }
 }
 
