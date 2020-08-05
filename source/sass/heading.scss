@@ -46,6 +46,10 @@
 
   &--catalog {
     margin-left: $base-padding-mobile;
+
+    @media only screen and (min-width: $tablet) {
+      margin-left: $base-padding-tablet;
+    }
   }
 
   &--extra {
@@ -56,6 +60,10 @@
     padding-bottom: 30px;
     border-top: 1px solid #ebebeb;
     align-self: flex-start;
+
+    @media only screen and (min-width: $tablet) {
+      width: 100%;
+    }
   }
 
   @media only screen and (min-width: $desktop) {
