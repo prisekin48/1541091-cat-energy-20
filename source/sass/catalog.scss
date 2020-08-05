@@ -13,6 +13,11 @@
     padding-left: $base-padding-tablet;
     padding-right: $base-padding-tablet;
   }
+
+  @media only screen and (min-width: $desktop) {
+    padding-left: $base-padding-desktop;
+    padding-right: $base-padding-desktop;
+  }
 }
 
 .catalog__item {
@@ -40,6 +45,10 @@
     min-height: 429px;
   }
 
+  @media only screen and (min-width: $desktop) {
+    width: 21%;
+  }
+
   &--more {
     display: flex;
     flex-direction: column;
@@ -55,6 +64,10 @@
       border: 2px solid #ebebeb;
       box-sizing: border-box;
       max-width: unset;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 21%;
     }
   }
 
