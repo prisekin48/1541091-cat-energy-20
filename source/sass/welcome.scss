@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    background-color: #f2f2f2;
+  }
 }
 
 .welcome__wrapper {
@@ -12,9 +16,10 @@
   justify-content: center;
 
   @media only screen and (min-width: $tablet) {
-  justify-content: space-between;
-  width: 628px;
-  padding: 60px 70px;
+    background-color: unset;
+    justify-content: space-between;
+    padding: 60px 70px;
+    width: 625px;
   }
 
   @media only screen and (min-width: $desktop) {
