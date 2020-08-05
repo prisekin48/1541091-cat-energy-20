@@ -22,10 +22,11 @@
 
   @media only screen and (min-width: $tablet) {
     background: url(../img/gift-photo-tablet@1x.jpg) center no-repeat;
-    padding-left: unset;
-    padding-right: unset;
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: row;
     align-items: center;
+    width: 100%;
   }
 }
 
