@@ -50,6 +50,11 @@
     @media only screen and (min-width: $tablet) {
       margin-left: $base-padding-tablet;
     }
+
+    @media only screen and (min-width: $desktop) {
+      margin-left: $base-padding-desktop;
+      margin-right: $base-padding-desktop;
+    }
   }
 
   &--extra {

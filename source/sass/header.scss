@@ -16,6 +16,8 @@
 
   @media only screen and (min-width: $desktop) {
     padding-top: 40px;
+    padding-left: $base-padding-desktop;
+    padding-right: $base-padding-desktop;
   }
 }
 
