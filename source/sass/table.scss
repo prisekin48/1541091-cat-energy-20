@@ -12,6 +12,13 @@
     font-size: 16px;
     line-height: 20px;
     }
+
+    @media only screen and (min-width: $desktop) {
+      width: 200px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 50px;
+    }
   }
 }
 
