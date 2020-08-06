@@ -20,6 +20,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .form__input-text {
@@ -31,6 +35,9 @@
   border: 1px solid #e7e7e7;
   padding-left: 10px;
   padding-right: 10px;
+  flex-grow: 1;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .form__input-radio {
