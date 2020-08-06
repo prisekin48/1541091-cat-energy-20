@@ -1,21 +1,34 @@
 .form {
-  font-family: $oswald;
   flex-direction: column;
 }
 
 .form__main-data {
   padding-left: $base-padding-mobile;
   padding-right: $base-padding-mobile;
+  font-family: $oswald;
 }
 
 .form__programs {
   padding-left: $base-padding-mobile;
   padding-right: $base-padding-mobile;
+  font-family: $oswald;
 }
 
 .form__contacts {
   padding-left: $base-padding-mobile;
   padding-right: $base-padding-mobile;
+  font-family: $oswald;
+}
+
+.form__adds {
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
+  font-family: $oswald;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form__sub-heading {
@@ -44,9 +57,18 @@
   &--programs {
     justify-content: flex-start;
   }
+
+  &--adds {
+    justify-content: flex-start;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 .form__input-text {
+  font-family: $oswald;
   font-family: inherit;
   color: #444444;
   font-size: 16px;
@@ -75,7 +97,7 @@
 }
 
 .form__input-text--comment {
-  text-transform: uppercase;
+  font-family: $oswald;
 }
 
 .form__input-text--email {
@@ -89,6 +111,7 @@
 
 .form__checkbox {
   margin-top: 10px;
+  margin-right: 10px;
 }
 
 .form__req-fields {
