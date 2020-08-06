@@ -8,6 +8,11 @@
   padding-right: $base-padding-mobile;
 }
 
+.form__programs {
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
+}
+
 .form__sub-heading {
   font-weight: normal;
   font-size: 14px;
@@ -29,6 +34,10 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  &--programs {
+    justify-content: flex-start;
+  }
 }
 
 .form__input-text {
@@ -48,6 +57,7 @@
 .form__input-radio {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 10px;
   color: #222222;
 }
 
