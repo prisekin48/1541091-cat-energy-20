@@ -13,6 +13,11 @@
   padding-right: $base-padding-mobile;
 }
 
+.form__contacts {
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
+}
+
 .form__sub-heading {
   font-weight: normal;
   font-size: 14px;
@@ -35,6 +40,7 @@
   justify-content: space-between;
   align-items: baseline;
 
+
   &--programs {
     justify-content: flex-start;
   }
@@ -52,6 +58,13 @@
   flex-grow: 1;
   margin-left: 15px;
   margin-top: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
 }
 
 .form__input-radio {
@@ -66,11 +79,12 @@
 }
 
 .form__input-text--email {
-  background: url("../img/icon-phone.svg") no-repeat right;
+  background-image: url("../img/icon-phone.svg");
+
 }
 
 .form__input-text--phone {
-  background: url("../img/icon-mail.svg") no-repeat right;
+  background-image: url("../img/icon-mail.svg");
 }
 
 .form__checkbox {
