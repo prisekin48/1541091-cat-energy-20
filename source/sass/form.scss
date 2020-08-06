@@ -1,8 +1,11 @@
 .form {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
   font-family: $oswald;
   flex-direction: column;
+}
+
+.form__main-data {
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
 }
 
 .form__sub-heading {
@@ -15,15 +18,17 @@
 }
 
 .form__label {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .form__input-text {

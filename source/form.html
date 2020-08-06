@@ -20,12 +20,12 @@
 
     <main class="main">
       <form class="form" action="https://echo.htmlacademy.ru">
-        <h1 class="heading">Подбор программы</h1>
+        <h1 class="heading heading--form">Подбор программы</h1>
         <div class="form__main-data">
           <h3 class="form__sub-heading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h3>
-          <label class="form__label" for="name">Имя:* <input class="form__input-text" id="name" type="text" name="name" placeholder="БАРСИК" required></label>
-          <label class="form__label" for="weight">Вес (кг):* <input class="form__input-text" id="weight" type="text" name="weight" placeholder="7" required></label>
-          <label class="form__label" for="age">Возраст (лет): <input class="form__input-text" id="age" type="text" name="age" placeholder="7"></label>
+          <label class="form__label" for="name">Имя:* <input class="form__input-text" id="name" size="10 type="text" name="name" placeholder="БАРСИК" required></label>
+          <label class="form__label" for="weight">Вес (кг):* <input class="form__input-text" id="weight" size="10 type="text" name="weight" placeholder="7" required></label>
+          <label class="form__label" for="age">Возраст (лет): <input class="form__input-text" id="age" size="10" type="text" name="age" placeholder="7"></label>
         </div>
         <hr>
         <div class="form__programs">
@@ -34,14 +34,14 @@
           <label class="form__label"><input class="form__input-radio" type="radio" name="choice" value="advise">Не знаю (Нужен ваш совет)</label>
         </div>
         <hr>
-        <h2 class="heading">Контактные данные (владельца кота)</h2>
+        <h2 class="heading heading--form">Контактные данные (владельца кота)</h2>
         <div class="form__contacts">
           <label class="form__label">Email:*<input class="form__input-text form__input-text--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
           <label class="form__label">Телефон:*<input class="form__input-text form__input-text--phone" type="phone" name="phone" placeholder="8 (960) 900-60-90" required></label>
         </div>
-        <h2 class="heading">Комментарий</h2>
+        <h2 class="heading heading--form">Комментарий</h2>
         <textarea class="form__input-text form__input-text--comment" name="comment" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-        <h2 class="heading">Дополнительно</h2>
+        <h2 class="heading heading--form">Дополнительно</h2>
         <div class="form__adds">
           <label class="form__label"><input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" checked>сахарозаменитель</label>
           <label class="form__label"><input type="checkbox" class="form__checkbox" name="water">питьевая вода</label>
