@@ -19,7 +19,8 @@
     background-color: unset;
     justify-content: space-between;
     padding: 60px 70px;
-    width: 625px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   @media only screen and (min-width: $desktop) {
