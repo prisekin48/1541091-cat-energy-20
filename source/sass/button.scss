@@ -21,7 +21,7 @@
       margin-top: 40px;
       margin-bottom: 40px;
       padding-bottom: 15px;
-  }
+    }
   }
 
   &--secondary {
@@ -51,6 +51,7 @@
       font-size: 20px;
       line-height: 0px;
     }
+
     @media only screen and (min-width: $desktop) {
       width: 45%;
       margin-right: 60px;
@@ -74,4 +75,4 @@
   font-size: 14px;
   display: block;
   min-width: 300px;
-  }
+}

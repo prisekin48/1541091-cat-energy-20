@@ -47,7 +47,6 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 24px;
-
   }
 
   @media only screen and (min-width: $desktop) {
@@ -61,7 +60,7 @@
     display: inline-block;
     border-radius: 50%;
     background-color: $base-color;
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
     background-position: 50%;
   }
 

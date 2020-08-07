@@ -1,6 +1,4 @@
 .form {
-
-
   @media only screen and (min-width: $tablet) {
     padding-left: 70px;
     padding-right: 70px;
@@ -50,6 +48,7 @@
     border: 1px solid #e7e7e7;
     padding: 15px 25px;
   }
+
   @media only screen and (min-width: $desktop) {
     width: 45%;
     margin-left: 0;
@@ -71,6 +70,7 @@
     padding-left: 0;
     padding-right: 0;
   }
+
   @media only screen and (min-width: $desktop) {
     width: 100%;
     margin-left: 0;
@@ -203,7 +203,6 @@
 
 .form__input-text {
   font-family: $oswald;
-  font-family: inherit;
   color: #444444;
   font-size: 16px;
   line-height: 18px;
@@ -239,7 +238,6 @@
 
   @media only screen and (min-width: $tablet) {
     min-height: 175px;
-    max-width: unset;
     margin-top: unset;
     max-width: 630px;
   }
@@ -252,7 +250,6 @@
 
 .form__input-text--email {
   background-image: url("../img/icon-phone.svg");
-
 }
 
 .form__input-text--phone {

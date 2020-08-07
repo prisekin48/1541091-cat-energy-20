@@ -11,34 +11,34 @@
   }
 
   &--first-screen {
-  color: white;
-  text-align: center;
+    color: white;
+    text-align: center;
 
-  @media only screen and (min-width: $tablet) {
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 60px;
-    color: #000000;
-    max-width: 450px;
-    text-align: left;
-    margin-top: 62px;
-  }
+    @media only screen and (min-width: $tablet) {
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+      max-width: 450px;
+      text-align: left;
+      margin-top: 62px;
+    }
 
-  @media only screen and (min-width: $desktop) {
-    margin-top: 225px;
-  }
+    @media only screen and (min-width: $desktop) {
+      margin-top: 225px;
+    }
   }
 
   &--how-it-works {
-  text-align: center;
-  margin-left: -60px;
+    text-align: center;
+    margin-left: -60px;
 
-  @media only screen and (min-width: $tablet) {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    margin-left: 0;
-  }
+    @media only screen and (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 0;
+    }
   }
 
   &--sample {
@@ -92,6 +92,4 @@
       width: 100%;
     }
   }
-
-
 }

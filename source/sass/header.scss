@@ -30,12 +30,11 @@
   cursor: pointer;
 
   &--nav-opened {
-      background-image: url("../img/icon-close.svg");
-
+    background-image: url("../img/icon-close.svg");
   }
 
   &--nav-closed {
-      background-image: url("../img/icon-mobile-menu.svg");
+    background-image: url("../img/icon-mobile-menu.svg");
   }
 
   &--nojs {
