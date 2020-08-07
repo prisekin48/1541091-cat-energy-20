@@ -42,6 +42,14 @@
   padding-left: $base-padding-mobile;
   padding-right: $base-padding-mobile;
   font-family: $oswald;
+
+  @media only screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 630px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .form__adds {
@@ -53,6 +61,12 @@
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+
+  @media only screen and (min-width: $tablet) {
+    padding: 0;
+    max-width: 630px;
+    align-items: baseline;
+  }
 }
 
 .form__textarea-wrapper {
@@ -60,6 +74,10 @@
   padding-right: $base-padding-mobile;
   display: flex;
   justify-content: center;
+
+  @media only screen and (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .form__sub-heading {
@@ -109,6 +127,16 @@
     align-items: baseline;
     margin-top: 5px;
     margin-bottom: 5px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 40%;
+      margin-left: 0;
+      margin-right: 50px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -147,6 +175,13 @@
   min-height: 150px;
   max-width: 380px;
   margin-left: unset;
+
+  @media only screen and (min-width: $tablet) {
+    min-height: 175px;
+    max-width: unset;
+    margin-top: unset;
+    max-width: 630px;
+  }
 }
 
 .form__input-text--email {
@@ -164,6 +199,7 @@
 }
 
 .form__req-fields {
+  font-family: $arial;
   text-align: center;
   font-weight: normal;
   font-size: 14px;
