@@ -6,6 +6,14 @@
   padding-left: $base-padding-mobile;
   padding-right: $base-padding-mobile;
   font-family: $oswald;
+
+  @media only screen and (min-width: $tablet) {
+    padding-left: $base-padding-tablet;
+    padding-right: $base-padding-tablet;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
 }
 
 .form__programs {
@@ -45,6 +53,11 @@
   text-transform: uppercase;
   margin-top: 37px;
   margin-bottom: 39px;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__label {
@@ -59,6 +72,10 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  @media only screen and (min-width: $tablet) {
+    max-width: unset;
+  }
 
 
   &--programs {
