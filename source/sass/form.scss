@@ -31,6 +31,13 @@
   margin-right: auto;
 }
 
+.form__textarea-wrapper {
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
+  display: flex;
+  justify-content: center;
+}
+
 .form__sub-heading {
   font-weight: normal;
   font-size: 14px;
@@ -98,6 +105,10 @@
 
 .form__input-text--comment {
   font-family: $oswald;
+  resize: none;
+  min-height: 150px;
+  max-width: 380px;
+  margin-left: unset;
 }
 
 .form__input-text--email {
