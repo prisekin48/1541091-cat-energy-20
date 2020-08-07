@@ -1,9 +1,9 @@
 var nav = document.querySelector('.nav');
 var menuButton = document.querySelector('.header__menu-button');
 
- if (window.innerWidth < 768) {
-   nav.classList.add('visually-hidden');
- }
+if (window.innerWidth < 768) {
+ nav.classList.add('visually-hidden');
+}
 
 menuButton.classList.remove('header__menu-button--nojs');
 
