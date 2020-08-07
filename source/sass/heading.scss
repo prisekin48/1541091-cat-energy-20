@@ -82,6 +82,11 @@
     margin-left: $base-padding-mobile;
     font-size: 24px;
     line-height: 26px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
 
