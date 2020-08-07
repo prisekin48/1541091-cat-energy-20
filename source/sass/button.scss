@@ -51,6 +51,10 @@
       font-size: 20px;
       line-height: 0px;
     }
+    @media only screen and (min-width: $desktop) {
+      width: 45%;
+      margin-right: 60px;
+    }
   }
 
   &--extra {

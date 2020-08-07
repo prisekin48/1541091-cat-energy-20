@@ -96,6 +96,15 @@
     max-width: 630px;
     align-items: baseline;
   }
+
+  @media only screen and (min-width: $desktop) {
+    max-width: unset;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+  }
 }
 
 .form__textarea-wrapper {
@@ -174,6 +183,11 @@
       margin-right: 50px;
       margin-top: 15px;
       margin-bottom: 15px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 20%;
+      margin-right: 60px;
     }
   }
 
