@@ -1,14 +1,11 @@
 .sample {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  @include base-padding();
   background: #eaeaea;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media only screen and (min-width: $tablet) {
-    padding-left: 0;
-    padding-right: 0;
     background: linear-gradient(to top, #eaeaea 40%, white 40%);
   }
 
@@ -23,20 +20,17 @@
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 
   @media only screen and (min-width: $tablet) {
-    width: 750px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 100%;
+    max-width: 750px;
   }
 
   @media only screen and (min-width: $desktop) {
     justify-content: unset;
-    padding-left: 7.7%;
     width: 50%;
-    padding-right: 100px;
   }
 }
 
@@ -44,13 +38,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
-  @media only screen and (min-width: $tablet) {
-    width: 750px;
-    padding-left: 30px;
-    padding-right: 30px;
+  @media only screen and (min-width: $desktop) {
+    width: 670px;
   }
 }
 
@@ -164,7 +156,6 @@
 
   @media only screen and (min-width: $tablet) {
     content: url("../img/before-tablet@1x.png");
-    padding-left: 5%;
   }
 
 
@@ -192,6 +183,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
+  margin: 0 15px;
 
   &--after {
     transform: rotate(180deg);
