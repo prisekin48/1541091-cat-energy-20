@@ -4,35 +4,41 @@
   line-height: 100%;
   font-weight: normal;
 
-  &--first-screen {
-  color: white;
-  text-align: center;
-
-  @media only screen and (min-width: $tablet) {
-    font-weight: normal;
+  @media only screen and (min-width: $desktop) {
     font-size: 60px;
     line-height: 60px;
-    color: #000000;
-    max-width: 450px;
-    text-align: left;
-    margin-top: 62px;
+    margin-bottom: 80px;
   }
 
-  @media only screen and (min-width: $desktop) {
-    margin-top: 225px;
-  }
+  &--first-screen {
+    color: white;
+    text-align: center;
+
+    @media only screen and (min-width: $tablet) {
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+      max-width: 450px;
+      text-align: left;
+      margin-top: 62px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      margin-top: 225px;
+    }
   }
 
   &--how-it-works {
-  text-align: center;
-  margin-left: -60px;
+    text-align: center;
+    margin-left: -60px;
 
-  @media only screen and (min-width: $tablet) {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    margin-left: 0;
-  }
+    @media only screen and (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 0;
+    }
   }
 
   &--sample {
@@ -41,6 +47,49 @@
     @media only screen and (min-width: $tablet) {
       width: 100%;
       margin-left: 0;
+    }
+  }
+
+  &--catalog {
+    margin-left: $base-padding-mobile;
+
+    @media only screen and (min-width: $tablet) {
+      margin-left: $base-padding-tablet;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      margin-left: $base-padding-desktop;
+      margin-right: $base-padding-desktop;
+    }
+  }
+
+  &--extra {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #ebebeb;
+    align-self: flex-start;
+    width: 100%;
+
+    @media only screen and (min-width: $desktop) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &--form {
+    margin-left: $base-padding-mobile;
+    font-size: 24px;
+    line-height: 26px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 100%;
     }
   }
 }

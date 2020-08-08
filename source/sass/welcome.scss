@@ -1,13 +1,36 @@
 .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    background-color: #f2f2f2;
+  }
+}
+
+.welcome__wrapper {
   padding-top: 10px;
   background-color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
   @media only screen and (min-width: $tablet) {
-  justify-content: space-around;
+    background-color: unset;
+    justify-content: space-between;
+    padding: 60px 70px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    background-color: #ffffff;
+    padding: 30px 0;
+    width: 570px;
+    position: relative;
+    top: 95px;
+    left: -23%;
+    justify-content: space-around;
   }
 }
 
@@ -20,14 +43,26 @@
   width: 140px;
   text-transform: uppercase;
   color: #111111;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 175px;
+  }
 }
 
 .welcome__address {
-
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   width: 140px;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
 }
 
 .welcome__map {
@@ -39,5 +74,10 @@
   @media only screen and (min-width: $tablet) {
     background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%;
     width: 100%;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: -155px;
+    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-desktop.svg") no-repeat 50%;
   }
 }

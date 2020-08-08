@@ -1,17 +1,46 @@
 .sample {
-  @include base-padding();
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
   background: #eaeaea;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   @media only screen and (min-width: $tablet) {
     padding-left: 0;
     padding-right: 0;
     background: linear-gradient(to top, #eaeaea 40%, white 40%);
   }
+
+  @media only screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: unset;
+    background: linear-gradient(to top, #eaeaea 70%, white 70%);
+  }
 }
 
-.sample__wrapper {
+.sample__info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-around;
+  align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    width: 750px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    justify-content: unset;
+    padding-left: 7.7%;
+    width: 50%;
+    padding-right: 100px;
+  }
+}
+
+.sample__cats-wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
@@ -34,6 +63,13 @@
     width: 100%;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -85,13 +121,17 @@
   @media only screen and (min-width: $tablet) {
     margin-top: 15px;
     background: white;
-    }
+  }
 
   & br {
     @media only screen and (min-width: $tablet) {
       display: none;
       margin-top: 10px;
     }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    background: #eaeaea;
   }
 }
 
@@ -105,11 +145,17 @@
   margin-right: auto;
 
   @media only screen and (min-width: $tablet) {
-    margin-right: 0px;
+    margin-right: 0;
     width: 180px;
     text-align: right;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 100%;
+    text-align: left;
+    content: "Затраты на питание:     15 000 руб.";
   }
 }
 
@@ -125,9 +171,9 @@
   &--after {
     content: url("../img/after-mobile@1x.png");
 
-  @media only screen and (min-width: $tablet) {
-    content: url("../img/after-tablet@1x.png");
-  }
+    @media only screen and (min-width: $tablet) {
+      content: url("../img/after-tablet@1x.png");
+    }
   }
 }
 

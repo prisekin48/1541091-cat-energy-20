@@ -1,13 +1,30 @@
 .catalog {
-  @include base-padding;
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 
   @media only screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: $base-padding-tablet;
+    padding-right: $base-padding-tablet;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    padding-left: $base-padding-desktop;
+    padding-right: $base-padding-desktop;
+  }
+}
+
+.catalog__wrapper {
+  width: 100%;
+
+  @media only screen and (min-width: $desktop) {
+    width: 70%;
   }
 }
 
@@ -30,6 +47,73 @@
     background-color: #f2f2f2;
     margin-bottom: 60px;
     border-top: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 60px;
+    min-height: 429px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 21%;
+  }
+
+  &--more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: unset;
+    margin-right: unset;
+    max-width: 420px;
+    width: 100%;
+
+    @media only screen and (min-width: $tablet) {
+      background-color: white;
+      width: 45%;
+      border: 2px solid #ebebeb;
+      box-sizing: border-box;
+      max-width: unset;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 21%;
+    }
+  }
+
+  &--extra {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and (min-width: $tablet) {
+      background-color: white;
+      min-height: unset;
+      margin-top: 0;
+      margin-bottom: 0;
+      border: 2px solid #ebebeb;
+      box-sizing: border-box;
+      max-width: 800px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      border-left: none;
+      border-right: none;
+      align-items: center;
+      flex-wrap: nowrap;
+      max-width: unset;
+    }
   }
 }
 
@@ -46,6 +130,8 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-bottom: 13px;
+  padding-right: 20px;
 
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
@@ -53,6 +139,15 @@
     margin-bottom: 20px;
     width: 150px;
     text-align: center;
+  }
+
+  &--extra {
+    width: unset;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    width: 200px;
+    text-align: left;
   }
 }
 
@@ -62,6 +157,13 @@
   height: 30px;
   margin-top: 37px;
   margin-bottom: 23px;
+
+  @media only screen and (min-width: $tablet) {
+    margin-top: 45px;
+    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .catalog__sub-heading {
@@ -74,6 +176,13 @@
   color: #111111;
   margin-top: 1px;
   margin-bottom: 10px;
+
+  @media only screen and (min-width: $tablet) {
+    width: 135px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .catalog__more-text {
@@ -84,4 +193,11 @@
   color: #444444;
   margin-top: 1px;
   margin-bottom: 1px;
+
+  @media only screen and (min-width: $tablet) {
+    width: 170px;
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

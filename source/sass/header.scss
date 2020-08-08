@@ -1,5 +1,6 @@
 .header {
-  @include base-padding();
+  padding-left: $base-padding-mobile;
+  padding-right: $base-padding-mobile;
   font-family: $oswald;
   display: flex;
   justify-content: space-between;
@@ -8,10 +9,15 @@
 
   @media only screen and (min-width: $tablet) {
     flex-wrap: nowrap;
+    padding-left: $base-padding-tablet;
+    padding-right: $base-padding-tablet;
+    align-items: flex-start;
   }
 
   @media only screen and (min-width: $desktop) {
     padding-top: 40px;
+    padding-left: $base-padding-desktop;
+    padding-right: $base-padding-desktop;
   }
 }
 
@@ -24,12 +30,11 @@
   cursor: pointer;
 
   &--nav-opened {
-      background-image: url("../img/icon-close.svg");
-
+    background-image: url("../img/icon-close.svg");
   }
 
   &--nav-closed {
-      background-image: url("../img/icon-mobile-menu.svg");
+    background-image: url("../img/icon-mobile-menu.svg");
   }
 
   &--nojs {
@@ -40,4 +45,3 @@
     display: none;
   }
 }
-
