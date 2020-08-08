@@ -1,6 +1,5 @@
 .first-screen {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  @include base-padding();
   font-family: $oswald;
   height: 480px;
   background: url("../img/index-can-mobile@1x.png") center 160px no-repeat, url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(to top, white 36%, #63a73a 36%);
