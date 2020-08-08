@@ -17,6 +17,8 @@
 }
 
 .sample__info-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
   width: 320px;
@@ -26,6 +28,8 @@
   @media only screen and (min-width: $tablet) {
     width: 100%;
     max-width: 750px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -42,7 +46,7 @@
   align-items: center;
 
   @media only screen and (min-width: $desktop) {
-    width: 670px;
+    width: 690px;
   }
 }
 
