@@ -1,12 +1,8 @@
 .form {
   @media only screen and (min-width: $tablet) {
-    padding-left: 70px;
-    padding-right: 70px;
   }
 
   @media only screen and (min-width: $desktop) {
-    padding-left: $base-padding-desktop;
-    padding-right: $base-padding-desktop;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -14,10 +10,12 @@
   }
 }
 
+.form__wrapper-first {
+  @include base-wrapper();
+}
+
 .form__main-data {
   font-family: $oswald;
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
 
   @media only screen and (min-width: $tablet) {
     margin-left: auto;
@@ -35,8 +33,6 @@
 }
 
 .form__programs {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
   font-family: $oswald;
 
   @media only screen and (min-width: $tablet) {
@@ -59,13 +55,10 @@
 }
 
 .form__contacts {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  @include base-wrapper();
   font-family: $oswald;
 
   @media only screen and (min-width: $tablet) {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 630px;
     padding-left: 0;
     padding-right: 0;
@@ -73,8 +66,6 @@
 
   @media only screen and (min-width: $desktop) {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
     max-width: unset;
     display: flex;
     justify-content: space-between;
@@ -82,39 +73,32 @@
 }
 
 .form__adds {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  @include base-wrapper();
+  margin-top: 20px;
   font-family: $oswald;
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 
   @media only screen and (min-width: $tablet) {
-    padding: 0;
-    max-width: 630px;
     align-items: baseline;
   }
 
   @media only screen and (min-width: $desktop) {
-    max-width: unset;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
     justify-content: flex-start;
     margin-bottom: 60px;
   }
 }
 
 .form__textarea-wrapper {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  @include base-wrapper();
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   @media only screen and (min-width: $tablet) {
     padding: 0;
+    max-width: 630px;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -178,9 +162,9 @@
     @media only screen and (min-width: $tablet) {
       font-size: 20px;
       line-height: 30px;
-      width: 40%;
+      width: 280px;
       margin-left: 0;
-      margin-right: 50px;
+      // margin-right: 80px;
       margin-top: 15px;
       margin-bottom: 15px;
     }
@@ -232,14 +216,11 @@
 .form__input-text--comment {
   font-family: $oswald;
   resize: none;
-  min-height: 150px;
-  max-width: 380px;
   margin-left: unset;
 
   @media only screen and (min-width: $tablet) {
     min-height: 175px;
     margin-top: unset;
-    max-width: 630px;
   }
 
   @media only screen and (min-width: $desktop) {
