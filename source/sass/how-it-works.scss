@@ -1,6 +1,5 @@
 .how-it-works {
-  padding-left: 5%;
-  padding-right: 5%;
+  @include base-wrapper();
 }
 
 .how-it-works__wrapper {

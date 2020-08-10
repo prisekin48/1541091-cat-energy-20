@@ -1,7 +1,10 @@
 .footer {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  width: 100%;
   background-color: #f2f2f2;
+}
+
+.footer__wrapper {
+  @include base-wrapper;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,12 +12,8 @@
   @media only screen and (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: $base-padding-tablet;
-    padding-right: $base-padding-tablet;
   }
 
   @media only screen and (min-width: $desktop) {
-    padding-left: $base-padding-desktop;
-    padding-right: $base-padding-desktop;
   }
 }
