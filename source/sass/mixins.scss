@@ -5,18 +5,18 @@
   @media only screen and (max-width: $tablet) {
     padding-left: $base-padding-mobile;
     padding-right: $base-padding-mobile;
-    max-width: 280px;
+    width: 280px;
   }
 
   @media only screen and (min-width: $tablet) {
     padding-left: $base-padding-tablet;
     padding-right: $base-padding-tablet;
-    max-width: 708px;
+    width: 708px;
   }
 
   @media only screen and (min-width: $desktop) {
     padding-left: $base-padding-desktop;
     padding-right: $base-padding-desktop;
-    max-width: 1220px;
+    width: 1220px;
   }
 }
