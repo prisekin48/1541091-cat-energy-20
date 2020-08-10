@@ -16,6 +16,7 @@
     flex-direction: row;
     align-items: unset;
     background: linear-gradient(to top, #eaeaea 70%, white 70%);
+    justify-content: space-between;
   }
 }
 
@@ -37,7 +38,7 @@
 
   @media only screen and (min-width: $desktop) {
     justify-content: unset;
-    width: 50%;
+    width: 575px;
   }
 }
 
@@ -53,7 +54,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    width: 690px;
+    width: 575px;
   }
 }
 
