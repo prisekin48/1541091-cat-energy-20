@@ -1,7 +1,16 @@
 .first-screen {
+  background: linear-gradient(to top, white 36%, #63a73a 36%);
+
+  @media only screen and (min-width: $tablet) {
+  background: none;
+  }
+}
+
+.first-screen__wrapper {
+  @include base-wrapper();
   font-family: $oswald;
   height: 480px;
-  background: url("../img/index-can-mobile@1x.png") center 160px no-repeat, url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(to top, white 36%, #63a73a 36%);
+  background: url("../img/index-can-mobile@1x.png") center 160px no-repeat, url("../img/index-background-mobile@1x.jpg") no-repeat top center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,7 +21,6 @@
     justify-content: flex-start;
     align-items: baseline;
     min-height: 700px;
-    padding-left: 190px;
   }
 
   @media only screen and (min-width: $desktop) {
