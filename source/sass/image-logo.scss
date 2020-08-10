@@ -9,6 +9,9 @@
   @media only screen and (min-width: $tablet) {
     background: url("../img/logo-tablet.svg") no-repeat;
     margin-top: 24px;
+    margin-bottom: 0;
+    width: 175px;
+    height: 52px;
   }
 
   @media only screen and (min-width: $desktop) {
