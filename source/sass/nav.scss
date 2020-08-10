@@ -40,7 +40,11 @@
     padding-bottom: 10px;
 
     &--active {
-      border-bottom: 2px solid green;
+      border-bottom: 2px solid #68b738;
+
+      // @media only screen and (min-width: $desktop) {
+      //   border-bottom: 2px solid #ffffff;
+      // }
     }
 
     &:first-child {
@@ -49,6 +53,15 @@
 
     &:last-child {
       order: -1;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--index {
+      color: #ffffff;
     }
   }
 }
