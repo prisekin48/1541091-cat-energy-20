@@ -12,6 +12,14 @@
 
   @media only screen and (min-width: $desktop) {
   }
+
+  &--extra {
+
+    @media only screen and (min-width: $desktop) {
+      align-items: flex-end;
+      @include base-wrapper();
+    }
+  }
 }
 
 .catalog__wrapper {
@@ -20,8 +28,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-  @media only screen and (min-width: $desktop) {
-    width: 70%;
+  &--extra {
+
+    @media only screen and (min-width: $desktop) {
+      width: 896px;
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
@@ -51,7 +64,8 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    width: 21%;
+    width: 245px;
+    min-height: 511px;
   }
 
   &--more {
@@ -96,8 +110,6 @@
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-between;
-      padding-left: 38px;
-      padding-right: 38px;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -109,6 +121,7 @@
       border-right: none;
       align-items: center;
       flex-wrap: nowrap;
+      min-height: unset;
       max-width: unset;
     }
   }
