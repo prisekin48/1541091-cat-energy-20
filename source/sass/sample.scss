@@ -1,5 +1,5 @@
 .sample {
-  @include base-padding();
+  @include base-wrapper();
   background: #eaeaea;
   display: flex;
   flex-direction: column;

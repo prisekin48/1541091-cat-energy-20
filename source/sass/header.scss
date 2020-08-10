@@ -1,5 +1,5 @@
 .header {
-  @include base-padding();
+  @include base-wrapper();
   font-family: $oswald;
   display: flex;
   justify-content: space-between;
@@ -12,11 +12,9 @@
   @media only screen and (min-width: $tablet) {
     flex-wrap: nowrap;
     align-items: flex-end;
-    max-width: 708px;
   }
 
   @media only screen and (min-width: $desktop) {
-    max-width: 1220px;
   }
 }
 
