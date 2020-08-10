@@ -3,6 +3,7 @@
   font-size: 36px;
   line-height: 100%;
   font-weight: normal;
+  width: 100%;
 
   @media only screen and (min-width: $desktop) {
     font-size: 60px;
@@ -48,33 +49,6 @@
     }
   }
 
-  &--catalog {
-    margin-left: $base-padding-mobile;
-
-    @media only screen and (min-width: $tablet) {
-      margin-left: $base-padding-tablet;
-    }
-
-    @media only screen and (min-width: $desktop) {
-      margin-left: $base-padding-desktop;
-      margin-right: $base-padding-desktop;
-    }
-  }
-
-  &--extra {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-top: 1px solid #ebebeb;
-    align-self: flex-start;
-    width: 100%;
-
-    @media only screen and (min-width: $desktop) {
-      margin-bottom: 80px;
-    }
-  }
 
   &--form {
     margin-left: $base-padding-mobile;

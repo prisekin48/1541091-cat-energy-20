@@ -1,6 +1,4 @@
 .catalog {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -10,18 +8,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: $base-padding-tablet;
-    padding-right: $base-padding-tablet;
   }
 
   @media only screen and (min-width: $desktop) {
-    padding-left: $base-padding-desktop;
-    padding-right: $base-padding-desktop;
   }
 }
 
 .catalog__wrapper {
-  width: 100%;
+  @include base-wrapper();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
   @media only screen and (min-width: $desktop) {
     width: 70%;
