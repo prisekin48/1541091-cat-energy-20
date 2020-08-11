@@ -81,15 +81,14 @@
 
   @media only screen and (min-width: $tablet) {
     align-items: baseline;
-
+    max-width: 630px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media only screen and (min-width: $desktop) {
     justify-content: flex-start;
     margin-bottom: 60px;
-    max-width: 630px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
