@@ -81,11 +81,15 @@
 
   @media only screen and (min-width: $tablet) {
     align-items: baseline;
+
   }
 
   @media only screen and (min-width: $desktop) {
     justify-content: flex-start;
     margin-bottom: 60px;
+    max-width: 630px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -163,8 +167,6 @@
       font-size: 20px;
       line-height: 30px;
       width: 280px;
-      margin-left: 0;
-      // margin-right: 80px;
       margin-top: 15px;
       margin-bottom: 15px;
     }
