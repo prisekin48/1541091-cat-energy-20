@@ -12,7 +12,15 @@
 
 .form__wrapper-first {
   @include base-wrapper();
+
+  @media only screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
+
 
 .form__main-data {
   font-family: $oswald;
@@ -65,9 +73,12 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    width: 100%;
     max-width: unset;
+    margin-top: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -89,6 +100,9 @@
   @media only screen and (min-width: $desktop) {
     justify-content: flex-start;
     margin-bottom: 60px;
+    max-width: unset;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -105,7 +119,9 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    width: 100%;
+    max-width: unset;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
