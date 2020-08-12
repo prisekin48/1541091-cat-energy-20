@@ -18,6 +18,7 @@
 .program__title {
   text-align: left;
   margin-left: 20px;
+  margin-bottom: 0;
   font-family: $oswald;
   font-weight: normal;
   font-size: 24px;
@@ -62,7 +63,9 @@
   font-size: 14px;
   line-height: 18px;
   margin-left: 20px;
+  margin-top: 30px;
   padding-bottom: 23px;
+  margin-bottom: 0;
   border-bottom: 1px solid #d9d9d9;
 
   @media only screen and (min-width: $tablet) {
@@ -90,9 +93,10 @@
   background: url("../img/icon-right-arrow-long.svg") no-repeat;
   background-position: 100px;
   background-size: 25px;
-  padding-right: 40px;
+  padding-right: 48px;
   margin-left: 20px;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
+  padding-top: 15px;
   text-transform: uppercase;
 
   @media only screen and (min-width: $tablet) {
