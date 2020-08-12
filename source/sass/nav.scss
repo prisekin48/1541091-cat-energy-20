@@ -25,7 +25,7 @@
   text-transform: uppercase;
   height: 65px;
   border-top: 1px solid #e6e6e6;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 
 
@@ -41,10 +41,6 @@
 
     &--active {
       border-bottom: 2px solid #68b738;
-
-      // @media only screen and (min-width: $desktop) {
-      //   border-bottom: 2px solid #ffffff;
-      // }
     }
 
     &:first-child {

@@ -24,13 +24,18 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-
-  &--nav-opened {
-    background-image: url("../img/icon-close.svg");
-  }
+  background-image: url("../img/icon-close.svg");
 
   &--nav-closed {
     background-image: url("../img/icon-mobile-menu.svg");
+
+    & + .nav {
+      display: none;
+
+      @media only screen and (min-width: $tablet) {
+        display: flex;
+      }
+    }
   }
 
   &--nojs {
