@@ -82,7 +82,10 @@
 }
 
 .how-it-works__number {
+  display: none;
+
   @media only screen and (min-width: $tablet) {
+    display: block;
     font-family: $oswald;
     font-size: 280px;
     line-height: 1;
