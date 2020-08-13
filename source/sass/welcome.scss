@@ -67,7 +67,7 @@
 .welcome__map {
   padding-top: 160px;
   padding-bottom: 200px;
-  background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%;
+  background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%/cover;
   width: 100%;
 
   @media only screen and (min-width: $tablet) {
