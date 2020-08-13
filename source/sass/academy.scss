@@ -1,10 +1,10 @@
 .academy {
   width: 280px;
-  margin-top: 22px;
   margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 22px;
 
   @media only screen and (min-width: $tablet) {
     width: auto;
