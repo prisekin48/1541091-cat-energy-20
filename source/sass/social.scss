@@ -19,6 +19,14 @@
   display: block;
   margin-left: 18px;
   margin-right: 18px;
+
+  &:hover {
+    color: $base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vk {
