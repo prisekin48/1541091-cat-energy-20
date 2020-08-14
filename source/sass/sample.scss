@@ -11,6 +11,8 @@
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(to top, #eaeaea 40%, white 40%);
+    margin-top: 40px;
+    border-top: 1px solid #e6e6e6;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -71,6 +73,8 @@
     width: 100%;
     font-size: 16px;
     line-height: 24px;
+    padding-right: 10px;
+    margin-top: 43px;
   }
 
   @media only screen and (min-width: $desktop) {

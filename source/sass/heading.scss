@@ -24,8 +24,8 @@
       color: #000000;
       max-width: 450px;
       text-align: left;
-      margin-top: 62px;
-      margin-left: 85px;
+      margin-top: 65px;
+      margin-left: 87px;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -42,6 +42,7 @@
       text-align: left;
       width: 100%;
       margin-bottom: 0;
+      margin-top: 6px;
     }
   }
 
@@ -50,7 +51,9 @@
 
     @media only screen and (min-width: $tablet) {
       width: 100%;
-      margin-left: 0;
+      font-size: 60px;
+      line-height: 60px;
+      margin-top: 45px;
     }
   }
 
