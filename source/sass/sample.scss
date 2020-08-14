@@ -153,9 +153,10 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+
+  &:last-child{
+    margin-left: 3px;
+  }
 
   @media only screen and (min-width: $tablet) {
     margin-right: 0;
@@ -170,6 +171,13 @@
     text-align: left;
     content: "Затраты на питание:     15 000 руб.";
   }
+}
+
+.sample__sub-heading-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 5px;
 }
 
 .sample__image {
