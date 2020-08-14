@@ -13,6 +13,7 @@
   @media only screen and (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 20px;
   }
 
   @media only screen and (min-width: $desktop) {

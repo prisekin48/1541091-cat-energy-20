@@ -10,7 +10,7 @@
     width: 768px;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(to top, #eaeaea 40%, white 40%);
+    background: linear-gradient(to top, #eaeaea 440px, white 440px);
     margin-top: 40px;
     border-top: 1px solid #e6e6e6;
   }
@@ -56,6 +56,8 @@
 
   @media only screen and (min-width: $tablet) {
     width: 708px;
+    padding-bottom: 50px;
+    padding-top: 55px;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -75,6 +77,7 @@
     line-height: 24px;
     padding-right: 10px;
     margin-top: 43px;
+    margin-bottom: 38px;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -87,17 +90,18 @@
 
 .sample__bullet {
   width: 124px;
-  height: 50px;
+  height: 55px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 13px;
 
   @media only screen and (min-width: $tablet) {
     margin-right: 40px;
     width: 162px;
-    height: 77px;
+    height: 72px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -109,10 +113,10 @@
   font-weight: normal;
   font-size: 24px;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 7px;
 
   @media only screen and (min-width: $tablet) {
-    padding-top: 20px;
+    padding-top: 16px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -122,6 +126,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
+  color: $special_dark-grey;
   text-align: center;
   background: #eaeaea;
   margin-left: 0;
@@ -131,8 +136,12 @@
   padding-left: 15px;
 
   @media only screen and (min-width: $tablet) {
-    margin-top: 15px;
+    margin-top: 11px;
     background: white;
+    font-size: 14px;
+    line-height: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   & br {
@@ -160,10 +169,11 @@
 
   @media only screen and (min-width: $tablet) {
     margin-right: 0;
-    width: 180px;
     text-align: right;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 6px;
+    margin-bottom: 0;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -178,6 +188,17 @@
   margin-right: auto;
   display: flex;
   margin-top: 5px;
+
+  @media only screen and (min-width: $tablet) {
+    margin-right: 0;
+    margin-left: 126px;
+    margin-top: 21px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    flex-direction: column;
+
+  }
 }
 
 .sample__image {
@@ -186,6 +207,7 @@
 
   @media only screen and (min-width: $tablet) {
     content: url("../img/before-tablet@1x.png");
+    margin-left: 16px;
   }
 
 
