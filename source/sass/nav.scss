@@ -29,6 +29,13 @@
   text-align: center;
   box-sizing: border-box;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media only screen and (min-width: $tablet) {
     border-top: none;
