@@ -34,6 +34,7 @@
   }
 
   &--how-it-works {
+    margin-bottom: 39px;
 
     @media only screen and (min-width: $tablet) {
       font-size: 60px;
@@ -45,6 +46,7 @@
   }
 
   &--sample {
+    margin-bottom: 20px;
 
     @media only screen and (min-width: $tablet) {
       width: 100%;

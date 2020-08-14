@@ -1,5 +1,6 @@
 .how-it-works {
   @include base-wrapper();
+  margin-top: 8px;
 }
 
 .how-it-works__wrapper {
@@ -53,7 +54,7 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: $base-color;
-    padding-right: 40px;
+    padding-right: 36px;
     margin-right: 20px;
 
     @media only screen and (min-width: $tablet) {

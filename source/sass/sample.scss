@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 
   @media only screen and (min-width: $tablet) {
     @include base-wrapper();
@@ -48,6 +49,8 @@
   width: 320px;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 25px;
 
   @media only screen and (min-width: $tablet) {
     width: 708px;
@@ -62,6 +65,7 @@
   width: 279px;
   font-weight: normal;
   font-size: 14px;
+  line-height: 18px;
 
   @media only screen and (min-width: $tablet) {
     width: 100%;
@@ -79,7 +83,7 @@
 
 .sample__bullet {
   width: 124px;
-  height: 56px;
+  height: 50px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   display: flex;
@@ -101,7 +105,7 @@
   font-weight: normal;
   font-size: 24px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 3px;
 
   @media only screen and (min-width: $tablet) {
     padding-top: 20px;
@@ -118,9 +122,9 @@
   background: #eaeaea;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-top: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @media only screen and (min-width: $tablet) {
     margin-top: 15px;
@@ -147,6 +151,7 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 
   @media only screen and (min-width: $tablet) {
     margin-right: 0;
@@ -164,6 +169,7 @@
 }
 
 .sample__image {
+  margin-bottom: 14px;
   content: url("../img/before-mobile@1x.png");
 
   @media only screen and (min-width: $tablet) {
@@ -195,7 +201,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
-  margin: 0 15px;
+  margin: 0 9px;
 
   &--after {
     transform: rotate(180deg);

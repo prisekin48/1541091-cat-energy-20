@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 22px;
+  padding-top: 16px;
 
   @media only screen and (min-width: $tablet) {
     width: 163px;
@@ -20,9 +20,10 @@
 
 
   &--logo {
-    width: 27px;
-    height: 27px;
+    width: 41px;
+    height: 41px;
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
+    margin-right: -7px;
   }
 }
