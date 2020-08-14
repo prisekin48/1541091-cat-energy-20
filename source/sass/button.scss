@@ -3,12 +3,21 @@
   background-color: $base-color;
   font-weight: normal;
   font-size: 14px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover {
+    background-color: $green2;
+  }
+
+  &:active {
+    color: transparentize(#ffffff, 0.7);
+    background-color: $green2;
+  }
 
   &--catalog {
     grid-column-start: 1;
