@@ -5,8 +5,13 @@
   background-image: url("../img/logo-footer.svg");
   background-repeat: no-repeat;
   margin-bottom: 32px;
+  margin-top: 39px;
 
-  &--footer {
-    margin-top: 39px;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
