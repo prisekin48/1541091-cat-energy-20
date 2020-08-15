@@ -16,6 +16,7 @@
 
   @media only screen and (min-width: $desktop) {
     width: 570px;
+    padding-top: 41px;
   }
 }
 
@@ -58,6 +59,10 @@
       position: absolute;
       margin: 0;
     }
+
+    @media only screen and (min-width: $desktop) {
+      position: initial;
+    }
   }
 
   &--lose::before {
@@ -72,6 +77,10 @@
     }
 
     @media only screen and (min-width: $desktop) {
+      width: 100px;
+      height: 106px;
+      background-size: 100px 106px;
+      margin-right: 60px;
     }
   }
 
@@ -87,6 +96,12 @@
     }
 
     @media only screen and (min-width: $desktop) {
+      width: 134px;
+      height: 105px;
+      background-size: 134px 100px;
+      margin-left: -20px;
+      margin-right: 48px;
+
     }
   }
 }
@@ -119,6 +134,7 @@
   @media only screen and (min-width: $desktop) {
     width: auto;
     padding-right: 60px;
+    margin-top: 41px;
   }
 }
 
@@ -151,5 +167,11 @@
     font-size: 20px;
     line-height: 30px;
     background-position: 130px 24px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 6px;
+    padding-top: 0;
+    background-position: 132px 9px;
   }
 }

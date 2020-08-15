@@ -26,11 +26,11 @@
 
   @media only screen and (min-width: $desktop) {
     background-color: #ffffff;
-    padding: 30px 0;
+    padding: 50px 0;
     width: 570px;
     position: relative;
     top: 95px;
-    left: -330px;
+    left: -325px;
     justify-content: space-around;
   }
 }
@@ -64,8 +64,7 @@
     font-size: 16px;
     line-height: 20px;
     width: 160px;
-    text-align: right;
-    content: "uytdfghj\nkjhgfghj";
+    text-align: left;
   }
 }
 
@@ -82,7 +81,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    margin-top: -155px;
-    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-desktop.svg") no-repeat 50%;
+    margin-top: -205px;
+    background: url("../img/map-pin.png") no-repeat 918px 130px, url("../img/map-desktop.svg") no-repeat 50%;
   }
 }

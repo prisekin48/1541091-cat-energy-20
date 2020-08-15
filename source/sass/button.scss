@@ -93,4 +93,9 @@
     min-width: unset;
     min-height: 34px;
     }
+
+    @media only screen and (min-width: $desktop) {
+    margin-top: 6px;
+    margin-left: 80px;
+    }
 }

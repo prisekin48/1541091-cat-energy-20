@@ -20,6 +20,8 @@
     align-items: unset;
     background: linear-gradient(to top, #eaeaea 70%, white 70%);
     justify-content: space-between;
+    margin-top: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -41,7 +43,8 @@
 
   @media only screen and (min-width: $desktop) {
     justify-content: unset;
-    width: 575px;
+    align-content: flex-start;
+    width: 570px;
   }
 }
 
@@ -62,6 +65,7 @@
 
   @media only screen and (min-width: $desktop) {
     width: 575px;
+    padding-top: 8px;
   }
 }
 
@@ -83,8 +87,9 @@
   @media only screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin-top: 125px;
+    margin-bottom: 0;
+    padding-right: 135px;
   }
 }
 
@@ -104,6 +109,10 @@
     height: 72px;
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 70px;
   }
 }
 
@@ -177,9 +186,8 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    width: 100%;
+    width: fit-content;
     text-align: left;
-    content: "Затраты на питание:     15 000 руб.";
   }
 }
 
@@ -192,12 +200,18 @@
   @media only screen and (min-width: $tablet) {
     margin-right: 0;
     margin-left: 126px;
-    margin-top: 21px;
     text-align: right;
     font-size: 20px;
     line-height: 20px;
     flex-direction: column;
+  }
 
+  @media only screen and (min-width: $desktop) {
+    margin-left: 0;
+    width: 328px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 21px;
   }
 }
 
@@ -210,6 +224,9 @@
     margin-left: 16px;
   }
 
+  @media only screen and (min-width: $desktop) {
+    margin-left: -35px;
+  }
 
   &--after {
     content: url("../img/after-mobile@1x.png");

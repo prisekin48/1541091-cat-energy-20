@@ -16,6 +16,11 @@
 
     &--first-screen {
       margin-left: 88px;
+
+      @media only screen and (min-width: $desktop) {
+        margin-top: 37px;
+        margin-left: 80px;
+      }
     }
   }
 }

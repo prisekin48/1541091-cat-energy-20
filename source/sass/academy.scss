@@ -9,6 +9,10 @@
   @media only screen and (min-width: $tablet) {
     width: 163px;
   }
+
+  @media only screen and (min-width: $desktop) {
+    padding-top: 22px;
+  }
 }
 
 .academy__link {
