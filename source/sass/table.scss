@@ -1,5 +1,4 @@
 .table {
-  margin-bottom: 15px;
 
   @media only screen and (min-width: $tablet) {
     width: 60%;
@@ -43,4 +42,7 @@
 
 .table__item {
   font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
 }
