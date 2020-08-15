@@ -1,4 +1,13 @@
 .table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 140px;
+  align-content: flex-start;
+  margin-top: 3px;
+
+  & dd {
+    text-align: right;
+  }
 
   @media only screen and (min-width: $tablet) {
     width: 60%;
@@ -21,26 +30,9 @@
   }
 }
 
-.table tr {
-  @media only screen and (min-width: $tablet) {
-    border-bottom: 1px solid #cdcdcd;
-  }
-}
-
-
-.table th {
-  text-align: left;
-
-  @media only screen and (min-width: $desktop) {
-    width: 244px;
-  }
-}
-
-.table td {
-  text-align: right;
-}
-
 .table__item {
+  margin: 0;
+  width: 70px;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
