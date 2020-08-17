@@ -10,13 +10,10 @@
     justify-content: space-between;
   }
 
-  @media only screen and (min-width: $desktop) {
-  }
-
   &--extra {
-
     @media only screen and (min-width: $desktop) {
       align-items: flex-end;
+  
       @include base-wrapper();
     }
   }
@@ -24,12 +21,11 @@
 
 .catalog__wrapper {
   @include base-wrapper();
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   &--extra {
-
     @media only screen and (min-width: $desktop) {
       width: 896px;
       padding: 0;
@@ -121,7 +117,6 @@
       border-right: none;
       align-items: center;
       flex-wrap: nowrap;
-      min-height: unset;
       max-width: unset;
       min-height: 72px;
     }

@@ -73,7 +73,7 @@
       height: 211px;
       background-size: 200px 211px;
       right: 62px;
-      top: 0px;
+      top: 0;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -101,7 +101,6 @@
       background-size: 134px 100px;
       margin-left: -20px;
       margin-right: 48px;
-
     }
   }
 }
