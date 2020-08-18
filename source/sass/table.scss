@@ -10,8 +10,15 @@
   }
 
   @media only screen and (min-width: $tablet) {
-    width: 60%;
+    width: 252px;
+    margin-top: 20px;
     margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 170px;
+    margin-top: 25px;
+    justify-content: space-between;
   }
 
   &--extra {
@@ -21,7 +28,7 @@
     margin-bottom: 15px;
 
     @media only screen and (min-width: $tablet) {
-      width: 40%;
+      width: unset;
       font-size: 16px;
       line-height: 20px;
     }
@@ -30,7 +37,7 @@
       width: 300px;
       font-size: 16px;
       line-height: 20px;
-      margin-left: 60px;
+      margin-right: 38px;
     }
   }
 }
@@ -43,9 +50,35 @@
   line-height: 16px;
   color: $special_dark-grey;
 
+  @media only screen and (min-width: $tablet) {
+    width: 125px;
+    font-size: 16px;
+    padding-bottom: 9px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid $special-grey;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 80px;
+    padding-bottom: 8px;
+  }
+
   &--extra {
     font-size: 14px;
     line-height: 14px;
     width: unset;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 50px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      margin-left: 12px;
+    }
   }
 }

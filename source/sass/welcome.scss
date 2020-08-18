@@ -6,6 +6,11 @@
   @media only screen and (min-width: $tablet) {
     background-color: #f2f2f2;
   }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 57px;
+    background: none;
+  }
 }
 
 .welcome__wrapper {
@@ -71,10 +76,6 @@
     line-height: 24px;
     width: 160px;
     text-align: right;
-  }
-
-  @media only screen and (min-width: $tablet) {
-    text-align: left;
   }
 }
 
