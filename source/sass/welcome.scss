@@ -16,7 +16,7 @@
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 30px;
+
 
   @media only screen and (min-width: $tablet) {
     background-color: unset;
@@ -37,6 +37,7 @@
 
   &--catalog {
     background-color: #f2f2f2;
+    margin-top: 30px;
   }
 }
 
@@ -67,8 +68,12 @@
   @media only screen and (min-width: $tablet) {
     margin-right: 40px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     width: 160px;
+    text-align: right;
+  }
+
+  @media only screen and (min-width: $tablet) {
     text-align: left;
   }
 }
@@ -87,6 +92,6 @@
 
   @media only screen and (min-width: $desktop) {
     margin-top: -205px;
-    background: url("../img/map-pin.png") no-repeat 918px 130px, url("../img/map-desktop.svg") no-repeat 50%;
+    background: url("../img/map-pin.png") no-repeat 1048px 130px, url("../img/map-desktop.svg") no-repeat 50%;
   }
 }
