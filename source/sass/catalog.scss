@@ -21,6 +21,7 @@
 
     @media only screen and (min-width: $desktop) {
       align-items: flex-end;
+      margin-bottom: 57px;
 
       @include base-wrapper();
     }
