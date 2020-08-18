@@ -3,6 +3,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ebebeb;
 
   @media only screen and (min-width: $tablet) {
     display: flex;
@@ -38,6 +40,7 @@
   border-top: 1px solid #ebebeb;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 19px;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
@@ -93,6 +96,7 @@
     max-width: 420px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 17px;
 
     @media only screen and (min-width: $tablet) {
       background-color: white;
@@ -150,6 +154,8 @@
 
   &--extra {
     width: unset;
+    margin-top: 10px;
+    margin-bottom: 9px;
   }
 
   @media only screen and (min-width: $tablet) {
@@ -162,7 +168,7 @@
   background-image: url("../img/icon-plus-mobile.svg");
   width: 30px;
   height: 30px;
-  margin-top: 37px;
+  margin-top: 27px;
   margin-bottom: 23px;
 
   @media only screen and (min-width: $tablet) {
@@ -182,7 +188,7 @@
   text-transform: uppercase;
   color: #111111;
   margin-top: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   @media only screen and (min-width: $tablet) {
     width: 135px;

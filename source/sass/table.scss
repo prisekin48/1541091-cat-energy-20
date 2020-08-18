@@ -15,6 +15,11 @@
   }
 
   &--extra {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
     @media only screen and (min-width: $tablet) {
       width: 40%;
       font-size: 16px;
@@ -37,4 +42,10 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  &--extra {
+    font-size: 14px;
+    line-height: 14px;
+    width: unset;
+  }
 }
