@@ -1,9 +1,12 @@
 .form {
+  margin-bottom: 21px;
+
   @media only screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
