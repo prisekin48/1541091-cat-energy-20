@@ -68,12 +68,12 @@
 
 
   &--form {
-    width: 100%;
     font-size: 36px;
     line-height: 36px;
     margin-top: 27px;
-
-
+    margin-left: 20px;
+    width: unset;
+    
     @media only screen and (min-width: $tablet) {
       font-size: 60px;
       line-height: 60px;
