@@ -201,7 +201,7 @@
     width: 100%;
     align-items: baseline;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 
     @media only screen and (min-width: $tablet) {
       font-size: 20px;
@@ -299,6 +299,10 @@
 .form__checkbox {
   margin-top: 10px;
   margin-right: 10px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
 }
 
 .form__req-fields {
@@ -307,4 +311,26 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+}
+
+
+.form__checkbox + .form__label--adds {
+    position: relative;
+    padding: 0 0 0 46px;
+    cursor: pointer;
+}
+
+.form__checkbox + .form__label--adds:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    border: 1px solid #d9d9d9;
+    transition: .2s;
+}
+
+.form__checkbox:checked + .form__label--adds:before {
+  background: url(../img/icon-tick.svg) center/18px 18px no-repeat;
 }
