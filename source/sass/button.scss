@@ -70,13 +70,11 @@
     width: 100%;
 
     @media only screen and (min-width: $tablet) {
-      width: 280px;
-      margin-bottom: 20px;
-      margin-right: 75px;
-      margin-left: 35px;
-      min-height: 50px;
+      width: 282px;
+      margin: 45px 0 20px 41px;
+      min-height: 52px;
       font-size: 20px;
-      line-height: 0px;
+      line-height: 0;
     }
 
     @media only screen and (min-width: $desktop) {
