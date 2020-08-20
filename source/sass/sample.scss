@@ -12,7 +12,7 @@
     margin-right: auto;
     background: linear-gradient(to top, #eaeaea 440px, white 440px);
     margin-top: 40px;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid #eaeaea;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -21,7 +21,8 @@
     background: linear-gradient(to top, #eaeaea 70%, white 70%);
     justify-content: space-between;
     margin-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 67px;
+    border: none;
   }
 }
 
@@ -59,13 +60,15 @@
 
   @media only screen and (min-width: $tablet) {
     width: 708px;
-    padding-bottom: 50px;
+    padding-bottom: 68px;
     padding-top: 55px;
+    align-items: flex-start;
   }
 
   @media only screen and (min-width: $desktop) {
     width: 575px;
     padding-top: 8px;
+    padding-bottom: 0;
   }
 }
 
@@ -228,6 +231,7 @@
 
   @media only screen and (min-width: $desktop) {
     margin-left: -35px;
+    margin-bottom: 37px;
   }
 
   &--after {
@@ -245,18 +249,70 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted #68b738;
+    margin: 0;
+  }
 }
 
 .sample__button {
-  width: 100px;
-  height: 20px;
-  background-image: url("../img/slider-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  border: none;
-  margin: 0 9px;
+  position: relative;
+  margin: 0 60px;
 
-  &--after {
-    transform: rotate(180deg);
+  @media only screen and (min-width: $tablet) {
+    content: "";
+    height: 6px;
+    width: 428px;
+    background-color: #dcdcdc;
+    position: relative;
+    top: 12px;
+    border-radius: 5px;
+    margin: 0 22px;
+  }
+
+  &::before {
+    content: "";
+    width: 84px;
+    height: 12px;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    margin: 0;
+    left: -40px;
+    top: -7px;
+    
+    @media only screen and (min-width: $tablet) {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      left: 200px;
+      top: -14px;
+    }
+  }
+
+  &::after {
+      position: absolute;
+      width: 35px;
+      background-color: #68b738;
+      content: "";
+      height: 6px;
+      border-radius: 10px;
+      top: -3px;
+      left: -33px;
+
+    @media only screen and (min-width: $tablet) {
+      width: 10px;
+      height: 10px;
+      left: 211px;
+      top: -2px;
+    }
+  }
+
+  &--after > &::before{
+    display: none;
   }
 }
