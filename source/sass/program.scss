@@ -2,51 +2,44 @@
   background-color: #f2f2f2;
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media only screen and (min-width: $tablet) {
-    background-color: unset;
-  }
-
-  @media only screen and (min-width: $desktop) {
-    max-width: 570px;
-  }
-}
-
-.program__wrapper {
-  display: flex;
   flex-wrap: wrap;
-  max-width: 320px;
+  width: 280px;
 
   @media only screen and (min-width: $tablet) {
-    min-width: 708px;
+    width: 708px;
     flex-direction: column;
-    max-width: none;
-    background-color: #f2f2f2;
+    margin-bottom: 33px;
+    padding-top: 77px;
+    padding-bottom: 7px;
+    margin-top: 0;
   }
 
   @media only screen and (min-width: $desktop) {
     width: 570px;
-    min-width: auto;
-    max-width: 570px;
+    padding-top: 41px;
   }
 }
 
 .program__title {
+  display: flex;
+  align-items: center;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-bottom: 0;
   font-family: $oswald;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin-top: 23px;
 
   @media only screen and (min-width: $tablet) {
+    margin-left: 53px;
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 24px;
+    position: relative;
+    margin-top: 0;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -54,22 +47,61 @@
   }
 
   &::before {
+    display: block;
     content: "";
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: $base-color;
+    width: 70px;
+    height: 55px;
     background-repeat: no-repeat;
     background-position: 50%;
+    margin-right: 10px;
+
+    @media only screen and (min-width: $tablet) {
+      position: absolute;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      position: initial;
+    }
   }
 
   &--lose::before {
-    background-image: url("../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-pro-mine.svg");
+
+    @media only screen and (min-width: $tablet) {
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
+      right: 62px;
+      top: 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 100px;
+      height: 106px;
+      background-size: 100px 106px;
+      margin-right: 60px;
+    }
   }
 
   &--gain::before {
-    background-image: url("../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-slim-mine.svg");
+
+    @media only screen and (min-width: $tablet) {
+      width: 268px;
+      height: 200px;
+      background-size: 268px 200px;
+      right: 28px;
+      top: 13px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 134px;
+      height: 105px;
+      background-size: 134px 100px;
+      margin-left: -20px;
+      margin-right: 48px;
+    }
   }
 }
 
@@ -79,20 +111,29 @@
   font-size: 14px;
   line-height: 18px;
   margin-left: 20px;
+  margin-top: 22px;
   padding-bottom: 23px;
+  margin-bottom: 0;
   border-bottom: 1px solid #d9d9d9;
 
   @media only screen and (min-width: $tablet) {
+    margin-left: 53px;
     border: none;
     width: 377px;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 20px;
+    margin-top: 25px;
+
+    &--shorter {
+      width: 342px;
+    }
   }
 
   @media only screen and (min-width: $desktop) {
     width: auto;
     padding-right: 60px;
+    margin-top: 41px;
   }
 }
 
@@ -103,15 +144,33 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-  background: url("../img/icon-right-arrow-long.svg") no-repeat;
-  background-position: 100px;
-  background-size: 25px;
-  padding-right: 40px;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat 100px/25px;
+  padding-right: 60px;
   margin-left: 20px;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
+  padding-top: 15px;
   text-transform: uppercase;
 
+  &:hover {
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 100px/32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media only screen and (min-width: $tablet) {
+    margin-top: 16px;
     margin-bottom: 30px;
+    margin-left: 53px;
+    font-size: 20px;
+    line-height: 30px;
+    background-position: 130px 24px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 6px;
+    padding-top: 0;
+    background-position: 132px 9px;
   }
 }

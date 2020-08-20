@@ -1,30 +1,50 @@
 .catalog {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ebebeb;
 
   @media only screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: $base-padding-tablet;
-    padding-right: $base-padding-tablet;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
-  @media only screen and (min-width: $desktop) {
-    padding-left: $base-padding-desktop;
-    padding-right: $base-padding-desktop;
+  &--extra {
+    @media only screen and (min-width: $tablet) {
+      margin-top: 7px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      align-items: flex-end;
+      margin-bottom: 57px;
+      margin-top: 75px;
+
+      @include base-wrapper();
+    }
   }
 }
 
 .catalog__wrapper {
-  width: 100%;
+  @include base-wrapper();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  @media only screen and (min-width: $desktop) {
-    width: 70%;
+  &--extra {
+    @media only screen and (min-width: $tablet) {
+      padding-top: 47px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 896px;
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
@@ -32,29 +52,32 @@
   border-top: 1px solid #ebebeb;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 19px;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 45px;
+  grid-template-rows: 72px 72px 45px;
 
   @media only screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 324px;
     background-color: #f2f2f2;
     margin-bottom: 60px;
     border-top: none;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 60px;
-    min-height: 429px;
+    margin-top: 0;
+    min-height: 511px;
   }
 
   @media only screen and (min-width: $desktop) {
-    width: 21%;
+    width: 245px;
+    min-height: 511px;
+    background: linear-gradient(to top, #eaeaea 430px, white 430px);
   }
 
   &--more {
@@ -68,14 +91,17 @@
 
     @media only screen and (min-width: $tablet) {
       background-color: white;
-      width: 45%;
+      width: 324px;
       border: 2px solid #ebebeb;
       box-sizing: border-box;
       max-width: unset;
+      min-height: unset;
+      align-self: flex-end;
     }
 
     @media only screen and (min-width: $desktop) {
-      width: 21%;
+      width: 245px;
+      background: none;
     }
   }
 
@@ -86,21 +112,23 @@
     max-width: 420px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 17px;
 
     @media only screen and (min-width: $tablet) {
       background-color: white;
       min-height: unset;
       margin-top: 0;
       margin-bottom: 0;
-      border: 2px solid #ebebeb;
+      border: 1px solid #ebebeb;
       box-sizing: border-box;
       max-width: 800px;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-between;
-      padding-left: 38px;
-      padding-right: 38px;
+      padding-left: 36px;
+      padding-right: 35px;
+      padding-top: 9px;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -108,11 +136,14 @@
       margin-right: 0;
       padding-left: 0;
       padding-right: 0;
+      padding-top: 0;
       border-left: none;
       border-right: none;
       align-items: center;
       flex-wrap: nowrap;
       max-width: unset;
+      min-height: 72px;
+      background: none;
     }
   }
 }
@@ -122,6 +153,11 @@
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
+
+  @media only screen and (min-width: $tablet) {
+    width: 168px;
+    height: 200px;
+  }
 }
 
 .catalog__title {
@@ -131,23 +167,38 @@
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 13px;
-  padding-right: 20px;
+  margin-top: 22px;
+  padding-right: 45px;
+  color: #222222;
 
   @media only screen and (min-width: $tablet) {
+    width: 155px;
+    text-align: center;
+    padding: 0;
+    margin-top: 42px;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 20px;
-    width: 150px;
-    text-align: center;
+    margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    line-height: 21px;
+    margin-top: 46px;
   }
 
   &--extra {
     width: unset;
-  }
+    margin-top: 10px;
+    margin-bottom: 9px;
 
-  @media only screen and (min-width: $tablet) {
-    width: 200px;
-    text-align: left;
+    @media only screen and (min-width: $tablet) {
+      margin-left: 2px;
+    }
+
+    @media only screen and (min-width: $tablet) {
+      flex-grow: 1;
+      text-align: left;
+    }
   }
 }
 
@@ -155,14 +206,18 @@
   background-image: url("../img/icon-plus-mobile.svg");
   width: 30px;
   height: 30px;
-  margin-top: 37px;
+  margin-top: 27px;
   margin-bottom: 23px;
 
   @media only screen and (min-width: $tablet) {
-    margin-top: 45px;
+    margin-top: 50px;
     margin-bottom: 50px;
     width: 60px;
     height: 60px;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    margin-bottom: 47px;
   }
 }
 
@@ -175,11 +230,11 @@
   text-transform: uppercase;
   color: #111111;
   margin-top: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   @media only screen and (min-width: $tablet) {
     width: 135px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -196,7 +251,7 @@
 
   @media only screen and (min-width: $tablet) {
     width: 170px;
-    margin-bottom: 70px;
+    margin-bottom: 88px;
     font-size: 16px;
     line-height: 18px;
   }

@@ -6,31 +6,42 @@
   @media only screen and (min-width: $tablet) {
     background-color: #f2f2f2;
   }
+
+  @media only screen and (min-width: $desktop) {
+    background: none;
+  }
 }
 
 .welcome__wrapper {
-  padding-top: 10px;
-  background-color: #ffffff;
+  @include base-wrapper();
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 
   @media only screen and (min-width: $tablet) {
     background-color: unset;
     justify-content: space-between;
-    padding: 60px 70px;
-    width: 100%;
-    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 48px;
   }
 
   @media only screen and (min-width: $desktop) {
     background-color: #ffffff;
-    padding: 30px 0;
+    padding: 50px 0;
     width: 570px;
     position: relative;
     top: 95px;
-    left: -23%;
+    left: -325px;
     justify-content: space-around;
+  }
+
+  &--catalog {
+    background-color: #f2f2f2;
+    margin-top: 30px;
   }
 }
 
@@ -46,8 +57,9 @@
 
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     width: 175px;
+    margin-left: 40px;
   }
 }
 
@@ -58,8 +70,9 @@
   width: 140px;
 
   @media only screen and (min-width: $tablet) {
+    margin-right: 40px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     width: 160px;
     text-align: right;
   }
@@ -68,16 +81,17 @@
 .welcome__map {
   padding-top: 160px;
   padding-bottom: 200px;
-  background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%;
+  background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%/cover;
   width: 100%;
 
   @media only screen and (min-width: $tablet) {
     background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%;
     width: 100%;
+    padding-bottom: 240px;
   }
 
   @media only screen and (min-width: $desktop) {
-    margin-top: -155px;
-    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-desktop.svg") no-repeat 50%;
+    margin-top: -205px;
+    background: url("../img/map-pin.png") no-repeat 1048px 130px, url("../img/map-desktop.svg") no-repeat 50%;
   }
 }

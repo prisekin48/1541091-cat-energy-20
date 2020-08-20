@@ -2,4 +2,12 @@
   font-family: "Arial", sans-serif;
   background-color: white;
   margin: 0 auto;
+
+  &--form {
+    margin-top: -8px;
+
+    @media only screen and (min-width: $tablet) {
+      margin-top: unset;
+    }
+  }
 }

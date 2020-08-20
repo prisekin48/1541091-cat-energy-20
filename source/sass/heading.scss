@@ -3,6 +3,7 @@
   font-size: 36px;
   line-height: 100%;
   font-weight: normal;
+  width: 100%;
 
   @media only screen and (min-width: $desktop) {
     font-size: 60px;
@@ -13,6 +14,8 @@
   &--first-screen {
     color: white;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 27px;
 
     @media only screen and (min-width: $tablet) {
       font-weight: normal;
@@ -21,75 +24,143 @@
       color: #000000;
       max-width: 450px;
       text-align: left;
-      margin-top: 62px;
+      margin-top: 65px;
+      margin-left: 87px;
     }
 
     @media only screen and (min-width: $desktop) {
       margin-top: 225px;
+      margin-left: 80px;
     }
   }
 
   &--how-it-works {
-    text-align: center;
-    margin-left: -60px;
+    margin-bottom: 39px;
 
     @media only screen and (min-width: $tablet) {
       font-size: 60px;
       line-height: 60px;
       text-align: left;
-      margin-left: 0;
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 6px;
+    }
+
+    @media only screen and (min-width: $tablet) {
+      margin-top: 0;
     }
   }
 
   &--sample {
-    margin-left: -80px;
+    margin-bottom: 20px;
 
     @media only screen and (min-width: $tablet) {
       width: 100%;
-      margin-left: 0;
-    }
-  }
-
-  &--catalog {
-    margin-left: $base-padding-mobile;
-
-    @media only screen and (min-width: $tablet) {
-      margin-left: $base-padding-tablet;
+      font-size: 60px;
+      line-height: 60px;
+      margin-top: 45px;
     }
 
     @media only screen and (min-width: $desktop) {
-      margin-left: $base-padding-desktop;
-      margin-right: $base-padding-desktop;
+      margin-top: 63px;
     }
   }
 
-  &--extra {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-top: 1px solid #ebebeb;
-    align-self: flex-start;
-    width: 100%;
-
-    @media only screen and (min-width: $desktop) {
-      margin-bottom: 80px;
-    }
-  }
 
   &--form {
-    margin-left: $base-padding-mobile;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 27px;
+    margin-left: 20px;
+    width: unset;
 
     @media only screen and (min-width: $tablet) {
       font-size: 60px;
       line-height: 60px;
+      text-align: center;
+      margin-left: -278px;
+      margin-top: 67px;
     }
 
     @media only screen and (min-width: $desktop) {
       width: 100%;
+      margin-left: 0;
+      margin-top: 77px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  &--catalog {
+    margin-top: 28px;
+    margin-bottom: 37px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 80px;
+      margin-top: 69px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      margin-top: 77px;
+    }
+  }
+
+  &--extra {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 28px auto 34px auto;
+    display: flex;
+    width: 320px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    align-items: baseline;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 36px;
+      line-height: 36px;
+      width: 768px;
+      margin-top: 6px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 1440px;
+      margin-top: 17px;
+      margin-bottom: 0;
+    }
+
+
+    &::after {
+      border-top: 2px solid $base-color;
+      padding: 0 0 0.3em;
+      margin-left: 22px;
+      flex-grow: 1;
+      content: "";
+
+      @media only screen and (min-width: $tablet) {
+        margin-left: 35px;
+      }
+    }
+
+
+    &::before {
+      content: "";
+
+      @media only screen and (min-width: $tablet) {
+        border-top: 2px solid $base-color;
+        padding: 0 0 0.3em;
+        margin-right: 38px;
+        width: 30px;
+        content: "";
+      }
+
+      @media only screen and (min-width: $desktop) {
+        width: 72px;
+      }
     }
   }
 }

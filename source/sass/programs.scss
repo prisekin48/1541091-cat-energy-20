@@ -1,11 +1,12 @@
 .programs {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  @include base-wrapper();
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media only screen and (min-width: $desktop) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 80px;
   }
 }

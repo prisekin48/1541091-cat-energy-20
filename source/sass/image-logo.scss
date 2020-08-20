@@ -4,14 +4,28 @@
   width: 190px;
   height: 38px;
   margin-top: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media only screen and (min-width: $tablet) {
     background: url("../img/logo-tablet.svg") no-repeat;
     margin-top: 24px;
+    margin-bottom: 0;
+    width: 175px;
+    height: 52px;
   }
 
   @media only screen and (min-width: $desktop) {
     background: url("../img/logo-desktop.svg") no-repeat;
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
   }
 }

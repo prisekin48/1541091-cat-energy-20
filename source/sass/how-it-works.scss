@@ -1,6 +1,10 @@
 .how-it-works {
-  padding-left: 5%;
-  padding-right: 5%;
+  @include base-wrapper();
+  margin-top: 8px;
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 41px;
+  }
 }
 
 .how-it-works__wrapper {
@@ -13,10 +17,13 @@
   @media only screen and (min-width: $tablet) {
     max-width: none;
     justify-content: space-between;
+    margin-top: 14px;
   }
 }
 
 .how-it-works__item {
+  color: $special_dark-grey;
+  position: relative;
   list-style: none;
   font-weight: normal;
   font-size: 14px;
@@ -25,18 +32,29 @@
   margin-bottom: 20px;
 
   @media only screen and (min-width: $tablet) {
-    width: 35%;
-    margin-right: 10%;
+    width: 250px;
+    min-height: 280px;
+    margin-top: 32px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 55px;
+    padding-top: 40px;
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      margin-right: 73px;
+    }
   }
 
   @media only screen and (min-width: $desktop) {
     width: 20%;
     margin-right: 0;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
   }
 
 
@@ -48,13 +66,14 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: $base-color;
-    padding-right: 40px;
+    padding-right: 36px;
     margin-right: 20px;
 
     @media only screen and (min-width: $tablet) {
-      margin-top: 30px;
       margin-bottom: 30px;
       padding-right: 0;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -72,5 +91,21 @@
 
   &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.how-it-works__number {
+  display: none;
+
+  @media only screen and (min-width: $tablet) {
+    display: block;
+    font-family: $oswald;
+    font-size: 280px;
+    line-height: 1;
+    position: absolute;
+    left: 115px;
+    top: 0;
+    color: #f2f2f2;
+    z-index: -1;
   }
 }

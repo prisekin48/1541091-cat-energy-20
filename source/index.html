@@ -2,9 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="">
     <title>HTML Academy: Кэт энерджи</title>
+
+        <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "index-mobile.png" );
+      }
+      /* Tablet */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "index-tablet.png" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1440px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "index-desktop.png" );
+        }
+      }
+    </style>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body class="body">
 
@@ -13,46 +40,44 @@
       <a class="image-logo" href="index.html"><span class="visually-hidden">Cat Energy</span></a>
       <button class="header__menu-button header__menu-button--nav-closed header__menu-button--nojs" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="nav">
-        <a class="nav__link" href="index.html">Главная</a>
-        <a class="nav__link nav__link--active" href="catalog.html">Каталог продукции</a>
-        <a class="nav__link" href="form.html">Подбор программы</a>
+        <a class="nav__link nav__link--active nav__link--index" href="index.html">Главная</a>
+        <a class="nav__link nav__link--index" href="catalog.html">Каталог продукции</a>
+        <a class="nav__link nav__link--index" href="form.html">Подбор программы</a>
       </nav>
     </header>
 
 
     <main class="main main--index">
       <section class="first-screen">
-        <h1 class="heading heading--first-screen">Функциональное питание для котов</h1>
-        <p class="sub-heading">Занялся собой? Займись котом!</p>
-        <a class="button button__first-screen" href="form.html">Подобрать программу</a>
+        <div class="first-screen__wrapper">
+          <h1 class="heading heading--first-screen">Функциональное питание для котов</h1>
+          <p class="sub-heading sub-heading--first-screen">Занялся собой? Займись котом!</p>
+          <a class="button button__first-screen" href="form.html">Подобрать программу</a>
+        </div>
       </section>
 
 
       <section class="programs">
         <div class="program">
-          <div class="program__wrapper">
             <h3 class="program__title program__title--lose">Похудение</h3>
             <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="catalog.html" class="program__link">Каталог slim</a>
-          </div>
+            <a class="program__link" href="catalog.html">Каталог slim</a>
         </div>
         <div class="program">
-          <div class="program__wrapper">
             <h3 class="program__title program__title--gain">Набор массы</h3>
-            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="catalog.html" class="program__link">Каталог pro</a>
-          </div>
+            <p class="program__description program__description--shorter">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="program__link" href="catalog.html">Каталог pro</a>
         </div>
       </section>
 
 
       <section class="how-it-works">
-        <h2 class="heading heading--how-it-works">Как это работает</h2>
         <ul class="how-it-works__wrapper">
-          <li class="how-it-works__item how-it-works__item--leaf">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="how-it-works__item how-it-works__item--boil">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="how-it-works__item how-it-works__item--forks">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="how-it-works__item how-it-works__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <h2 class="heading heading--how-it-works">Как это работает</h2>
+          <li class="how-it-works__item how-it-works__item--leaf">Функциональное питание содержит только полезные питательные вещества.<span class="how-it-works__number">1</span></li>
+          <li class="how-it-works__item how-it-works__item--boil">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.<span class="how-it-works__number">2</span></li>
+          <li class="how-it-works__item how-it-works__item--forks">Замените один-два приема обычной еды на наше функциональное питание.<span class="how-it-works__number">3</span></li>
+          <li class="how-it-works__item how-it-works__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!<span class="how-it-works__number">4</span></li>
         </ul>
       </section>
 
@@ -69,12 +94,15 @@
               <dt class="sample__bullet-text">60 дней</dt>
               <dd class="sample__bullet-sub-text">затрачено <br>времени</dd>
             </dl>
-            <p class="sample__sub-heading">Затраты на питание: 15 000 РУБ.</p>
+            <div class="sample__sub-heading-wrapper">
+              <p class="sample__sub-heading">Затраты на питание:</p>
+              <p class="sample__sub-heading">15 000 РУБ.</p>
+            </div>
           </div>
           <div class="sample__cats-wrapper">
             <img class="sample__image">
             <p class="sample__state-text sample__state-text--before">Было</p>
-            <button class="sample__button"></button>
+            <span class="sample__button"></span>
             <p class="sample__state-text sample__state-text--after">Стало</p>
           </div>
       </section>
@@ -90,15 +118,17 @@
 
 
     <footer class="footer">
-      <a class="text-logo text-logo--footer" href="index.html"><span class="visually-hidden">Логотип</span></a>
-      <div class="social">
-        <a class="social__link social__link--vk" href="https://vk.com"><span class="visually-hidden">Vkontakte</span></a>
-        <a class="social__link social__link--inst" href="https://instagram.com"><span class="visually-hidden">Instagram</span></a>
-        <a class="social__link social__link--fb" href="https://facebook.com"><span class="visually-hidden">Facebook</span></a>
-      </div>
-      <div class="academy">
-        <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
-        <a class="academy__link academy__link--logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип Академии</span></a>
+      <div class="footer__wrapper">
+        <a class="text-logo" href="index.html"><span class="visually-hidden">Логотип</span></a>
+        <div class="social">
+          <a class="social__link social__link--vk" href="https://vk.com"><span class="visually-hidden">Vkontakte</span></a>
+          <a class="social__link social__link--inst" href="https://instagram.com"><span class="visually-hidden">Instagram</span></a>
+          <a class="social__link social__link--fb" href="https://facebook.com"><span class="visually-hidden">Facebook</span></a>
+        </div>
+        <div class="academy">
+          <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="academy__link academy__link--logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип Академии</span></a>
+        </div>
       </div>
     </footer>
 

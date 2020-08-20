@@ -4,7 +4,7 @@
   color: white;
   text-transform: uppercase;
   font-size: 14px;
-  margin-top: -300px;
+  margin-top: -265px;
 
   @media only screen and (min-width: $tablet) {
     margin-top: 41px;
@@ -13,5 +13,14 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+
+    &--first-screen {
+      margin-left: 88px;
+
+      @media only screen and (min-width: $desktop) {
+        margin-top: 37px;
+        margin-left: 80px;
+      }
+    }
   }
 }

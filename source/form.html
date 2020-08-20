@@ -2,51 +2,83 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="body">
+        <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "form-mobile.png" );
+      }
+      /* Tablet */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "form-tablet.png" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1440px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "form-desktop.png" );
+        }
+      }
+    </style>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <!-- // Pixel Glass -->
+  <body class="body body--form">
 
     <header class="header">
       <a class="image-logo" href="index.html"><span class="visually-hidden">Cat Energy</span></a>
       <button class="header__menu-button header__menu-button--nav-closed header__menu-button--nojs" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="nav">
-        <a class="nav__link" href="index.html">Главная</a>
-        <a class="nav__link nav__link--active" href="catalog.html">Каталог продукции</a>
+        <a class="nav__link nav__link--active" href="index.html">Главная</a>
+        <a class="nav__link" href="catalog.html">Каталог продукции</a>
         <a class="nav__link" href="form.html">Подбор программы</a>
       </nav>
     </header>
 
 
     <main class="main">
-      <h1 class="heading heading--form">Подбор программы</h1>
       <form class="form" action="https://echo.htmlacademy.ru">
-        <div class="form__main-data">
-          <h3 class="form__sub-heading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h3>
-          <label class="form__label" for="name">Имя:* <input class="form__input-text" id="name" size="10" type="text" name="name" placeholder="БАРСИК" required></label>
-          <label class="form__label" for="weight">Вес (кг):* <input class="form__input-text" id="weight" size="10" type="text" name="weight" placeholder="7" required></label>
-          <label class="form__label" for="age">Возраст (лет): <input class="form__input-text" id="age" size="10" type="text" name="age" placeholder="7"></label>
+        <div class="form__wrapper-first">
+          <h1 class="heading heading--form">Подбор программы</h1>
+          <div class="form__main-data">
+            <h3 class="form__sub-heading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h3>
+            <label class="form__label" for="name">Имя:* <input class="form__input-text" id="name" size="10" type="text" name="name" placeholder="БАРСИК" required></label>
+            <label class="form__label" for="weight">Вес (кг):* <input class="form__input-text" id="weight" size="10" type="text" name="weight" placeholder="7" required></label>
+            <label class="form__label" for="age">Возраст (лет): <input class="form__input-text" id="age" size="10" type="text" name="age" placeholder="7"></label>
+          </div>
+          <div class="form__programs">
+            <input class="form__input-radio" type="radio" name="choice" value="lose" id="choice-lose" checked>
+            <label class="form__label form__label--programs" for="choice-lose">Похудение</label>
+            <input class="form__input-radio" type="radio" name="choice" value="gain" id="choice-gain">
+            <label class="form__label form__label--programs" for="choice-gain">Набор массы</label>
+            <input class="form__input-radio" type="radio" name="choice" value="advise" id="choice-advise">
+            <label class="form__label form__label--programs" for="choice-advise">Не знаю (Нужен ваш совет)</label>
+          </div>
         </div>
-        <div class="form__programs">
-          <label class="form__label form__label--programs"><input class="form__input-radio" type="radio" name="choice" value="lose" checked>Похудение</label>
-          <label class="form__label form__label--programs"><input class="form__input-radio" type="radio" name="choice" value="gain">Набор массы</label>
-          <label class="form__label form__label--programs"><input class="form__input-radio" type="radio" name="choice" value="advise">Не знаю (Нужен ваш совет)</label>
-        </div>
-        <h2 class="heading heading--form">Контактные данные (владельца кота)</h2>
+        <h2 class="heading heading--extra">Контактные данные (владельца кота)</h2>
         <div class="form__contacts">
-          <label class="form__label form__label--contacts">Email:*<input class="form__input-text form__input-text--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
+          <label class="form__label form__label--contacts">E-mail:*<input class="form__input-text form__input-text--email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
           <label class="form__label form__label--contacts">Телефон:*<input class="form__input-text form__input-text--phone" type="phone" name="phone" placeholder="8 (960) 900-60-90" required></label>
         </div>
-        <h2 class="heading heading--form">Комментарий</h2>
+        <h2 class="heading heading--extra">Комментарий</h2>
         <div class="form__textarea-wrapper">
           <textarea class="form__input-text form__input-text--comment" name="comment" rows="20" cols="20" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <h2 class="heading heading--form">Дополнительно</h2>
+        <h2 class="heading heading--extra">Дополнительно</h2>
         <div class="form__adds">
-          <label class="form__label form__label--adds"><input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" checked>сахарозаменитель</label>
-          <label class="form__label form__label--adds"><input type="checkbox" class="form__checkbox" name="water">питьевая вода</label>
-          <label class="form__label form__label--adds"><input type="checkbox" class="form__checkbox" name="milk">молоко</label>
-          <label class="form__label form__label--adds"><input type="checkbox" class="form__checkbox" name="vitamins">витамины</label>
+          <input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" id="sugar" checked><label class="form__label form__label--adds" for="sugar">сахарозаменитель</label>
+          <input type="checkbox" class="form__checkbox" name="water" id="water"><label class="form__label form__label--adds" for="water">питьевая вода</label>
+          <input type="checkbox" class="form__checkbox" name="milk" id="milk"><label class="form__label form__label--adds" for="milk">молоко</label>
+          <input type="checkbox" class="form__checkbox" name="vitamins" id="vitamins"><label class="form__label form__label--adds" for="vitamins">витамины</label>
           <input class="button button--form" type="submit" value="Отправить заявку">
           <p class="form__req-fields">* — Обязательные поля</p>
         </div>
@@ -67,15 +99,17 @@
 
 
     <footer class="footer">
-      <a class="text-logo text-logo--footer" href="index.html"><span class="visually-hidden">Логотип</span></a>
-      <div class="social">
-        <a class="social__link social__link--vk" href="https://vk.com"><span class="visually-hidden">Vkontakte</span></a>
-        <a class="social__link social__link--inst" href="https://instagram.com"><span class="visually-hidden">Instagram</span></a>
-        <a class="social__link social__link--fb" href="https://facebook.com"><span class="visually-hidden">Facebook</span></a>
-      </div>
-      <div class="academy">
-        <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
-        <a class="academy__link academy__link--logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип Академии</span></a>
+      <div class="footer__wrapper">
+        <a class="text-logo" href="index.html"><span class="visually-hidden">Логотип</span></a>
+        <div class="social">
+          <a class="social__link social__link--vk" href="https://vk.com"><span class="visually-hidden">Vkontakte</span></a>
+          <a class="social__link social__link--inst" href="https://instagram.com"><span class="visually-hidden">Instagram</span></a>
+          <a class="social__link social__link--fb" href="https://facebook.com"><span class="visually-hidden">Facebook</span></a>
+        </div>
+        <div class="academy">
+          <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="academy__link academy__link--logo" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип Академии</span></a>
+        </div>
       </div>
     </footer>
     <script src="js/app.js"></script>

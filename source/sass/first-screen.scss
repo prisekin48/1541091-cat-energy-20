@@ -1,9 +1,20 @@
 .first-screen {
-  padding-left: $base-padding-mobile;
-  padding-right: $base-padding-mobile;
+  background: linear-gradient(to top, white 36%, #63a73a 36%);
+
+  @media only screen and (min-width: $tablet) {
+    background: none;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    background: linear-gradient(to right, white 50%, #63a73a 50%);
+  }
+}
+
+.first-screen__wrapper {
+  @include base-wrapper();
   font-family: $oswald;
   height: 480px;
-  background: url("../img/index-can-mobile@1x.png") center 160px no-repeat, url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(to top, white 36%, #63a73a 36%);
+  background: url("../img/index-can-mobile@1x.png") center 165px no-repeat, url("../img/index-background-mobile@1x.jpg") no-repeat top center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,12 +24,12 @@
     background: url("../img/index-can-tablet@1x.jpg") center bottom no-repeat;
     justify-content: flex-start;
     align-items: baseline;
-    padding-bottom: 400px;
-    padding-left: 120px;
+    min-height: 874px;
   }
 
   @media only screen and (min-width: $desktop) {
-    background: url("../img/index-can-desktop@1x.png") 60% center no-repeat, url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    background: url("../img/index-can-desktop@1x.png") 557px 140px no-repeat, url("../img/index-background-desktop@1x.jpg") no-repeat right top;
     margin-top: -110px;
+    min-height: 695px;
   }
 }

@@ -1,4 +1,22 @@
-@mixin hide-link-text() {
-  text-indent: -100%;
-  overflow: hidden;
+@mixin base-wrapper() {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (max-width: $tablet) {
+    padding-left: $base-padding-mobile;
+    padding-right: $base-padding-mobile;
+    width: 280px;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    padding-left: $base-padding-tablet;
+    padding-right: $base-padding-tablet;
+    width: 708px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    padding-left: $base-padding-desktop;
+    padding-right: $base-padding-desktop;
+    width: 1220px;
+  }
 }

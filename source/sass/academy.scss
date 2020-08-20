@@ -1,14 +1,17 @@
 .academy {
   width: 280px;
-  margin-top: 22px;
   margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 16px;
 
   @media only screen and (min-width: $tablet) {
-    justify-content: flex-end;
-    width: auto;
+    width: 163px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    padding-top: 22px;
   }
 }
 
@@ -16,20 +19,23 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 
 
   &--logo {
-    display: block;
-    width: 27px;
-    height: 34px;
+    width: 41px;
+    height: 41px;
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
+    margin-right: -7px;
 
-
-    @media only screen and (min-width: $tablet) {
-      margin-left: 50px;
+    &:hover {
+      color: $base-color;
     }
   }
 }
