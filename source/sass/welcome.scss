@@ -85,13 +85,13 @@
   width: 100%;
 
   @media only screen and (min-width: $tablet) {
-    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%;
+    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%/cover;
     width: 100%;
     padding-bottom: 240px;
   }
 
   @media only screen and (min-width: $desktop) {
     margin-top: -205px;
-    background: url("../img/map-pin.png") no-repeat 1048px 130px, url("../img/map-desktop.svg") no-repeat 50%;
+    background: url("../img/map-pin.png") no-repeat 1048px 130px, url("../img/map-desktop.svg") no-repeat 50%/cover;
   }
 }
