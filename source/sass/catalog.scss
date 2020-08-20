@@ -90,13 +90,13 @@
     width: 100%;
 
     @media only screen and (min-width: $tablet) {
-    background-color: white;
-    width: 324px;
-    border: 2px solid #ebebeb;
-    box-sizing: border-box;
-    max-width: unset;
-    min-height: unset;
-    align-self: flex-end;
+      background-color: white;
+      width: 324px;
+      border: 2px solid #ebebeb;
+      box-sizing: border-box;
+      max-width: unset;
+      min-height: unset;
+      align-self: flex-end;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -154,10 +154,10 @@
   grid-column-start: 1;
   grid-column-end: 2;
 
-    @media only screen and (min-width: $tablet) {
-      width: 168px;
-      height: 200px;
-    }
+  @media only screen and (min-width: $tablet) {
+    width: 168px;
+    height: 200px;
+  }
 }
 
 .catalog__title {

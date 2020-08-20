@@ -101,6 +101,7 @@
       margin-bottom: 80px;
       margin-top: 69px;
     }
+    
     @media only screen and (min-width: $desktop) {
       margin-top: 77px;
     }
@@ -135,7 +136,7 @@
 
     &::after {
       border-top: 2px solid $base-color;
-      padding: 0 0 .3em;
+      padding: 0 0 0.3em;
       margin-left: 22px;
       flex-grow: 1;
       content: "";
@@ -151,7 +152,7 @@
 
       @media only screen and (min-width: $tablet) {
         border-top: 2px solid $base-color;
-        padding: 0 0 .3em;
+        padding: 0 0 0.3em;
         margin-right: 38px;
         width: 30px;
         content: "";

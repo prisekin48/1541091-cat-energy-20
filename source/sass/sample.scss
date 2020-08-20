@@ -295,14 +295,14 @@
   }
 
   &::after {
-      position: absolute;
-      width: 35px;
-      background-color: #68b738;
-      content: "";
-      height: 6px;
-      border-radius: 10px;
-      top: -3px;
-      left: -33px;
+    position: absolute;
+    width: 35px;
+    background-color: #68b738;
+    content: "";
+    height: 6px;
+    border-radius: 10px;
+    top: -3px;
+    left: -33px;
 
     @media only screen and (min-width: $tablet) {
       width: 10px;
@@ -312,7 +312,7 @@
     }
   }
 
-  &--after > &::before{
+  &--after > &::before {
     display: none;
   }
 }

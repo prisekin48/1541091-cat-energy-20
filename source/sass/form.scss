@@ -32,6 +32,7 @@
 
 .form__main-data {
   font-family: $oswald;
+
   @include base-wrapper();
 
   @media only screen and (min-width: $tablet) {
@@ -52,6 +53,7 @@
 
 .form__programs {
   font-family: $oswald;
+
   @include base-wrapper();
   margin-top: 24px;
   border-top: 1px solid #e2e2e2;
@@ -72,7 +74,6 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 20px;
-
   }
 
   @media only screen and (min-width: $desktop) {
@@ -218,16 +219,16 @@
       padding-left: 45px;
     }
 
-    &:before {
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       top: -5px;
       left: -10px;
       width: 28px;
       height: 28px;
-      border: 1px solid #CDD1DA;
+      border: 1px solid #cdd1da;
       border-radius: 50%;
-      background: #FFF;
+      background: #ffffff;
 
       @media only screen and (min-width: $tablet) {
         left: -15px;
@@ -236,18 +237,18 @@
       }
     }
 
-    &:after {
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       top: 3px;
       left: -2px;
       width: 14px;
       height: 14px;
       border-radius: 50%;
-      background: #9FD468;
-      box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+      background: #9fd468;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
       opacity: 0;
-      transition: .2s;
+      transition: 0.2s;
 
       @media only screen and (min-width: $tablet) {
         top: 7px;
@@ -334,7 +335,7 @@
   margin: 10px 0 0 7px;
 }
 
-.form__input-radio:checked + .form__label--programs:after {
+.form__input-radio:checked + .form__label--programs::after {
   opacity: 1;
 }
 
@@ -384,8 +385,6 @@
 }
 
 .form__checkbox {
-  margin-top: 10px;
-  margin-right: 10px;
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -416,31 +415,31 @@
 
 
 .form__checkbox + .form__label--adds {
-    position: relative;
-    padding-left: 46px;
-    cursor: pointer;
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
 
-    @media only screen and (min-width: $tablet) {
-    padding-left: 58px;
-    }
+  @media only screen and (min-width: $tablet) {
+  padding-left: 58px;
+  }
 }
 
-.form__checkbox + .form__label--adds:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 29px;
-    height: 29px;
-    border: 1px solid #d9d9d9;
-    transition: .2s;
+.form__checkbox + .form__label--adds::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 29px;
+  height: 29px;
+  border: 1px solid #d9d9d9;
+  transition: .2s;
 
-    @media only screen and (min-width: $tablet) {
-      width: 38px;
-      height: 38px;
-    }
+  @media only screen and (min-width: $tablet) {
+    width: 38px;
+    height: 38px;
+  }
 }
 
-.form__checkbox:checked + .form__label--adds:before {
-  background: url(../img/icon-tick.svg) center/18px 18px no-repeat;
+.form__checkbox:checked + .form__label--adds::before {
+  background: url("../img/icon-tick.svg") center/18px 18px no-repeat;
 }
