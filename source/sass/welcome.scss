@@ -75,6 +75,10 @@
     width: 160px;
     text-align: right;
   }
+
+  @media only screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .welcome__map {
