@@ -312,7 +312,7 @@
     }
   }
 
-  &--after > &::before {
-    display: none;
+  &--after.sample__button::after {
+    left: 4px;
   }
 }
