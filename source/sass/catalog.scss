@@ -88,7 +88,7 @@
     margin-left: unset;
     margin-right: unset;
     max-width: 420px;
-    width: 100%;
+    width: 100%;background: none;
 
     @media only screen and (min-width: $tablet) {
       background-color: white;
@@ -102,7 +102,6 @@
 
     @media only screen and (min-width: $desktop) {
       width: 245px;
-      background: none;
     }
   }
 
