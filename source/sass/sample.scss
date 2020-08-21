@@ -252,6 +252,7 @@
   line-height: 20px;
   cursor: pointer;
   border-bottom: 1px dotted transparent;
+  user-select: none;
 
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
@@ -325,6 +326,8 @@
   }
 
   &--after.sample__button::after {
-    left: 4px;
+    @media only screen and (max-width: $tablet) {
+      left: 4px;
+    }
   }
 }
