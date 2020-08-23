@@ -226,7 +226,7 @@
       left: -10px;
       width: 28px;
       height: 28px;
-      border: 1px solid #cdd1da;
+      border: 1px solid #cdcdcd;
       border-radius: 50%;
       background: #ffffff;
 
@@ -311,6 +311,7 @@
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 94% center;
+  box-sizing: border-box;
 
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
@@ -322,6 +323,18 @@
   &::placeholder {
     text-transform: uppercase;
   }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .form__input-radio {
@@ -330,6 +343,14 @@
   z-index: -1;
   opacity: 0;
   margin: 10px 0 0 7px;
+
+  &:hover + .form__label--programs::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active + .form__label--programs {
+    opacity: 0.3;
+  }
 }
 
 .form__input-radio:checked + .form__label--programs::after {
@@ -386,6 +407,14 @@
   z-index: -1;
   opacity: 0;
   margin: 10px 0 0 20px;
+
+  &:hover + .form__label--adds::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active + .form__label--adds {
+    opacity: 0.3;
+  }
 }
 
 .form__req-fields {

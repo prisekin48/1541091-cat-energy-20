@@ -59,6 +59,14 @@
       width: 168px;
       margin-bottom: 38px;
     }
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: transparentize(#444444, 0.7);
+    }
   }
 
   &--form {

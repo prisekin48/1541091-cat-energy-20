@@ -15,13 +15,15 @@
   }
 
   &--extra {
+    margin-bottom: 32px;
+
     @media only screen and (min-width: $tablet) {
       margin-top: 7px;
     }
 
     @media only screen and (min-width: $desktop) {
       align-items: flex-end;
-      margin-bottom: 57px;
+      margin-bottom: 88px;
       margin-top: 75px;
 
       @include base-wrapper();
@@ -65,7 +67,7 @@
     flex-direction: column;
     align-items: center;
     width: 324px;
-    background-color: #f2f2f2;
+    background: linear-gradient(to top, #eaeaea 430px, white 430px);
     margin-bottom: 60px;
     border-top: none;
     margin-left: 0;
@@ -77,7 +79,6 @@
   @media only screen and (min-width: $desktop) {
     width: 245px;
     min-height: 511px;
-    background: linear-gradient(to top, #eaeaea 430px, white 430px);
   }
 
   &--more {
@@ -88,6 +89,7 @@
     margin-right: unset;
     max-width: 420px;
     width: 100%;
+    background: none;
 
     @media only screen and (min-width: $tablet) {
       background-color: white;
@@ -101,7 +103,6 @@
 
     @media only screen and (min-width: $desktop) {
       width: 245px;
-      background: none;
     }
   }
 
@@ -210,6 +211,7 @@
   margin-bottom: 23px;
 
   @media only screen and (min-width: $tablet) {
+    background-image: url("../img/icon-plus.svg");
     margin-top: 50px;
     margin-bottom: 50px;
     width: 60px;

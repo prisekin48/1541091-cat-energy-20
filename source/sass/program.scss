@@ -151,15 +151,8 @@
   padding-top: 15px;
   text-transform: uppercase;
 
-  &:hover {
-    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 100px/32px;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media only screen and (min-width: $tablet) {
+    width: 40%;
     margin-top: 16px;
     margin-bottom: 30px;
     margin-left: 53px;
@@ -172,5 +165,21 @@
     margin-top: 6px;
     padding-top: 0;
     background-position: 132px 9px;
+  }
+
+  &:hover {
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 100px/32px;
+
+    @media only screen and (min-width: $tablet) {
+      background-position: 130px 24px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background-position: 132px 9px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

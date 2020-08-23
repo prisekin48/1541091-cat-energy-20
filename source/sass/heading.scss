@@ -112,15 +112,12 @@
     line-height: 24px;
     margin: 28px auto 34px auto;
     display: flex;
-    width: 320px;
-    padding-left: 20px;
-    box-sizing: border-box;
+    width: 100vw;
     align-items: baseline;
 
     @media only screen and (min-width: $tablet) {
       font-size: 36px;
       line-height: 36px;
-      width: 768px;
       margin-top: 6px;
       margin-left: auto;
       margin-right: auto;
@@ -128,7 +125,6 @@
     }
 
     @media only screen and (min-width: $desktop) {
-      width: 1440px;
       margin-top: 17px;
       margin-bottom: 0;
     }
@@ -149,17 +145,24 @@
 
     &::before {
       content: "";
+      margin-right: calc((100vw - 320px) / 2 + 20px);
 
       @media only screen and (min-width: $tablet) {
         border-top: 2px solid $base-color;
         padding: 0 0 0.3em;
         margin-right: 38px;
-        width: 30px;
+        width: calc((100vw - 768px) / 2 + 30px);
         content: "";
       }
 
       @media only screen and (min-width: $desktop) {
-        width: 72px;
+        width: calc((100vw - 1440px) / 2 + 70px);
+      }
+    }
+
+    & br {
+      @media only screen and (min-width: $tablet) {
+        display: none;
       }
     }
   }

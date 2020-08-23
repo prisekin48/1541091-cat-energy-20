@@ -56,7 +56,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 
   @media only screen and (min-width: $tablet) {
     width: 708px;
@@ -244,11 +244,15 @@
 }
 
 .sample__state-text {
+  margin-bottom: 0;
   font-family: $oswald;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
+  border-bottom: 1px dotted transparent;
+  user-select: none;
 
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
@@ -256,11 +260,20 @@
     border-bottom: 1px dotted #68b738;
     margin: 0;
   }
+
+  &:hover {
+    border-bottom: 1px solid #68b738;
+  }
+
+  &:active {
+    border: none;
+  }
 }
 
 .sample__button {
   position: relative;
-  margin: 0 60px;
+  margin: 14px 60px 0;
+  cursor: pointer;
 
   @media only screen and (min-width: $tablet) {
     content: "";
@@ -312,7 +325,9 @@
     }
   }
 
-  &--after > &::before {
-    display: none;
+  &--after.sample__button::after {
+    @media only screen and (max-width: $tablet) {
+      left: 4px;
+    }
   }
 }
