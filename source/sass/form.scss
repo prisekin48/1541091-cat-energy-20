@@ -329,8 +329,13 @@
     border: 1px solid #cdcdcd;
   }
 
-  &:focus {
+  &:focus:not(:valid) {
     border: 2px solid yellow;
+    padding-left: 14px;
+
+    @media only screen and (min-width: $tablet) {
+      padding-left: 17px;
+    }
   }
 
   &:required:invalid:not(:placeholder-shown) {
@@ -384,6 +389,18 @@
     max-width: unset;
     margin-top: 0;
     padding-top: 5px;
+  }
+
+  &:focus {
+    padding-top: 14px;
+
+    @media only screen and (min-width: $tablet) {
+      padding-top: 9px;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    padding-top: 4px;
   }
 }
 
