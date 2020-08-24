@@ -222,10 +222,8 @@
 
 .sample__image {
   margin-bottom: 14px;
-  content: url("../img/before-mobile@1x.png");
 
   @media only screen and (min-width: $tablet) {
-    content: url("../img/before-tablet@1x.png");
     margin-left: 16px;
   }
 
@@ -235,10 +233,7 @@
   }
 
   &--after {
-    content: url("../img/after-mobile@1x.png");
-
     @media only screen and (min-width: $tablet) {
-      content: url("../img/after-tablet@1x.png");
     }
   }
 }

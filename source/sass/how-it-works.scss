@@ -65,6 +65,7 @@
     height: 60px;
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: 50px 50px;
     background-color: $base-color;
     padding-right: 36px;
     margin-right: 20px;
@@ -79,18 +80,34 @@
 
   &--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    } 
   }
 
   &--boil::before {
     background-image: url("../img/advantage-powder@1x.png");
+  
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    } 
   }
 
   &--forks::before {
     background-image: url("../img/advantage-dining@1x.png");
+  
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    } 
   }
 
   &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
+  
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    } 
   }
 }
 
