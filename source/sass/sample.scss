@@ -220,10 +220,12 @@
 }
 
 .sample__image {
-  margin-bottom: 14px;
+  margin-bottom: 7px;
 
   @media only screen and (min-width: $tablet) {
     margin-left: 16px;
+    width: 690px;
+    height: 517px;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -232,7 +234,14 @@
   }
 
   &--after {
+    content: url("../img/after-mobile@1x.png");
+
     @media only screen and (min-width: $tablet) {
+      content: url("../img/after-tablet@1x.png");
+    }
+
+    @media only screen and (min-width: $desktop) {
+      content: url("../img/after-desktop@1x.png");
     }
   }
 }
