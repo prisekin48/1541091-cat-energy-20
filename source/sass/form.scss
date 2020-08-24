@@ -304,6 +304,7 @@
   line-height: 18px;
   height: 46px;
   border: 1px solid #e7e7e7;
+  border-radius: 2px;
   padding-left: 15px;
   padding-right: 10px;
   flex-grow: 1;
@@ -329,11 +330,15 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 2px solid yellow;
   }
 
-  &:invalid {
-    border: 2px solid #ff8282;
+  &:required:invalid:not(:placeholder-shown) {
+    border: 2px solid crimson;
+  }
+
+  &:required:valid:not(:placeholder-shown) {
+    border: 2px solid $base-color;
   }
 }
 
