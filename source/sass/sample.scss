@@ -6,11 +6,10 @@
   margin-top: 20px;
 
   @media only screen and (min-width: $tablet) {
-    @include base-wrapper();
-    width: 768px;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(to top, #eaeaea 440px, white 440px);
+    background: linear-gradient(to top, #eaeaea 465px, white 465px);
     margin-top: 40px;
     border-top: 1px solid #eaeaea;
   }
@@ -18,10 +17,10 @@
   @media only screen and (min-width: $desktop) {
     flex-direction: row;
     align-items: unset;
-    background: linear-gradient(to top, #eaeaea 70%, white 70%);
-    justify-content: space-between;
+    background: linear-gradient(to top, #eaeaea 460px, white 460px);
+    justify-content: center;
     margin-top: 0;
-    padding-bottom: 67px;
+    padding-bottom: 70px;
     border: none;
   }
 }
@@ -38,14 +37,14 @@
   @media only screen and (min-width: $tablet) {
     width: 100%;
     max-width: 750px;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   @media only screen and (min-width: $desktop) {
     justify-content: unset;
     align-content: flex-start;
-    width: 570px;
+    width: 610px;
+    padding-left: 32px;
+    padding-right: 5px;
   }
 }
 
@@ -66,7 +65,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    width: 575px;
+    width: 690px;
     padding-top: 8px;
     padding-bottom: 0;
   }
@@ -115,7 +114,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    margin-top: 70px;
+    margin-top: 65px;
   }
 }
 
@@ -228,8 +227,8 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    margin-left: -35px;
-    margin-bottom: 37px;
+    margin-left: 0;
+    margin-bottom: 32px;
   }
 
   &--after {
