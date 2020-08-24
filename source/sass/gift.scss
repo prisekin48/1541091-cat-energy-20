@@ -13,7 +13,7 @@
   text-align: center;
   min-height: 290px;
 
-  @media(min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) {
     background: url("../img/gift-photo-mobile@2x.jpg") center/280px no-repeat;
   }
 
@@ -27,7 +27,7 @@
     align-items: center;
     width: 768px;
 
-    @media(min-resolution: 2dppx) {
+    @media (min-resolution: 2dppx) {
       background: url("../img/gift-photo-tablet@2x.jpg") center/708px no-repeat;
     }
   }
@@ -39,7 +39,7 @@
     justify-content: flex-start;
     margin: 0;
 
-    @media(min-resolution: 2dppx) {
+    @media (min-resolution: 2dppx) {
       background: url("../img/gift-photo-desktop@2x.jpg") center/245px no-repeat;
     }
   }
