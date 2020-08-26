@@ -102,7 +102,7 @@
 
   @media only screen and (min-width: $desktop) {
     max-width: unset;
-    margin-top: 78px;
+    margin-top: 75px;
     padding-left: 110px;
     padding-right: 110px;
     display: flex;
@@ -149,8 +149,8 @@
     max-width: unset;
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 47px;
-    margin-top: 80px;
+    margin-bottom: 52px;
+    margin-top: 77px;
   }
 }
 
@@ -165,7 +165,7 @@
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -191,7 +191,7 @@
     max-width: unset;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
 
 
@@ -304,7 +304,7 @@
   font-family: $oswald;
   color: #444444;
   font-size: 16px;
-  height: 46px;
+  height: 51px;
   border: 1px solid #e7e7e7;
   border-radius: 2px;
   padding-left: 15px;
@@ -385,7 +385,7 @@
     width: 100%;
     max-width: unset;
     margin-top: 0;
-    padding-top: 5px;
+    padding-top: 9px;
   }
 
   &:focus {
@@ -394,10 +394,6 @@
     @media only screen and (min-width: $tablet) {
       padding-top: 10px;
     }
-  }
-
-  @media only screen and (min-width: $desktop) {
-    padding-top: 5px;
   }
 }
 
