@@ -260,12 +260,12 @@
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted #68b738;
+    border-bottom: 1px dotted #cdcdcd;
     margin: 0;
   }
 
   &:hover {
-    border-bottom: 1px solid #68b738;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   &:active {
@@ -273,64 +273,70 @@
   }
 }
 
-.sample__button {
+.sample__control {
   position: relative;
   margin: 14px 60px 0;
-  cursor: pointer;
 
   @media only screen and (min-width: $tablet) {
-    content: "";
     height: 6px;
     width: 428px;
     background-color: #dcdcdc;
-    position: relative;
     top: 12px;
     border-radius: 5px;
     margin: 0 22px;
   }
+}
 
-  &::before {
-    content: "";
-    width: 84px;
-    height: 12px;
-    border: 1px solid #cdcdcd;
-    background-color: white;
-    border-radius: 8px;
-    position: absolute;
-    margin: 0;
-    left: -40px;
-    top: -7px;
+.sample__button {
+  cursor: pointer;
+  width: 84px;
+  height: 12px;
+  border: 1px solid #cdcdcd;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  margin: 0;
+  left: -40px;
+  top: -7px;
 
-    @media only screen and (min-width: $tablet) {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      left: 200px;
-      top: -14px;
-    }
+  @media only screen and (min-width: $tablet) {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    left: 200px;
+    top: -14px;
   }
 
-  &::after {
-    position: absolute;
-    width: 35px;
-    background-color: #68b738;
-    content: "";
-    height: 6px;
-    border-radius: 10px;
-    top: -3px;
-    left: -33px;
-
-    @media only screen and (min-width: $tablet) {
-      width: 10px;
-      height: 10px;
-      left: 211px;
-      top: -2px;
-    }
+  &:hover {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
   }
 
-  &--after.sample__button::after {
-    @media only screen and (max-width: $tablet) {
-      left: 4px;
-    }
+  &:active {
+    border-color: $base-color;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  }
+}
+
+.sample__button-dot {
+  position: absolute;
+  width: 35px;
+  background-color: #68b738;
+  content: "";
+  height: 6px;
+  border-radius: 10px;
+  top: 3px;
+  left: 7px;
+
+  @media only screen and (min-width: $tablet) {
+    width: 10px;
+    height: 10px;
+    left: 11px;
+    top: 11px;
+  }
+}
+
+.sample__button--after .sample__button-dot {
+  @media only screen and (max-width: $tablet) {
+    left: 42px;
   }
 }
