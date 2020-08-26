@@ -337,11 +337,7 @@
   }
 
   &:required:invalid:not(:placeholder-shown) {
-    border: 2px solid crimson;
-  }
-
-  &:required:valid:not(:placeholder-shown) {
-    border: 2px solid $base-color;
+    border: 2px solid #ff8282;
   }
 }
 
