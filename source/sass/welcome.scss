@@ -87,17 +87,29 @@
 .welcome__map {
   padding-top: 160px;
   padding-bottom: 200px;
-  background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-mobile.svg") no-repeat 50%/cover;
+  background: url("../img/map-pin.png") no-repeat 50%, url("../img/bg-map-mobile@1x.png") no-repeat 50%/cover;
   width: 100%;
+  
+  @media (min-resolution: 2dppx) {
+    background: url("../img/map-pin.png") no-repeat 50%, url("../img/bg-map-mobile@2x.png") no-repeat 50%/cover;
+  }
 
   @media only screen and (min-width: $tablet) {
-    background: url("../img/map-pin.png") no-repeat 50%, url("../img/map-tablet.svg") no-repeat 50%/cover;
+    background: url("../img/map-pin.png") no-repeat 50%, url("../img/bg-map-tablet@1x.png") no-repeat 50%/cover;
     width: 100%;
     padding-bottom: 240px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/map-pin.png") no-repeat 50%, url("../img/bg-map-tablet@2x.png") no-repeat 50%/cover;
+    }
   }
 
   @media only screen and (min-width: $desktop) {
     margin-top: -205px;
-    background: url("../img/map-pin.png") no-repeat 1048px 130px, url("../img/map-desktop.svg") no-repeat 50%/cover;
+    background: url("../img/map-pin.png") no-repeat 1048px 130px, url("../img/bg-map-desktop@1x.png") no-repeat 50%/cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/map-pin.png") no-repeat 1048px 130px, url("../img/bg-map-desktop@2x.png") no-repeat 50%/cover;
+    }
   }
 }
