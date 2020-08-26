@@ -1,7 +1,7 @@
 .how-it-works {
   @include base-wrapper();
   margin-top: 38px;
-  
+
   @media only screen and (min-width: $tablet) {
     margin-top: 14px;
   }
