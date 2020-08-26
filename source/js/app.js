@@ -8,11 +8,11 @@ menuButton.addEventListener('click', function() {
 });
 
 var sampleButton = document.querySelector('.sample__button');
-var sampleImage = document.querySelector('.sample__image');
+var sampleCatsWrapper = document.querySelector('.sample__cats-wrapper');
 
 sampleButton.addEventListener('click', function() {
   sampleButton.classList.toggle('sample__button--after');
-  sampleImage.classList.toggle('sample__image--after');
+  sampleCatsWrapper.classList.toggle('sample__cats-wrapper--after');
 });
 
 var sampleStateTextBefore = document.querySelector('.sample__state-text--before');
@@ -20,10 +20,10 @@ var sampleStateTextAfter = document.querySelector('.sample__state-text--after');
 
 sampleStateTextBefore.addEventListener('click', function() {
   sampleButton.classList.remove('sample__button--after');
-  sampleImage.classList.remove('sample__image--after');
+  sampleCatsWrapper.classList.remove('sample__cats-wrapper--after');
 });
 
 sampleStateTextAfter.addEventListener('click', function() {
   sampleButton.classList.add('sample__button--after');
-  sampleImage.classList.add('sample__image--after');
+  sampleCatsWrapper.classList.add('sample__cats-wrapper--after');
 });

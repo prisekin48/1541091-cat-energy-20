@@ -234,16 +234,22 @@
   }
 
   &--after {
-    content: url("../img/after-mobile@1x.png");
-
-    @media only screen and (min-width: $tablet) {
-      content: url("../img/after-tablet@1x.png");
-    }
-
-    @media only screen and (min-width: $desktop) {
-      content: url("../img/after-desktop@1x.png");
-    }
+    display: none;
   }
+}
+
+.sample__button--after .sample__button-dot {
+  @media only screen and (max-width: $tablet) {
+    left: 42px;
+  }
+}
+
+.sample__cats-wrapper--after .sample__image {
+  display: none;
+}
+
+.sample__cats-wrapper--after .sample__image--after {
+  display: inline;
 }
 
 .sample__state-text {
@@ -332,11 +338,5 @@
     height: 10px;
     left: 11px;
     top: 11px;
-  }
-}
-
-.sample__button--after .sample__button-dot {
-  @media only screen and (max-width: $tablet) {
-    left: 42px;
   }
 }
