@@ -1,6 +1,10 @@
 .how-it-works {
   @include base-wrapper();
-  margin-top: 8px;
+  margin-top: 38px;
+
+  @media only screen and (min-width: $tablet) {
+    margin-top: 14px;
+  }
 
   @media only screen and (min-width: $desktop) {
     margin-top: 41px;
@@ -17,7 +21,6 @@
   @media only screen and (min-width: $tablet) {
     max-width: none;
     justify-content: space-between;
-    margin-top: 14px;
   }
 }
 
@@ -36,6 +39,7 @@
     min-height: 280px;
     margin-top: 32px;
     margin-bottom: 5px;
+    margin-right: 73px;
     display: flex;
     flex-direction: column;
     font-size: 16px;

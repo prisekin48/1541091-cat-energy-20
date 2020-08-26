@@ -68,18 +68,19 @@
 
 
   &--form {
+    width: 100%;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 27px;
-    margin-left: 20px;
-    width: unset;
+    padding-left: calc((100vw - 280px) / 2);
 
     @media only screen and (min-width: $tablet) {
+      width: unset;
       font-size: 60px;
       line-height: 60px;
       text-align: center;
       margin-left: -278px;
       margin-top: 67px;
+      padding-left: 0;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -94,12 +95,14 @@
   &--catalog {
     margin-top: 28px;
     margin-bottom: 37px;
+    padding-left: calc((100vw - 280px) / 2);
 
     @media only screen and (min-width: $tablet) {
       font-size: 60px;
       line-height: 60px;
       margin-bottom: 80px;
       margin-top: 69px;
+      padding: 0;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -138,7 +141,7 @@
       content: "";
 
       @media only screen and (min-width: $tablet) {
-        margin-left: 35px;
+        margin-left: 42px;
       }
     }
 
@@ -156,7 +159,7 @@
       }
 
       @media only screen and (min-width: $desktop) {
-        width: calc((100vw - 1440px) / 2 + 70px);
+        width: calc((100vw - 1440px) / 2 + 65px);
       }
     }
 
