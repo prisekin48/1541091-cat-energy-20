@@ -301,7 +301,6 @@
   font-family: $oswald;
   color: #444444;
   font-size: 16px;
-  line-height: 18px;
   height: 46px;
   border: 1px solid #e7e7e7;
   border-radius: 2px;
@@ -316,7 +315,6 @@
 
   @media only screen and (min-width: $tablet) {
     font-size: 20px;
-    line-height: 30px;
     margin-left: 20px;
     padding-left: 18px;
   }
