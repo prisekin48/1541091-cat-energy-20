@@ -1,7 +1,9 @@
 .form {
   margin-bottom: 18px;
+  padding: 3px;
 
   @media only screen and (min-width: $desktop) {
+    padding-top: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -12,9 +14,11 @@
 
 .form__wrapper-first {
   max-width: 320px;
+  margin-top: 5px;
 
   @media only screen and (min-width: $tablet) {
     max-width: unset;
+    margin-top: 0;
     margin-bottom: 77px;
   }
 
@@ -65,7 +69,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
   @media only screen and (min-width: $tablet) {
     box-sizing: border-box;
@@ -304,7 +308,7 @@
   font-family: $oswald;
   color: #444444;
   font-size: 16px;
-  height: 51px;
+  height: 46px;
   border: 1px solid #e7e7e7;
   border-radius: 2px;
   padding-left: 15px;
@@ -317,6 +321,7 @@
   box-sizing: border-box;
 
   @media only screen and (min-width: $tablet) {
+    height: 51px;
     font-size: 20px;
     margin-left: 20px;
     padding-left: 18px;
