@@ -302,8 +302,9 @@
   color: #444444;
   font-size: 16px;
   line-height: 18px;
-  height: 42px;
+  height: 46px;
   border: 1px solid #e7e7e7;
+  border-radius: 2px;
   padding-left: 15px;
   padding-right: 10px;
   flex-grow: 1;
@@ -328,12 +329,21 @@
     border: 1px solid #cdcdcd;
   }
 
-  &:focus {
-    border: 2px solid #444444;
+  &:focus:not(:valid) {
+    border: 2px solid yellow;
+    padding-left: 14px;
+
+    @media only screen and (min-width: $tablet) {
+      padding-left: 17px;
+    }
   }
 
-  &:invalid {
-    border: 2px solid #ff8282;
+  &:required:invalid:not(:placeholder-shown) {
+    border: 2px solid crimson;
+  }
+
+  &:required:valid:not(:placeholder-shown) {
+    border: 2px solid $base-color;
   }
 }
 
@@ -362,7 +372,7 @@
   resize: none;
   margin-left: unset;
   padding-top: 14px;
-  min-height: 134px;
+  min-height: 151px;
 
   @media only screen and (min-width: $tablet) {
     min-height: 175px;
@@ -378,6 +388,18 @@
     width: 100%;
     max-width: unset;
     margin-top: 0;
+    padding-top: 5px;
+  }
+
+  &:focus {
+    padding-top: 14px;
+
+    @media only screen and (min-width: $tablet) {
+      padding-top: 10px;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
     padding-top: 5px;
   }
 }
