@@ -12,8 +12,6 @@
 
 .form__wrapper-first {
   max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 
   @media only screen and (min-width: $tablet) {
     max-width: unset;
@@ -33,7 +31,10 @@
 .form__main-data {
   font-family: $oswald;
 
-  @include base-wrapper();
+  width: 100vw;
+  box-sizing: border-box;
+  padding-left: calc((100vw - 280px) / 2);
+  padding-right: calc((100vw - 280px) / 2);
 
   @media only screen and (min-width: $tablet) {
     margin-left: auto;
@@ -53,8 +54,10 @@
 
 .form__programs {
   font-family: $oswald;
-
-  @include base-wrapper();
+  width: 100vw;
+  box-sizing: border-box;
+  padding-left: calc((100vw - 280px) / 2);
+  padding-right: calc((100vw - 280px) / 2);
   margin-top: 24px;
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
