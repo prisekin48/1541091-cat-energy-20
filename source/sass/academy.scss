@@ -30,12 +30,11 @@
   &--logo {
     width: 41px;
     height: 41px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
     margin-right: -7px;
+    fill: #666666;
 
     &:hover {
-      color: $base-color;
+      fill: $base-color;
     }
   }
 }
