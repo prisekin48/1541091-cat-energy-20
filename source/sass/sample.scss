@@ -15,6 +15,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
+    width: unset;
     flex-direction: row;
     align-items: unset;
     background: linear-gradient(to top, #eaeaea 460px, white 460px);
@@ -43,7 +44,7 @@
     justify-content: unset;
     align-content: flex-start;
     width: 610px;
-    padding-left: 32px;
+    padding-left: 40px;
     padding-right: 5px;
   }
 }
@@ -68,6 +69,8 @@
     width: 690px;
     padding-top: 8px;
     padding-bottom: 0;
+    padding-left: 40px;
+    box-sizing: border-box;
   }
 }
 
@@ -229,7 +232,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    margin-left: 0;
+    margin-left: -37px;
     margin-bottom: 32px;
   }
 
