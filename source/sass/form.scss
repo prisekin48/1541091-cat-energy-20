@@ -294,6 +294,8 @@
   }
 
   &--contacts {
+    position: relative;
+
     @media only screen and (min-width: $tablet) {
       max-width: 628px;
     }
@@ -315,12 +317,8 @@
   border: 1px solid #e7e7e7;
   border-radius: 2px;
   padding-left: 15px;
-  padding-right: 10px;
   flex-grow: 1;
   margin-left: 13px;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 94% center;
   box-sizing: border-box;
 
   @media only screen and (min-width: $tablet) {
@@ -336,6 +334,14 @@
 
   &:hover {
     border: 1px solid #cdcdcd;
+  }
+
+  &:focus + .form__icon {
+    fill: $base-color;
+  }
+
+  &:invalid:not(:placeholder-shown) + .form__icon {
+    fill: crimson;
   }
 
   &:focus:not(:valid) {
@@ -405,23 +411,16 @@
   }
 }
 
-.form__input-text--email {
-  background-image: url("../img/icon-mail.svg");
-  background-position: 98% center;
+.form__icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  fill: #222222;
 
   @media only screen and (min-width: $desktop) {
-    background-position: 96% center;
-  }
-}
-
-.form__input-text--phone {
-  background-image: url("../img/icon-phone.svg");
-  background-position: 98% center;
-
-  @media only screen and (min-width: $desktop) {
-    background-position: 97% center;
-    padding-left: 15px;
-    margin-left: 16px;
+    right: 18px;
   }
 }
 
