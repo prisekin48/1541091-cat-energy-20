@@ -355,6 +355,11 @@
 
   &:required:invalid:not(:placeholder-shown) {
     border: 2px solid #ff8282;
+    padding-left: 14px;
+
+    @media only screen and (min-width: $tablet) {
+      padding-left: 17px;
+    }
   }
 }
 
