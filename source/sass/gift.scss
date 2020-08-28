@@ -43,23 +43,22 @@
       background: url("../img/gift-photo-desktop@2x.jpg") center/245px no-repeat;
     }
   }
+}
 
-  &::before {
-    content: "";
-    background: url("../img/icon-gift.svg") center no-repeat;
-    width: 58px;
-    min-height: 80px;
-    margin-top: 55px;
+.gift__icon {
+  fill: #ffffff;
+  width: 58px;
+  height: 80px;
+  margin-top: 55px;
 
-    @media only screen and (min-width: $tablet) {
-      margin-top: -10px;
-      margin-left: -16px;
-    }
+  @media only screen and (min-width: $tablet) {
+    margin-top: -10px;
+    margin-left: -16px;
+  }
 
-    @media only screen and (min-width: $desktop) {
-      margin-top: 57px;
-      margin-left: 0;
-    }
+  @media only screen and (min-width: $desktop) {
+    margin-top: 57px;
+    margin-left: 0;
   }
 }
 
