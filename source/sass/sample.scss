@@ -15,6 +15,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
+    width: unset;
     flex-direction: row;
     align-items: unset;
     background: linear-gradient(to top, #eaeaea 460px, white 460px);
@@ -43,7 +44,7 @@
     justify-content: unset;
     align-content: flex-start;
     width: 610px;
-    padding-left: 32px;
+    padding-left: 40px;
     padding-right: 5px;
   }
 }
@@ -68,6 +69,8 @@
     width: 690px;
     padding-top: 8px;
     padding-bottom: 0;
+    padding-left: 40px;
+    box-sizing: border-box;
   }
 }
 
@@ -91,7 +94,7 @@
     line-height: 24px;
     margin-top: 130px;
     margin-bottom: 0;
-    padding-right: 135px;
+    padding-right: 130px;
   }
 }
 
@@ -229,21 +232,27 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    margin-left: 0;
+    margin-left: -37px;
     margin-bottom: 32px;
   }
 
   &--after {
-    content: url("../img/after-mobile@1x.png");
-
-    @media only screen and (min-width: $tablet) {
-      content: url("../img/after-tablet@1x.png");
-    }
-
-    @media only screen and (min-width: $desktop) {
-      content: url("../img/after-desktop@1x.png");
-    }
+    display: none;
   }
+}
+
+.sample__button--after .sample__button-dot {
+  @media only screen and (max-width: $tablet) {
+    left: 42px;
+  }
+}
+
+.sample__cats-wrapper--after .sample__image {
+  display: none;
+}
+
+.sample__cats-wrapper--after .sample__image--after {
+  display: inline;
 }
 
 .sample__state-text {
@@ -332,11 +341,5 @@
     height: 10px;
     left: 11px;
     top: 11px;
-  }
-}
-
-.sample__button--after .sample__button-dot {
-  @media only screen and (max-width: $tablet) {
-    left: 42px;
   }
 }
