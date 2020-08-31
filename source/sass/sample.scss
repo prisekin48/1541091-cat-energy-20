@@ -40,6 +40,7 @@
     background-color: #eaeaea;
   }
 }
+
 .sample__info-wrapper {
   z-index: 1;
   padding-left: 20px;
@@ -177,7 +178,7 @@
   @media only screen and (min-width: $desktop) {
     background: #f2f2f2;
   }
-  
+
   & br {
     @media only screen and (min-width: $tablet) {
       display: none;
