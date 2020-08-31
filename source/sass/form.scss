@@ -276,6 +276,7 @@
     align-items: baseline;
     margin-top: 5px;
     margin-bottom: 20px;
+    border: 1px solid transparent;
 
     @media only screen and (min-width: $tablet) {
       font-size: 20px;
@@ -288,8 +289,8 @@
     }
 
     @media only screen and (min-width: $desktop) {
-      width: 155px;
-      margin-right: 30px;
+      width: 165px;
+      margin-right: 21px;
       margin-left: 0;
     }
   }
@@ -500,4 +501,8 @@
 
 .form__checkbox:checked + .form__label--adds::before {
   background: url("../img/icon-tick.svg") center/18px 18px no-repeat;
+}
+
+.form__checkbox:focus + .form__label--adds {
+  border: 1px solid black;
 }
