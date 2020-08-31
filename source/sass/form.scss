@@ -212,6 +212,7 @@
     position: relative;
     padding-left: 35px;
     cursor: pointer;
+    border: 1px solid transparent;
 
     @media only screen and (min-width: $tablet) {
       margin-top: 15px;
@@ -382,6 +383,10 @@
 
 .form__input-radio:checked + .form__label--programs::after {
   opacity: 1;
+}
+
+.form__input-radio:focus + .form__label--programs {
+  border: 1px solid black;
 }
 
 .form__input-text--comment {
