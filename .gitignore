@@ -9,7 +9,5 @@ source/*.png
 *.sublime*
 node_modules/
 npm-debug.*
-source/css/*.css
-source/css/*.map
 Thumbs.db
-build
+build/
