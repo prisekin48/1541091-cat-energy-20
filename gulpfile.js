@@ -125,4 +125,3 @@ exports.build = gulp.series(
 exports.default = gulp.series(
   clean, copy, sprite, createWebp, images, styles, server, watcher
 );
-
