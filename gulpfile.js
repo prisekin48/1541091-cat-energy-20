@@ -26,7 +26,6 @@ exports.clean = clean;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**",
     "source/*.html"
     ], {
@@ -53,7 +52,7 @@ exports.sprite  = sprite;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.webp = createWebp;
@@ -67,6 +66,7 @@ const images = () => {
       imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
@@ -113,28 +113,16 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
-// Build 
-
-const build = () => gulp.series(
-    "clean",
-    "copy",
-    "styles",
-    "sprite"
-);
-
 exports.build = gulp.series(
     clean,
     copy,
+    sprite,
+    createWebp,
+    images,
     styles,
-    sprite
 );
 
-
-// exports.build = gulp.series(
-//   clean, copy, styles, sprite
-// );
-
 exports.default = gulp.series(
-  build, server, watcher
+  clean, copy, sprite, createWebp, images, styles, server, watcher
 );
 
