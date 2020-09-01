@@ -9,6 +9,18 @@ const csso = require("gulp-csso");
 const remane = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore"); 
+
+// Create sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+    .pipe(svgstore())
+    .pipe(remane("icons-sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite  = sprite;
 
 // WebP
 
