@@ -42,7 +42,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(remane("icons-sprite.svg"))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.sprite  = sprite;
@@ -85,7 +85,7 @@ const styles = () => {
     .pipe(cssmin())
     .pipe(remane("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
@@ -96,7 +96,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
