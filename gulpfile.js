@@ -5,12 +5,12 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const csso = require("gulp-csso");
 const remane = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const cssmin = require("gulp-cssmin");
 
 
 // Delete build folder
@@ -78,17 +78,16 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(remane("styles.css"))
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
+    .pipe(cssmin())
     .pipe(remane("styles.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
-
-exports.styles = styles;
 
 // Server
 
@@ -104,8 +103,6 @@ const server = (done) => {
   done();
 }
 
-exports.server = server;
-
 // Watcher
 
 const watcher = () => {
@@ -114,14 +111,14 @@ const watcher = () => {
 }
 
 exports.build = gulp.series(
-    clean,
-    copy,
-    sprite,
-    createWebp,
-    images,
-    styles,
+  clean,
+  copy,
+  sprite,
+  createWebp,
+  images,
+  styles,
 );
 
 exports.default = gulp.series(
-  clean, copy, sprite, createWebp, images, styles, server, watcher
+  styles, server, watcher
 );
