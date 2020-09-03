@@ -89,6 +89,8 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
+exports.styles = styles;
+
 // Server
 
 const server = (done) => {
