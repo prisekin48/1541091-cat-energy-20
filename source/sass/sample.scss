@@ -25,21 +25,23 @@
     border: none;
     position: relative;
   }
-}
+  
+  &:before {
+    content: "";
+    display: none;
 
-.sample_second-bg {
-  display: none;
-
-  @media only screen and (min-width: $desktop) {
-    display: block;
-    position: absolute;
-    top: 202px;
-    right: 0;
-    bottom: 0;
-    left: calc(50% + 325px);
-    background-color: #eaeaea;
+    @media only screen and (min-width: $desktop) {
+      display: block;
+      position: absolute;
+      top: 202px;
+      right: 0;
+      bottom: 0;
+      left: calc(50% + 325px);
+      background-color: #eaeaea;
+    }
   }
 }
+
 
 .sample__info-wrapper {
   z-index: 1;
