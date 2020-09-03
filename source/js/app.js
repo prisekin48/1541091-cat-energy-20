@@ -2,7 +2,7 @@ let nav = document.querySelector('.nav');
 let menuButton = document.querySelector('.header__menu-button');
 let map = document.querySelector('.welcome__map');
 
-menuButton.classList.remove('header__menu-button--nojs');
+menuButton.classList.add('header__menu-button--nav-closed', 'header__menu-button--js');
 map.classList.remove('welcome__map--nojs');
 
 menuButton.addEventListener('click', function() {
