@@ -90,19 +90,29 @@
 }
 
 .welcome__map {
+  background-color: #f2f2f2;
   padding-top: 160px;
   padding-bottom: 200px;
-  background: url("../img/bg-map-mobile.png") no-repeat 50%/cover;
   width: 100%;
 
   @media only screen and (min-width: $tablet) {
-    background: url("../img/bg-map-tablet.png") no-repeat 50%/cover;
     width: 100%;
     padding-bottom: 240px;
   }
 
   @media only screen and (min-width: $desktop) {
     margin-top: -205px;
-    background: url("../img/bg-map-desktop.png") no-repeat 50%/cover;
+  }
+
+  &--nojs {
+    background: url("../img/bg-map-mobile.png") no-repeat 50%/cover;
+
+    @media only screen and (min-width: $tablet) {
+      background: url("../img/bg-map-tablet.png") no-repeat 50%/cover;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background: url("../img/bg-map-desktop.png") no-repeat 50%/cover;
+    }
   }
 }
