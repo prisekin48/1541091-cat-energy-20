@@ -31,18 +31,19 @@ sampleStateTextAfter.addEventListener('click', function() {
 });
 
 
-let address = {lat: 59.938635, lng: 30.323118};
-let icon = "../img/map-pin.png";
 
 function initMap() {
+  let address = {lat: 59.938635, lng: 30.323118};
+  let icon = "../img/map-pin.png";
+
   map = new google.maps.Map(document.querySelector(".welcome__map"), {
     center: address,
     zoom: 16
   });
   marker = new google.maps.Marker({
-	  position: address,
-	  map: map,
-	  title: 'Привет Кекс!',
-	  icon: icon
-	});
+    position: address,
+    map: map,
+    title: 'Привет Кекс!',
+    icon: icon
+  });
 };

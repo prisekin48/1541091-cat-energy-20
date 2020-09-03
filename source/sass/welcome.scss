@@ -26,8 +26,8 @@
 
 
   @media only screen and (min-width: $tablet) {
-    padding-left: calc((100vw - 635px)/ 2 + 5px);
-    padding-right: calc((100vw - 635px)/ 2 + 5px);
+    padding-left: calc((100vw - 635px) / 2 + 5px);
+    padding-right: calc((100vw - 635px) / 2 + 5px);
     background-color: unset;
     justify-content: space-between;
     padding-top: 50px;
@@ -42,6 +42,7 @@
     top: 95px;
     left: -325px;
     justify-content: flex-start;
+    z-index: 5;
   }
 
   &--index {
