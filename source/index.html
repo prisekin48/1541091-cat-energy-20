@@ -3,36 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>HTML Academy: Кэт энерджи</title>
-
-        <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* Mobile layout by default */
-        background-image: url( "index-mobile.png" );
-      }
-      /* Tablet */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Tablet layout */
-          background-image: url( "index-tablet.png" );
-        }
-      }
-      /* Desktop */
-      @media ( min-width: 1440px ) {
-        HTML {
-          /* Desktop layout */
-          background-image: url( "index-desktop.png" );
-        }
-      }
-    </style>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <!-- // Pixel Glass -->
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <link rel="icon" sizes="any" href="img/favicon.svg">
+    <title>Кэт энерджи - Присекин</title>
   </head>
+
   <body class="body">
 
 
@@ -40,7 +15,7 @@
       <a class="image-logo" href="index.html">
         <span class="visually-hidden">Cat Energy</span>
       </a>
-      <button class="header__menu-button header__menu-button--nav-closed header__menu-button--nojs" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="header__menu-button" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="nav">
         <a class="nav__link nav__link--active nav__link--index" href="index.html">Главная</a>
         <a class="nav__link nav__link--index" href="catalog.html">Каталог продукции</a>
@@ -62,7 +37,7 @@
       <section class="programs">
         <div class="program">
             <svg class="program__title--lose">
-              <use xlink:href="img/sprite.svg#icon-cat-slim-mine">
+              <use xlink:href="img/icons-sprite.svg#icon-cat-slim-mine">
               </use>
             </svg>
             <h3 class="program__title">Похудение</h3>
@@ -71,7 +46,7 @@
         </div>
         <div class="program">
             <svg class="program__title--gain">
-              <use xlink:href="img/sprite.svg#icon-cat-pro-mine">
+              <use xlink:href="img/icons-sprite.svg#icon-cat-pro-mine">
               </use>
             </svg>
             <h3 class="program__title">Набор массы</h3>
@@ -141,7 +116,11 @@
           <h2 class="welcome__heading">Приглашаем<br>к сотрудничеству дилеров!</h2>
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="welcome__map"></div>
+        <div class="welcome__map welcome__map--nojs">
+          <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQCMPhH4507Nrg4nqDO9EG1GWHFzeQhts&callback=initMap">
+          </script>
+        </div>
       </section>
     </main>
 
@@ -152,21 +131,21 @@
         <div class="social">
           <a class="social__link" href="https://vk.com">
             <svg class="social__link--vk">
-              <use xlink:href="img/sprite.svg#icon-vk">
+              <use xlink:href="img/icons-sprite.svg#icon-vk">
               </use>
             </svg>
             <span class="visually-hidden">Vkontakte</span>
           </a>
           <a class="social__link" href="https://instagram.com">
             <svg class="social__link--inst">
-              <use xlink:href="img/sprite.svg#icon-insta">
+              <use xlink:href="img/icons-sprite.svg#icon-insta">
               </use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
           <a class="social__link" href="https://facebook.com">
             <svg class="social__link--fb">
-              <use xlink:href="img/sprite.svg#icon-fb">
+              <use xlink:href="img/icons-sprite.svg#icon-fb">
               </use>
             </svg>
             <span class="visually-hidden">Facebook</span>
@@ -176,7 +155,7 @@
           <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
           <a class="academy__link" href="https://htmlacademy.ru">
             <svg class="academy__link--logo">
-              <use xlink:href="img/sprite.svg#htmlacademy">
+              <use xlink:href="img/icons-sprite.svg#icon-htmlacademy">
               </use>
             </svg>
             <span class="visually-hidden">Логотип Академии</span>

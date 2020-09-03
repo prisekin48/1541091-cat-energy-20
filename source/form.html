@@ -3,40 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <link rel="icon" sizes="any" href="img/favicon.svg">
+    <title>Кэт энерджи - Присекин</title>
   </head>
-        <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* Mobile layout by default */
-        background-image: url( "form-mobile.png" );
-      }
-      /* Tablet */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Tablet layout */
-          background-image: url( "form-tablet.png" );
-        }
-      }
-      /* Desktop */
-      @media ( min-width: 1440px ) {
-        HTML {
-          /* Desktop layout */
-          background-image: url( "form-desktop.png" );
-        }
-      }
-    </style>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <!-- // Pixel Glass -->
-  <body class="body body--form">
+
+  <body class="body">
 
     <header class="header">
       <a class="image-logo" href="index.html"><span class="visually-hidden">Cat Energy</span></a>
-      <button class="header__menu-button header__menu-button--nav-closed header__menu-button--nojs" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="header__menu-button" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="nav">
         <a class="nav__link" href="index.html">Главная</a>
         <a class="nav__link" href="catalog.html">Каталог продукции</a>
@@ -66,17 +42,17 @@
         </div>
         <h2 class="heading heading--extra">Контактные данные <br>(владельца кота)</h2>
         <div class="form__contacts">
-          <label class="form__label form__label--contacts">E-mail:*
-            <input class="form__input-text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          <label class="form__label form__label--contacts" for="email">E-mail:*
+            <input class="form__input-text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
             <svg class="form__icon">
-              <use xlink:href="img/sprite.svg#icon-mail">
+              <use xlink:href="img/icons-sprite.svg#icon-mail">
               </use>
             </svg>
           </label>
-          <label class="form__label form__label--contacts">Телефон:*
-            <input class="form__input-text" type="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          <label class="form__label form__label--contacts" for="phone">Телефон:*
+            <input class="form__input-text" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
             <svg class="form__icon">
-              <use xlink:href="img/sprite.svg#icon-phone">
+              <use xlink:href="img/icons-sprite.svg#icon-phone">
               </use>
             </svg>
           </label>
@@ -102,11 +78,12 @@
           <h2 class="welcome__heading">Приглашаем<br>к сотрудничеству дилеров!</h2>
           <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="welcome__map"></div>
+        <div class="welcome__map welcome__map--nojs">
+          <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQCMPhH4507Nrg4nqDO9EG1GWHFzeQhts&callback=initMap">
+          </script>
+        </div>
       </section>
-    </main>
-
-
     </main>
 
 
@@ -116,21 +93,21 @@
         <div class="social">
           <a class="social__link" href="https://vk.com">
             <svg class="social__link--vk">
-              <use xlink:href="img/sprite.svg#icon-vk">
+              <use xlink:href="img/icons-sprite.svg#icon-vk">
               </use>
             </svg>
             <span class="visually-hidden">Vkontakte</span>
           </a>
           <a class="social__link" href="https://instagram.com">
             <svg class="social__link--inst">
-              <use xlink:href="img/sprite.svg#icon-insta">
+              <use xlink:href="img/icons-sprite.svg#icon-insta">
               </use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
           <a class="social__link" href="https://facebook.com">
             <svg class="social__link--fb">
-              <use xlink:href="img/sprite.svg#icon-fb">
+              <use xlink:href="img/icons-sprite.svg#icon-fb">
               </use>
             </svg>
             <span class="visually-hidden">Facebook</span>
@@ -140,7 +117,7 @@
           <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
           <a class="academy__link" href="https://htmlacademy.ru">
             <svg class="academy__link--logo">
-              <use xlink:href="img/sprite.svg#htmlacademy">
+              <use xlink:href="img/icons-sprite.svg#icon-htmlacademy">
               </use>
             </svg>
             <span class="visually-hidden">Логотип Академии</span>

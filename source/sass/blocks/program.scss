@@ -1,0 +1,175 @@
+.program {
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  align-items: center;
+  padding-top: 22px;
+  margin-bottom: 1px;
+
+  @media only screen and (min-width: $tablet) {
+    width: 708px;
+    flex-direction: column;
+    margin-bottom: 29px;
+    padding-top: 77px;
+    padding-bottom: 4px;
+    margin-top: 0;
+    position: relative;
+    align-items: flex-start;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: 570px;
+    padding-top: 36px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.program__title {
+  margin-bottom: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 0;
+
+  @media only screen and (min-width: $tablet) {
+    margin-left: 53px;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    position: relative;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  &--lose {
+    width: 50px;
+    height: 53px;
+    margin-left: 21px;
+    margin-right: 20px;
+
+    @media only screen and (min-width: $tablet) {
+      width: 200px;
+      height: 226px;
+      position: absolute;
+      right: 41px;
+      top: 72px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      position: unset;
+      width: 100px;
+      height: 112px;
+      margin-left: 52px;
+      margin-right: 62px;
+    }
+  }
+
+  &--gain {
+    width: 67px;
+    height: 53px;
+    margin-left: 13px;
+    margin-right: 10px;
+
+    @media only screen and (min-width: $tablet) {
+      width: 268px;
+      height: 200px;
+      position: absolute;
+      right: 18px;
+      top: 91px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      position: unset;
+      width: 134px;
+      height: 112px;
+      margin-left: 33px;
+      margin-right: 47px;
+    }
+  }
+}
+
+.program__description {
+  width: 227px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 20px;
+  margin-top: 22px;
+  padding-bottom: 23px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media only screen and (min-width: $tablet) {
+    margin-left: 53px;
+    border: none;
+    width: 377px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+
+    &--shorter {
+      width: 342px;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    width: auto;
+    padding-right: 50px;
+    margin-top: 38px;
+  }
+}
+
+.program__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat 100px/25px;
+  padding-right: 60px;
+  margin-left: 20px;
+  padding-bottom: 22px;
+  padding-top: 17px;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $tablet) {
+    width: 40%;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    margin-left: 53px;
+    font-size: 20px;
+    line-height: 30px;
+    background-position: 130px 24px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 6px;
+    padding-top: 0;
+    background-position: 132px 9px;
+  }
+
+  &:hover {
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 100px/32px;
+
+    @media only screen and (min-width: $tablet) {
+      background-position: 130px 24px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background-position: 132px 9px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
