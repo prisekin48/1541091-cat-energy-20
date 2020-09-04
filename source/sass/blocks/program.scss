@@ -47,51 +47,51 @@
     text-align: center;
     margin-left: 0;
   }
+}
 
-  &--lose {
-    width: 50px;
-    height: 53px;
-    margin-left: 21px;
-    margin-right: 20px;
+.program__lose {
+  width: 50px;
+  height: 53px;
+  margin-left: 21px;
+  margin-right: 20px;
 
-    @media only screen and (min-width: $tablet) {
-      width: 200px;
-      height: 226px;
-      position: absolute;
-      right: 41px;
-      top: 72px;
-    }
-
-    @media only screen and (min-width: $desktop) {
-      position: unset;
-      width: 100px;
-      height: 112px;
-      margin-left: 52px;
-      margin-right: 62px;
-    }
+  @media only screen and (min-width: $tablet) {
+    width: 200px;
+    height: 226px;
+    position: absolute;
+    right: 41px;
+    top: 72px;
   }
 
-  &--gain {
-    width: 67px;
-    height: 53px;
-    margin-left: 13px;
-    margin-right: 10px;
+  @media only screen and (min-width: $desktop) {
+    position: unset;
+    width: 100px;
+    height: 112px;
+    margin-left: 52px;
+    margin-right: 62px;
+  }
+}
 
-    @media only screen and (min-width: $tablet) {
-      width: 268px;
-      height: 200px;
-      position: absolute;
-      right: 18px;
-      top: 91px;
-    }
+.program__gain {
+  width: 67px;
+  height: 53px;
+  margin-left: 13px;
+  margin-right: 10px;
 
-    @media only screen and (min-width: $desktop) {
-      position: unset;
-      width: 134px;
-      height: 112px;
-      margin-left: 33px;
-      margin-right: 47px;
-    }
+  @media only screen and (min-width: $tablet) {
+    width: 268px;
+    height: 200px;
+    position: absolute;
+    right: 18px;
+    top: 91px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    position: unset;
+    width: 134px;
+    height: 112px;
+    margin-left: 33px;
+    margin-right: 47px;
   }
 }
 
