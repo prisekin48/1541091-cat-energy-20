@@ -11,7 +11,7 @@
   <body class="body">
 
     <header class="header">
-      <a href="index.html">
+      <a href="index.html" title="На главную" aria-label="На главную">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -20,9 +20,9 @@
       </a>
       <button class="header__menu-button" title="Меню"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="nav">
-        <a class="nav__link" href="index.html">Главная</a>
-        <a class="nav__link" href="catalog.html">Каталог продукции</a>
-        <a class="nav__link nav__link--active" href="form.html">Подбор программы</a>
+        <a class="nav__link" href="index.html" title="На главную" aria-label="На главную">Главная</a>
+        <a class="nav__link" href="catalog.html" title="В каталог" aria-label="В каталог">Каталог продукции</a>
+        <a class="nav__link nav__link--active" href="form.html" title="Подобрать программу" aria-label="Подобрать программу">Подбор программы</a>
       </nav>
     </header>
 
@@ -33,30 +33,30 @@
           <h1 class="heading heading--form">Подбор программы</h1>
           <div class="form__main-data">
             <h3 class="form__sub-heading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h3>
-            <label class="form__label" for="name">Имя:* <input class="form__input-text" id="name" size="10" type="text" name="name" placeholder="БАРСИК" required></label>
-            <label class="form__label" for="weight">Вес (кг):* <input class="form__input-text" id="weight" size="10" type="text" name="weight" placeholder="7" required></label>
-            <label class="form__label" for="age">Возраст (лет): <input class="form__input-text" id="age" size="10" type="text" name="age" placeholder="7"></label>
+            <label class="form__label" for="name">Имя:* <input class="form__input-text" id="name" size="10" type="text" name="name" placeholder="БАРСИК" title="Введите имя" aria-label="Введите имя" required></label>
+            <label class="form__label" for="weight">Вес (кг):* <input class="form__input-text" id="weight" size="10" type="text" name="weight" placeholder="7" title="Введите вес" aria-label="Введите вес" required></label>
+            <label class="form__label" for="age">Возраст (лет): <input class="form__input-text" id="age" size="10" type="text" name="age" placeholder="7" title="Введите возраст" aria-label="Введите возраст"></label>
           </div>
           <div class="form__programs">
             <input class="form__input-radio" type="radio" name="choice" value="lose" id="choice-lose" checked>
-            <label class="form__label form__label--programs" for="choice-lose">Похудение</label>
+            <label class="form__label form__label--programs" for="choice-lose" title="Выбрать пункт 'Похудение'" aria-label="Выбрать пункт 'Похудение'">Похудение</label>
             <input class="form__input-radio" type="radio" name="choice" value="gain" id="choice-gain">
-            <label class="form__label form__label--programs" for="choice-gain">Набор массы</label>
+            <label class="form__label form__label--programs" for="choice-gain" title="Выбрать пункт 'Набор массы'" aria-label="Выбрать пункт 'Набор массы'">Набор массы</label>
             <input class="form__input-radio" type="radio" name="choice" value="advise" id="choice-advise">
-            <label class="form__label form__label--programs" for="choice-advise">Не знаю (Нужен ваш совет)</label>
+            <label class="form__label form__label--programs" for="choice-advise" title="Выбрать пункт 'Не знаю (Нужен ваш совет)'" aria-label="Выбрать пункт 'Не знаю (Нужен ваш совет)'">Не знаю (Нужен ваш совет)</label>
           </div>
         </div>
         <h2 class="heading heading--extra">Контактные данные <br>(владельца кота)</h2>
         <div class="form__contacts">
           <label class="form__label form__label--contacts" for="email">E-mail:*
-            <input class="form__input-text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <input class="form__input-text" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" title="Введите электронную почту" aria-label="Введите электронную почту" required>
             <svg class="form__icon">
               <use xlink:href="img/icons-sprite.svg#icon-mail">
               </use>
             </svg>
           </label>
           <label class="form__label form__label--contacts" for="phone">Телефон:*
-            <input class="form__input-text" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input-text" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" title="Введите номер телефона" aria-label="Введите номер телефона" required>
             <svg class="form__icon">
               <use xlink:href="img/icons-sprite.svg#icon-phone">
               </use>
@@ -65,15 +65,15 @@
         </div>
         <h2 class="heading heading--extra">Комментарий</h2>
         <div class="form__textarea-wrapper">
-          <textarea class="form__input-text form__input-text--comment" name="comment" rows="20" cols="20" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__input-text form__input-text--comment" name="comment" rows="20" cols="20" placeholder="Расскажите обо всех повадках кота" title="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
         </div>
         <h2 class="heading heading--extra">Дополнительно</h2>
         <div class="form__adds">
-          <input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" id="sugar" checked><label class="form__label form__label--adds" for="sugar">сахарозаменитель</label>
-          <input type="checkbox" class="form__checkbox" name="water" id="water"><label class="form__label form__label--adds" for="water">питьевая вода</label>
-          <input type="checkbox" class="form__checkbox" name="milk" id="milk"><label class="form__label form__label--adds" for="milk">молоко</label>
-          <input type="checkbox" class="form__checkbox" name="vitamins" id="vitamins"><label class="form__label form__label--adds" for="vitamins">витамины</label>
-          <input class="button button--form" type="submit" value="Отправить заявку">
+          <input type="checkbox" class="form__checkbox form__checkbox--checked" name="sugar" id="sugar" checked><label class="form__label form__label--adds" for="sugar" title="Выбрать пункт 'Сахарозаменитель'" aria-label="Выбрать пункт 'Сахарозаменитель'">Сахарозаменитель</label>
+          <input type="checkbox" class="form__checkbox" name="water" id="water"><label class="form__label form__label--adds" for="water" title="Выбрать пункт 'Питьевая вода'" aria-label="Выбрать пункт 'Питьевая вода'">Питьевая вода</label>
+          <input type="checkbox" class="form__checkbox" name="milk" id="milk"><label class="form__label form__label--adds" for="milk" title="Выбрать пункт 'Молоко'" aria-label="Выбрать пункт 'Молоко'">Молоко</label>
+          <input type="checkbox" class="form__checkbox" name="vitamins" id="vitamins"><label class="form__label form__label--adds" for="vitamins" title="Выбрать пункт 'Витамины'" aria-label="Выбрать пункт 'Витамины'">Витамины</label>
+          <input class="button button--form" type="submit" value="Отправить заявку" title="Отправить заявку" aria-label="Отправить заявку">
           <p class="form__req-fields">* — Обязательные поля</p>
         </div>
       </form>
@@ -95,25 +95,25 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
-        <a href="index.html">
+        <a href="index.html" title="На главную" aria-label="На главную">
             <img class="text-logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип текстовый">
         </a>
         <div class="social">
-          <a class="social__link" href="https://vk.com">
+          <a class="social__link" href="https://vk.com" title="Мы во Вконтакте" aria-label="Мы во Вконтакте">
             <svg class="social__vk">
               <use xlink:href="img/icons-sprite.svg#icon-vk">
               </use>
             </svg>
             <span class="visually-hidden">Vkontakte</span>
           </a>
-          <a class="social__link" href="https://instagram.com">
+          <a class="social__link" href="https://instagram.com" title="Мы в Instagram" aria-label="Мы в Instagram">
             <svg class="social__inst">
               <use xlink:href="img/icons-sprite.svg#icon-insta">
               </use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
-          <a class="social__link" href="https://facebook.com">
+          <a class="social__link" href="https://facebook.com" title="Мы в Facebook" aria-label="Мы в Facebook">
             <svg class="social__fb">
               <use xlink:href="img/icons-sprite.svg#icon-fb">
               </use>
@@ -122,8 +122,8 @@
           </a>
         </div>
         <div class="academy">
-          <a class="academy__link" href="https://htmlacademy.ru">HTML Academy</a>
-          <a class="academy__link" href="https://htmlacademy.ru">
+          <a class="academy__link" href="https://htmlacademy.ru" title="На сайт Академии" aria-label="На сайт Академии">HTML Academy</a>
+          <a class="academy__link" href="https://htmlacademy.ru" title="На сайт Академии" aria-label="На сайт Академии">
             <svg class="academy__logo">
               <use xlink:href="img/icons-sprite.svg#icon-htmlacademy">
               </use>
