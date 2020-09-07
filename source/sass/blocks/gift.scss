@@ -1,7 +1,7 @@
 .gift {
   @include base-wrapper();
   margin-top: 40px;
-  background: url("../img/gift-photo-mobile@1x.jpg") center/280px no-repeat;
+  background: #63a73a url("../img/gift-photo-mobile@1x.jpg") center/280px no-repeat;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -11,36 +11,39 @@
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+  box-sizing: border-box;
   min-height: 290px;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/gift-photo-mobile@2x.jpg") center/280px no-repeat;
+    background: #63a73a url("../img/gift-photo-mobile@2x.jpg") center/280px no-repeat;
   }
 
   @media only screen and (min-width: $tablet) {
-    background: url("../img/gift-photo-tablet@1x.jpg") center/708px no-repeat;
+    background: #63a73a url("../img/gift-photo-tablet@1x.jpg") center/708px no-repeat;
     margin-top: 23px;
     padding-left: 0;
     padding-right: 0;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 768px;
+    width: 708px;
+    min-height: 200px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/gift-photo-tablet@2x.jpg") center/708px no-repeat;
+      background: #63a73a url("../img/gift-photo-tablet@2x.jpg") center/708px no-repeat;
     }
   }
 
   @media only screen and (min-width: $desktop) {
-    background: url("../img/gift-photo-desktop@1x.jpg") center/245px no-repeat;
+    background: #63a73a url("../img/gift-photo-desktop@1x.jpg") center/245px no-repeat;
     width: 245px;
+    min-height: unset;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/gift-photo-desktop@2x.jpg") center/245px no-repeat;
+      background: #63a73a url("../img/gift-photo-desktop@2x.jpg") center/245px no-repeat;
     }
   }
 }
